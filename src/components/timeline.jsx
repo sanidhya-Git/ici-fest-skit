@@ -168,10 +168,10 @@ const Timeline = () => {
           Timeline for ICI FEST{"'"}
           <span className='text-[#ff583e]'>24</span>
         </p>
-        {/* <p className='mt-1 text-base font-medium'>coming soon</p> */}
+        <p className='mt-1 text-base font-medium'>coming soon</p>
       </div>
 
-      <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
+      {/* <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
         <div>
           <button
             className={`${
@@ -204,9 +204,9 @@ const Timeline = () => {
             Day 3
           </button>
         </div>
-      </div>
+      </div> */}
 
-      <div className='flex justify-center mt-[20px]'>
+      {/* <div className='flex justify-center mt-[20px]'>
         <div
           className={`${
             activeButton === 0 ? 'active-div' : 'deactive-div'
@@ -284,7 +284,7 @@ const Timeline = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
