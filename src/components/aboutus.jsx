@@ -13,6 +13,10 @@ import {
   img22,
   new_spon_one,
   new_spon_two,
+  new_spon_three,
+  new_spon_four,
+  new_spon_five,
+  new_spon_six,
 } from '../assets';
 import Highlight from './highlights';
 
@@ -95,7 +99,35 @@ const About = () => {
     },
     {
       image: new_spon_two,
-      w: '150px',
+      w: '170px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+    {
+      image: new_spon_three,
+      w: '130px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+    {
+      image: new_spon_four,
+      w: '300px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+    {
+      image: new_spon_five,
+      w: '130px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+    {
+      image: new_spon_six,
+      w: '250px',
       h: '150px',
       w_mob: '120px',
       h_mob: '120px',
