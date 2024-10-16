@@ -33,6 +33,7 @@ import img22 from './triangle.png';
 
 // new sponsors
 import new_spon_one from "./new_spon_one.jpg";
+import new_spon_two from "./new_spon_two.jpg";
 
 import loader from './loader_logo.png';
 
@@ -156,4 +157,5 @@ export {
   img21,
   img22,
   new_spon_one,
+  new_spon_two,
 };

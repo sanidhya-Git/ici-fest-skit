@@ -12,6 +12,7 @@ import {
   img21,
   img22,
   new_spon_one,
+  new_spon_two,
 } from '../assets';
 import Highlight from './highlights';
 
@@ -87,6 +88,13 @@ const About = () => {
     },
     {
       image: new_spon_one,
+      w: '150px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+    {
+      image: new_spon_two,
       w: '150px',
       h: '150px',
       w_mob: '120px',
