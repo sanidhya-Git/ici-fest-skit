@@ -4,7 +4,7 @@ const Counter = () => {
       <div className='mt-[30px] md:mt-[50px] text-[30px] md:text-[36px] font-extrabold text-center'>
         <span>
           FEST{"'"}
-          <span className='text-[#ff583e]'>24 </span>Stats
+          <span className='text-[#ff583e]'>23 </span>Stats
         </span>
       </div>
 
