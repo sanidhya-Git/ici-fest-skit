@@ -31,6 +31,9 @@ import img20 from './20.png';
 import img21 from './anutech.png';
 import img22 from './triangle.png';
 
+// new sponsors
+import new_spon_one from "./new_spon_one.jpg";
+
 import loader from './loader_logo.png';
 
 import jw from './jw.png';
@@ -152,4 +155,5 @@ export {
   ResponseLogo,
   img21,
   img22,
+  new_spon_one,
 };
