@@ -168,9 +168,9 @@ const Timeline = () => {
           Timeline for ICI FEST{"'"}
           <span className='text-[#ff583e]'>24</span>
         </p>
-        {/* <p className='mt-1 text-base font-medium'>coming soon</p> */}
+        <p className='mt-1 text-base font-medium'>coming soon</p>
       </div>
-
+{/* 
       <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
         <div>
           <button
@@ -284,7 +284,7 @@ const Timeline = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
