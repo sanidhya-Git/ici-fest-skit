@@ -8,8 +8,8 @@ import 'swiper/css/navigation';
 
 const Highlight = () => {
   const image_list = [
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728638081/ici-fest-24/tpvxkni3jqindhpgxnhw.png',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728636254/ici-fest-24/ixdrtk4q0yfn9xdaud0o.jpg',
+    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728638081/ici-fest-24/tpvxkni3jqindhpgxnhw.png',
+    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728636254/ici-fest-24/ixdrtk4q0yfn9xdaud0o.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632099/ici-fest-24/pjkbjksgcw6vdgsrr0ll.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632093/ici-fest-24/ocfau0wcst35wx1wbpru.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/lb11nmfbpl987x8kfosm.jpg',
