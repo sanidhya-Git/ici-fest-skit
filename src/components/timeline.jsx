@@ -170,8 +170,13 @@ const Timeline = () => {
         </p>
         <p className='mt-1 text-base font-medium'>coming soon</p>
       </div>
+<<<<<<< HEAD
 {/* 
       <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
+=======
+
+      {/* <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
+>>>>>>> bd2e03bc3d873e603a4ef694a3e1aeddc6069b79
         <div>
           <button
             className={`${
@@ -204,9 +209,9 @@ const Timeline = () => {
             Day 3
           </button>
         </div>
-      </div>
+      </div> */}
 
-      <div className='flex justify-center mt-[20px]'>
+      {/* <div className='flex justify-center mt-[20px]'>
         <div
           className={`${
             activeButton === 0 ? 'active-div' : 'deactive-div'
