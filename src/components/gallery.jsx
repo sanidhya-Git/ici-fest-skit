@@ -1,6 +1,6 @@
 function Gallery() {
   const images = [
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728638081/ici-fest-24/tpvxkni3jqindhpgxnhw.png',
+    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728638081/ici-fest-24/tpvxkni3jqindhpgxnhw.png',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728636254/ici-fest-24/ixdrtk4q0yfn9xdaud0o.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632099/ici-fest-24/pjkbjksgcw6vdgsrr0ll.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632093/ici-fest-24/ocfau0wcst35wx1wbpru.jpg',
@@ -11,7 +11,7 @@ function Gallery() {
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/zllvarfp5uhjuy1mr99t.png',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/qn0l1iwigsl6zxxrhac4.png',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/ycofwy9hmkpqvedo8khr.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728836000/ici-fest-24/cxcohuaetnbmkmk5wh3q.png',
+    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728836000/ici-fest-24/cxcohuaetnbmkmk5wh3q.png',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728836000/ici-fest-24/re8pzfo01etsxazm4u3o.png',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728835999/ici-fest-24/a8qbf6fphpbk9kad3pw3.png',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728927538/ici-fest-24/wgypubcxzmjtueovabzi.jpg',

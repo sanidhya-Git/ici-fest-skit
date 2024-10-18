@@ -28,78 +28,8 @@ import { Link } from 'react-router-dom';
 const About = () => {
   const support_image = [
     {
-      image: img13,
-      w: '150px',
-      h: '150px',
-      w_mob: '120px',
-      h_mob: '100px',
-    },
-    {
-      image: img14,
-      w: '150px',
-      h: '150px',
-      w_mob: '120px',
-      h_mob: '100px',
-    },
-    {
-      image: img15,
-      w: '150px',
-      h: '150px',
-      w_mob: '100px',
-      h_mob: '100px',
-    },
-    {
-      image: img16,
+      image: new_spon_four,
       w: '120px',
-      h: '120px',
-      w_mob: '90px',
-      h_mob: '90px',
-    },
-    {
-      image: img18,
-      w: '150px',
-      h: '150px',
-      w_mob: '100px',
-      h_mob: '100px',
-    },
-    {
-      image: img19,
-      w: '150px',
-      h: '150px',
-      w_mob: '100px',
-      h_mob: '100px',
-    },
-    {
-      image: img20,
-      w: '150px',
-      h: '150px',
-      w_mob: '120px',
-      h_mob: '120px',
-    },
-    {
-      image: img21,
-      w: '150px',
-      h: '150px',
-      w_mob: '120px',
-      h_mob: '120px',
-    },
-    {
-      image: img22,
-      w: '150px',
-      h: '150px',
-      w_mob: '120px',
-      h_mob: '120px',
-    },
-    {
-      image: new_spon_one,
-      w: '150px',
-      h: '150px',
-      w_mob: '120px',
-      h_mob: '120px',
-    },
-    {
-      image: new_spon_two,
-      w: '170px',
       h: '150px',
       w_mob: '120px',
       h_mob: '120px',
@@ -112,8 +42,8 @@ const About = () => {
       h_mob: '120px',
     },
     {
-      image: new_spon_four,
-      w: '300px',
+      image: img12,
+      w: '250px',
       h: '150px',
       w_mob: '120px',
       h_mob: '120px',
@@ -126,11 +56,100 @@ const About = () => {
       h_mob: '120px',
     },
     {
+      image: img14,
+      w: '150px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '100px',
+    },
+    {
+      image: img19,
+      w: '150px',
+      h: '150px',
+      w_mob: '100px',
+      h_mob: '100px',
+    },
+    {
+      image: img15,
+      w: '150px',
+      h: '150px',
+      w_mob: '100px',
+      h_mob: '100px',
+    },
+    {
+      image: img11,
+      w: '200px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+    {
+      image: img21,
+      w: '150px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+
+    {
+      image: img13,
+      w: '150px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '100px',
+    },
+    {
+      image: img18,
+      w: '150px',
+      h: '150px',
+      w_mob: '100px',
+      h_mob: '100px',
+    },
+    {
+      image: img22,
+      w: '150px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+
+    {
+      image: img20,
+      w: '150px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+
+    {
+      image: new_spon_two,
+      w: '170px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+
+    {
       image: new_spon_six,
       w: '250px',
       h: '150px',
       w_mob: '120px',
       h_mob: '120px',
+    },
+    {
+      image: new_spon_one,
+      w: '150px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
+
+    {
+      image: img16,
+      w: '120px',
+      h: '120px',
+      w_mob: '90px',
+      h_mob: '90px',
     },
   ];
 
@@ -204,7 +223,7 @@ const About = () => {
           </span>
         </div>
 
-        <div className='block md:flex justify-center gap-[150px] mt-[10px] md:mt-[50px]'>
+        {/* <div className='block md:flex justify-center gap-[150px] mt-[10px] md:mt-[50px]'>
           <div className=''>
             <div className=' flex justify-center'>
               <span className='font-bold text-[16px] md:text-[18px]'>
@@ -237,15 +256,15 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div className=' max-[320px]:mt-[10px] mt-[50px]'>
-        <div className=' flex justify-center mb-[20px] md:mb-[10px] '>
+      <div className=' max-[320px]:mt-[10px] mt-[10px]'>
+        {/* <div className=' flex justify-center mb-[20px] md:mb-[10px] '>
           <span className='font-bold text-[16px] md:text-[18px]'>
             Supporters
           </span>
-        </div>
+        </div> */}
 
         <div className='hidden md:flex  flex-wrap gap-7 justify-center items-center'>
           {support_image.map((img_info, index) => (
