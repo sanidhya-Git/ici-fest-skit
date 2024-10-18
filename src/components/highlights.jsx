@@ -11,7 +11,7 @@ const Highlight = () => {
     // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728638081/ici-fest-24/tpvxkni3jqindhpgxnhw.png',
     // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728636254/ici-fest-24/ixdrtk4q0yfn9xdaud0o.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632099/ici-fest-24/pjkbjksgcw6vdgsrr0ll.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632093/ici-fest-24/ocfau0wcst35wx1wbpru.jpg',
+    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632093/ici-fest-24/ocfau0wcst35wx1wbpru.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/lb11nmfbpl987x8kfosm.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/f7s1gh112cldcesckxon.jpg',
     'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/f5kukhb4pwhn8m5gjfza.png',

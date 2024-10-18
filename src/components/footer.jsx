@@ -75,7 +75,7 @@ const Footer = () => {
               <ul className="text-[#fff] ml-[30px]">
                 <li className="hover:text-[#ff583e] duration-300 mb-[10px] text-[#fff]">
                   <a
-                    href="https://drive.google.com/drive/folders/1y3hMlWEWZzpL_iN8EpH9gIPhBKFBIDQ4?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1lXoKX8eDuY0SERplTC_xkgsrlUbX7c_s?usp=sharing"
                     target="blank"
                   >
                     Gallery
@@ -157,7 +157,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="hover:text-[#ff583e] duration-300  mb-[10px]">
-                  Uday singh Sisodia -
+                  Uday Singh Sisodia -
                   <a href="https://wa.me/7733917219" target="blank">
                     {" "}
                     &nbsp;+91 7733917219
@@ -308,7 +308,7 @@ const Footer = () => {
                     <a href="https://wa.me/9571285091">&nbsp;+91 9571285091</a>
                   </li>
                   <li className="hover:text-[#ff583e] duration-300">
-                    Uday singh Sisodia -
+                    Uday Singh Sisodia -
                     <a href="https://wa.me/7733917219">&nbsp;+91 7733917219</a>
                   </li>
                   <li className="hover:text-[#ff583e] duration-300">
