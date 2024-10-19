@@ -38,7 +38,7 @@ import new_spon_three from "./new_spon_three.png";
 import new_spon_four from "./new_spon_four.png";
 import new_spon_five from "./new_spon_five.png";
 import new_spon_six from "./new_spon_six.avif";
-import new_spon_seven from "./new_spon_seven.JPG";
+import new_spon_seven from "./new_spon_seven.png";
 
 import loader from './loader_logo.png';
 
