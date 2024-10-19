@@ -204,7 +204,7 @@ const About = () => {
           <div className=' mt-[22px] flex justify-center items-center bg-[#ff583e] text-white hover:bg-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] px-[15px] md:px-[22px] py-[6px] md:py-[10px] text-[13px] md:text-[14px] rounded-[8px] w-fit font-semibold'>
             <button type='button' className=''>
               <Link
-                to='https://drive.google.com/drive/folders/15z8Rx5dDA_5RVyZnmGqlkIppQ9Nc2AQx?usp=sharing'
+                to='https://drive.google.com/drive/folders/1lXoKX8eDuY0SERplTC_xkgsrlUbX7c_s?usp=sharing'
                 target='_blank'
               >
                 View All

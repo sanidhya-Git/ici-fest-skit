@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Timeline = () => {
   const [activeButton, setActiveButton] = useState(0);
@@ -10,153 +10,177 @@ const Timeline = () => {
   const DataDayOne = [
     {
       Event: {
-        1: 'Inaugural',
+        1: 'Inaugural + Expo + Exhibition',
       },
-      Timing: '10:00 am - 11:00 am',
+      Timing: '10:00 am - 11:15 am',
     },
     {
       Event: {
-        1: 'Joist Kwik (Round 1)',
-      },
-      Timing: '11:00 am - 01:00 pm',
-    },
-    {
-      Event: {
-        1: 'Bowling Alley (Round 1)',
-      },
-      Timing: '11:30 am - 01:00 pm',
-    },
-    {
-      Event: {
-        1: 'Toggle',
-      },
-      Timing: '11:30 am - 01:30 pm',
-    },
-    {
-      Event: {
-        1: 'Art of Persuasion',
+        1: 'Panel Discussion',
       },
       Timing: '11:30 am - 12:30 pm',
     },
     {
       Event: {
-        1: 'Quake Proof (Round 1)',
+        1: 'Bowling Alley, Joist Kwik',
       },
-      Timing: '01:00 pm - 03:00 pm',
+      Timing: '12:30 pm - 02:00 pm',
     },
     {
       Event: {
-        1: 'Mix & Mould (Round 1)',
+        1: 'Startup Expo',
+      },
+      Timing: '12:30 pm - 01:30 pm',
+    },
+    {
+      Event: {
+        1: 'Crack the Circuit',
       },
       Timing: '01:00 pm - 02:00 pm',
     },
     {
       Event: {
-        1: 'Crack the Cad',
+        1: 'EV and GeoPolymer Workshop',
       },
-      Timing: '01:00 pm - 02:00 pm',
+      Timing: '01:00 pm - 03:45 pm',
     },
-    {
-      Event: {
-        1: 'The Mudventure',
-      },
-      Timing: '01:00 pm - 02:00 pm',
-    },
-    {
-      Event: {
-        1: 'Engineers Day Celebration',
-      },
-      Timing: '02:00 pm - 03:30 pm',
-    },
-    {
-      Event: {
-        1: 'Rejoice',
-      },
-      Timing: '03:30 pm onwards',
-    },
+    // {
+    //   Event: {
+    //     1: 'Mix & Mould (Round 1)',
+    //   },
+    //   Timing: '01:00 pm - 02:00 pm',
+    // },
+    // {
+    //   Event: {
+    //     1: 'Crack the Cad',
+    //   },
+    //   Timing: '01:00 pm - 02:00 pm',
+    // },
+    // {
+    //   Event: {
+    //     1: 'The Mudventure',
+    //   },
+    //   Timing: '01:00 pm - 02:00 pm',
+    // },
+    // {
+    //   Event: {
+    //     1: 'Engineers Day Celebration',
+    //   },
+    //   Timing: '02:00 pm - 03:30 pm',
+    // },
+    // {
+    //   Event: {
+    //     1: 'Rejoice',
+    //   },
+    //   Timing: '03:30 pm onwards',
+    // },
   ];
 
   const DataDayTwo = [
     {
       Event: {
-        1: 'Joist Kwik (Round 2)',
-      },
-      Timing: '08:15 am - 11:00 pm',
-    },
-    {
-      Event: {
-        1: 'Quake Proof (Round 2)',
-      },
-      Timing: '08:15 am - 11:00 am',
-    },
-    {
-      Event: {
-        1: 'Bowling Alley (Round 2)',
-      },
-      Timing: '08:15 am - 11:00 am',
-    },
-    {
-      Event: {
         1: 'Brick-O-Brick',
       },
-      Timing: '09:00 am - 11:00 am',
+      Timing: '09:00 am - 11:30 pm',
     },
     {
       Event: {
-        1: 'Mix & Mould (Round 2)',
+        1: 'Bowling Alley, Joist Kwik',
       },
-      Timing: '09:00 am - 11:00 am',
+      Timing: '10:00 am - 12:00 noon',
     },
     {
       Event: {
-        1: 'Let the Brush Talk',
+        1: 'Drone and Art of Sensation Workshop',
       },
-      Timing: '09:00 am - 11:00 am',
+      Timing: '12:00 noon - 01:30 pm',
     },
     {
       Event: {
-        1: 'Tower Craft',
+        1: 'IGBC',
       },
-      Timing: '12:30 pm - 02:00 pm',
+      Timing: '02:00 pm - 03:30 pm',
     },
     {
       Event: {
-        1: 'Kabad se Jugaad!',
+        1: 'MUN',
       },
-      Timing: '12:30 pm - 02:00 pm',
+      Timing: '12:00 noon - 03:00 pm',
     },
     {
       Event: {
-        1: 'Workshop',
+        1: 'Robo Soccer',
       },
-      Timing: '01:00 pm - 02:00 pm',
+      Timing: '02:00 pm - 03:00 pm',
     },
-    {
-      Event: {
-        1: 'Validatory',
-      },
-      Timing: '02:00 pm onwards',
-    },
+    // {
+    //   Event: {
+    //     1: 'Tower Craft',
+    //   },
+    //   Timing: '12:30 pm - 02:00 pm',
+    // },
+    // {
+    //   Event: {
+    //     1: 'Kabad se Jugaad!',
+    //   },
+    //   Timing: '12:30 pm - 02:00 pm',
+    // },
+    // {
+    //   Event: {
+    //     1: 'Workshop',
+    //   },
+    //   Timing: '01:00 pm - 02:00 pm',
+    // },
+    // {
+    //   Event: {
+    //     1: 'Validatory',
+    //   },
+    //   Timing: '02:00 pm onwards',
+    // },
   ];
 
   const DataDayThree = [
     {
       Event: {
-        1: 'Walkathon',
+        1: 'Walkathon & Cyclothon',
       },
-      Timing: '07:00 am - 09:00 am',
+      Timing: '06:00 am - 07:00 am',
     },
     {
       Event: {
         1: 'Scavenger Hunt',
       },
-      Timing: '09:00 am - 10:30 am',
+      Timing: '08:00 am - 11:00 am',
     },
     {
       Event: {
-        1: 'Sports Battle',
+        1: 'E Sports',
       },
-      Timing: '09:00 am Onwards',
+      Timing: '11:00 am = 12:00 noon',
+    },
+    {
+      Event: {
+        1: 'Jenga Palooza',
+      },
+      Timing: '11:00 am = 12:00 noon',
+    },
+    {
+      Event: {
+        1: 'Face Painting',
+      },
+      Timing: '12:00 noon - 01:00 pm',
+    },
+    {
+      Event: {
+        1: 'Ball and Pen Showdown',
+      },
+      Timing: '12:00 noon - 01:00 pm',
+    },
+    {
+      Event: {
+        1: 'Valedictory Ceremony',
+      },
+      Timing: '02:00 pm onwards',
     },
   ];
 
@@ -170,8 +194,9 @@ const Timeline = () => {
         </p>
         <p className='mt-1 text-base font-medium'>coming soon</p>
       </div>
+      {/*
 
-      {/* <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
+      <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
         <div>
           <button
             className={`${
@@ -204,9 +229,9 @@ const Timeline = () => {
             Day 3
           </button>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className='flex justify-center mt-[20px]'>
+      <div className='flex justify-center mt-[20px]'>
         <div
           className={`${
             activeButton === 0 ? 'active-div' : 'deactive-div'
@@ -284,7 +309,8 @@ const Timeline = () => {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
+      */}
     </>
   );
 };
