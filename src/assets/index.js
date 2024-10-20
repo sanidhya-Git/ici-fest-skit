@@ -24,7 +24,7 @@ import img13 from './13.png';
 import img14 from './14.png';
 import img15 from './15.png';
 import img16 from './16.png';
-import img17 from './17.png';
+// import img17 from './17.png';
 import img18 from './18.png';
 import img19 from './19.png';
 import img20 from './20.png';
@@ -38,6 +38,7 @@ import new_spon_three from "./new_spon_three.png";
 import new_spon_four from "./new_spon_four.png";
 import new_spon_five from "./new_spon_five.png";
 import new_spon_six from "./new_spon_six.avif";
+import new_spon_seven from "./new_spon_seven.png";
 
 import loader from './loader_logo.png';
 
@@ -103,7 +104,7 @@ export {
   img14,
   img15,
   img16,
-  img17,
+  // img17,
   img18,
   img19,
   img20,
@@ -166,4 +167,5 @@ export {
   new_spon_four,
   new_spon_five,
   new_spon_six,
+  new_spon_seven,
 };

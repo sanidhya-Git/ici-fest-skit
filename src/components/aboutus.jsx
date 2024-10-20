@@ -5,7 +5,7 @@ import {
   img14,
   img15,
   img16,
-  img17,
+  // img17,
   img18,
   img19,
   img20,
@@ -17,7 +17,9 @@ import {
   new_spon_four,
   new_spon_five,
   new_spon_six,
-} from '../assets';
+  new_spon_seven,
+} 
+from '../assets';
 import Highlight from './highlights';
 
 import Counter from './counter';
@@ -27,6 +29,13 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   const support_image = [
+    {
+      image: new_spon_seven,
+      w: '120px',
+      h: '150px',
+      w_mob: '120px',
+      h_mob: '120px',
+    },
     {
       image: new_spon_four,
       w: '120px',
