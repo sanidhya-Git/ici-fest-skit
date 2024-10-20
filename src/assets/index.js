@@ -1,5 +1,3 @@
-import bg_video_desktop from './bg_3_desktop.mp4';
-import bg_video_mobile from './bg_3_mobile.mp4';
 
 import skit_logo from './skit_logo.png';
 import ici_logo from './ici_logo.png';
@@ -92,9 +90,18 @@ import PrizePool from './prize.png';
 
 import ResponseLogo from './responselogo.png';
 
+// collaboration
+import collabOne from "./collaborator/one.png";
+import collabTwo from "./collaborator/two.png";
+import collabThree from "./collaborator/three.png";
+import collabFour from "./collaborator/four.png";
+import collabFive from "./collaborator/five.png";
+import collabSix from "./collaborator/six.png";
+import collabSeven from "./collaborator/seven.png";
+import collabEight from "./collaborator/eight.png";
+import collabNine from "./collaborator/nine.png";
+
 export {
-  bg_video_desktop,
-  bg_video_mobile,
   skit_logo,
   ici_logo,
   scroll_down,
@@ -168,4 +175,14 @@ export {
   new_spon_five,
   new_spon_six,
   new_spon_seven,
+
+  collabOne,
+  collabTwo,
+  collabThree,
+  collabFour,
+  collabFive,
+  collabSix,
+  collabSeven, 
+  collabEight,
+  collabNine
 };
