@@ -18,14 +18,14 @@ import {
   new_spon_five,
   new_spon_six,
   new_spon_seven,
-} 
-from '../assets';
+} from '../assets';
 import Highlight from './highlights';
 
 import Counter from './counter';
 import PrizePool from './prizepool';
 
 import { Link } from 'react-router-dom';
+import { Collaborators } from './collobrators';
 
 const About = () => {
   const support_image = [
@@ -302,6 +302,8 @@ const About = () => {
           ))}
         </div>
       </div>
+
+      <Collaborators />
     </>
   );
 };

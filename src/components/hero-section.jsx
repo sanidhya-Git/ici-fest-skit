@@ -1,8 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-import { bg_video_desktop, bg_video_mobile } from '../assets';
-import { Link } from 'react-router-dom';
-
 const HeroSection = () => {
   return (
     <>
@@ -13,8 +10,9 @@ const HeroSection = () => {
           muted
           className='-mt-[250px] w-full h-full hidden md:block'
         >
+          {/* Desktop */}
           <source
-            src='https://res.cloudinary.com/dm2pha7cn/video/upload/v1728706723/ici-fest-24/scc6bisgml9cdnojwrqh.mp4'
+            src='https://res.cloudinary.com/dm2pha7cn/video/upload/v1729411929/ici-fest-24/fqajalcvosxpmq6vhchp.mp4'
             type='video/mp4'
           />
         </video>
@@ -48,8 +46,9 @@ const HeroSection = () => {
           muted
           className='-mt-[40%] w-full h-full block md:hidden'
         >
+          {/* Mobile */}
           <source
-            src='https://res.cloudinary.com/dm2pha7cn/video/upload/v1728706816/ici-fest-24/j8ssacfea5dvudpwb21m.mp4'
+            src='https://res.cloudinary.com/dm2pha7cn/video/upload/v1729411924/ici-fest-24/r7kkzjrwyqrmpps3ngbd.mp4'
             type='video/mp4'
           />
         </video>
