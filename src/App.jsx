@@ -53,8 +53,16 @@ const App = () => {
             <Route path='/registrations' element={<TempReg />} />
             <Route path='/aboutteam' element={<AboutTeam />} />
             <Route path='/joist-kwik' element={<JK />} />
+            <Route path='/drone_workshop' element={<DN />} />
+            <Route path='/fabricoffantacy' element={<Fabric />} />
             <Route path='/jengaplooza' element={<JENGA />} />
             <Route path='/ici_mun' element={<MUN />} />
+
+            <Route path='/engine_exotics' element={<ES />} />
+            <Route path='/egamingvalorant' element={<EV />} />
+            <Route path='/coordination_clash' element={<CC />} />
+            <Route path='/ev_workshop' element={<EVWORKSHOP />} />
+
             <Route path='/techconnect' element={<TECH />} />
             <Route path='/quiz_a_thon' element={<OAT />} />
             <Route path='/pitch_perfect' element={<pp />} />
