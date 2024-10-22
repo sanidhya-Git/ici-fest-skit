@@ -38,12 +38,12 @@ const JK = () => {
                 <div>
                   <div>Date</div>
                   <div>
-                    Round 1 - 15<sup>th </sup>September 2023 -
+                    Round 1 - <sup></sup>
                   </div>{" "}
                   <div>
                     {" "}
-                    Round 2 - 16
-                    <sup>th </sup>September 2023 -
+                    Round 2 - 
+                    <sup> </sup>
                   </div>
                 </div>
                 <div>
@@ -51,10 +51,10 @@ const JK = () => {
                     <span>Time</span>
                   </div>
                   <div>
-                    <span><span className="inline md:hidden"> Round 1</span> - 11:00 AM to 01:00 PM</span>
+                    <span><span className="inline md:hidden"> Round 1</span> - </span>
                   </div>
                   <div>
-                    <span><span className="inline md:hidden"> Round 2</span> - 08:15 AM to 11:00 AM</span>
+                    <span><span className="inline md:hidden"> Round 2</span> - </span>
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@ const JK = () => {
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] ">
-              <span>Registration Fee - ₹200 per team</span>
+              <span>Registration Fee - ₹250 per team</span>
             </div>
             <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">
@@ -80,10 +80,10 @@ const JK = () => {
             </a>
             <div className="mt-[10px]">
               <span>
-                <b> For more details - Sanskar: {" "}
+                <b> For more details - Aditya Singh : {" "}
                 <a href="https://wa.me/6377829943" target="blank" className="underline">
                   {" "}
-                  +91 6377829943
+                  +91 9024913492
                 </a>
                 </b>
               </span>
