@@ -45,7 +45,7 @@ const MUN= () => {
               </span>
             </div> */}
             <Link
-              to={`https://erp.skit.ac.in/register/r/crackthecircuit`}
+              to={`https://erp.skit.ac.in/register/r/ici_mun`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -60,7 +60,7 @@ const MUN= () => {
                   {' '}
                   For more details - Jagrati pareek:{' '}
                   <a
-                    href='https://wa.me/9001799799'
+                    
                     target='blank'
                     className='underline'
                   >

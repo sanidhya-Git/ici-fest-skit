@@ -45,8 +45,8 @@ const ES= () => {
               </span>
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/crackthecircuit`}
-              target='_blank'
+              to={`https://erp.skit.ac.in/register/r/engine_exotics`} 
+            target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
                 <button className='bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center'>
@@ -60,7 +60,7 @@ const ES= () => {
                   {' '}
                   For more details - Yuraj Singh Jadaun:{' '}
                   <a
-                    href='https://wa.me/9001799799'
+                    
                     target='blank'
                     className='underline'
                   >
@@ -121,12 +121,9 @@ const ES= () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px]'>
-                    Your task is to design a residential house using AutoCAD
-                    software.Design a residential house with a footprint of 30'
-                    by 60' using AutoCAD, incorporating essential elements to
-                    meet the basic residential requirements. The design should
-                    ensure optimal space utilization, functionality, and a
-                    balanced integration of indoor and outdoor spaces.
+                  A team of 4 members will be made and each will play in rapid fire round
+                  in which slides of car parts and logo will be displayed on screen and
+                  teams have to guess the BRAND AND NAME OF THE CAR.
                   </span>
                 </div>
 
@@ -138,7 +135,7 @@ const ES= () => {
                   </div>
                   <div>
                     <span className='font-semibold text-[17px]'>
-                      Participate Individually.
+                    In teams. Must have 4 members each.
                     </span>
                   </div>
                 </div>
@@ -147,22 +144,28 @@ const ES= () => {
                   <div>
                     <div className='mt-[10px] '>
                       <span className='font-bold text-[18px] '>
-                        Basic Requirements
+                      Description:
                       </span>
                     </div>
                     <div className='flex justify-center  '>
                       <span>
-                        Living room, Dining room, Kitchen with adequate
-                        countertop space and storage, Master bedroom with
-                        attached bathroom,
-                        <br className='hidden lg:block' /> Additional bedrooms
-                        with shared bathrooms, Home office/study room, Utility
-                        room
+                      1) <b>ROUND 1 (LEVEL-EASY):</b><br/>
+In round 1, 15 questions would be asked related to car’s logo and parts.
+Time limit: 8 seconds.<br/>
+Note: After ROUND 1, 25 teams will be selected for next round.<br/>
+2) <b>ROUND 2 (LEVEL-MEDIUM):</b><br/>
+In round 2, 10 questions would be asked related to car’s logo and parts.
+Time limit: 15 seconds.<br/>
+Note: After ROUND 2, 10 teams will be selected for final round.<br/>
+3) <b>ROUND 3 (LEVEL-HARD):</b><br/>
+In round 3, 5 questions would be asked related to car’s logo and parts.
+Time limit: 20 seconds.<br/>
+Note: After ROUND 3, Winner, 1st runner up and 2nd runner up will be
+decided.
                       </span>
                     </div>
                     <div>
-                      <span className='font-bold text-[18px] '>NOTE: </span>
-                      <span>Computers will be provided</span>
+                      
                     </div>
                   </div>
                 </div>
@@ -177,9 +180,8 @@ const ES= () => {
             <div className='flex justify-center mt-[10px] text-center'>
               <div>
                 <span>
-                  This is the single round event. Participant will be given{' '}
-                  <b>1 hour</b> to complete their task. No submissions are
-                  allowed after 1 hour.
+                  This is the three round event. Participant will be given{' '}
+                  <b>1.5 hour</b> to complete their task.
                 </span>
               </div>
             </div>
@@ -189,6 +191,7 @@ const ES= () => {
               activeButton === 2 ? 'active-div' : 'deactive-div'
             } mx-[20px]`}
           >
+           
             <div className='text-center mb-[10px]'>
               <span className='font-bold text-[20px] underline'>
                 JUDGING CRITERIA
@@ -202,21 +205,41 @@ const ES= () => {
             <div className='flex justify-center  text-[17px]'>
               <ul>
                 <li>
-                  1. Adherence to the specified dimensions and requirements
+                1) After the 1st Round, 25 teams will be selected on the basis of how
+many answers did they <br/>answered correct from the 15 questions and
+time taken to submit the response sheet.<br/>
+2) After the 2nd Round, 10 teams will be selected on the basis of how
+many answers did they <br/>answered correct from the 10 questions and
+time taken to submit the response sheet.<br/>
+3) After the 3rd Round, 3 teams will be declared as the Winner, 1st Runner
+Up and 2nd Runner Up on the<br/> basis of how many answers did they
+answered correct in the last 5 questions and with how much accuracy.
                 </li>
-                <li>2. Logical and efficient layout of rooms</li>
-                <li>3. Proper allocation of spaces for different functions.</li>
-                <li>
-                  4. Adequate consideration for ventilation, lighting, safety,
-                  and privacy
-                </li>
-                <li>
-                  5. Clear and professional presentation of the design using
-                  AutoCAD tools.
-                </li>
+               
               </ul>
             </div>
-          </div>
+            <div className='text-center mb-[10px]'>
+              <span className='font-bold text-[20px] underline'>
+                DISQUALIFICATION CRITERIA
+              </span>
+            </div>
+            <div className=''>
+             
+            </div>
+            <div className='flex justify-center  text-[17px]'>
+              <ul>
+                <li>
+                1) No peeking in other’s answer sheet.<br/>
+2) No use of unfair means (Mobile, electronic devices, etc).<br/>
+3) Team causing disturbance in the event will be disqualified.<br/>
+4) If team’s name is not written on sheet then response sheet won’t be
+considered.
+                </li>
+               
+              </ul>
+            </div>
+          </div> 
+          
         </div>
       </div>
     </div>
