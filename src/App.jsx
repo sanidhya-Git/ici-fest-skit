@@ -39,7 +39,7 @@ import CRACKTHECIRCUIT from './components/events_details/crackthecircuit';
 import MUDADVENTURE from './components/events_details/mudadventure';
 import BRUSHTALK from './components/events_details/brushtalk';
 import WORKSHOP from './components/events_details/cementworkshop';
-import WALKATHON from './components/events_details/webathon';
+
 import Layout from './layout';
 import GALLERY from './components/gallery';
 import RESPONSE from './components/response';
