@@ -28,7 +28,7 @@ const Counter = () => {
           <div>
             <div className=''>
               <span className='text-[24px] lg:text-[36px] font-extrabold text-[#ff583e] leading-none'>
-                3500+
+                4500+
               </span>
             </div>
             <div className=''>
@@ -58,7 +58,7 @@ const Counter = () => {
           <div>
             <div className=''>
               <span className='text-[24px] lg:text-[36px] font-extrabold text-[#ff583e] leading-none'>
-                3500+
+                5000+
               </span>
             </div>
             <div className=''>
