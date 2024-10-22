@@ -58,14 +58,14 @@ const EVWORKSHOP = () => {
               <span>
                 <b>
                   {' '}
-                  For more details - ***:{' '}
+                  For more details - :{' '}
                   <a
                     href='https://wa.me/9001799799'
                     target='blank'
                     className='underline'
                   >
                     {' '}
-                    +91 ***
+                    +91 
                   </a>
                 </b>
               </span>

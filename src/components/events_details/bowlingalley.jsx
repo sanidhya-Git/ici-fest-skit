@@ -98,7 +98,7 @@ const BA = () => {
                     className='underline'
                   >
                     {' '}
-                    &nbsp;+91 0000000000
+                    &nbsp;
                   </a>
                 </b>
               </span>
