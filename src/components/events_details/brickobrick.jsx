@@ -20,7 +20,7 @@ const BOB = () => {
   };
 
   return (
-    <div>
+    <div className="w-full min-h-screen">
       <br />
       <br />
       <br />
