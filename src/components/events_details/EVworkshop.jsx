@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const crackthecircuit= () => {
+const EVWORKSHOP = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -19,7 +19,7 @@ const crackthecircuit= () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px] uppercase'>
-                Crack The Circuit
+                EV Workshop
               </span>
             </div>
             <div className='flex justify-center'>
@@ -37,13 +37,13 @@ const crackthecircuit= () => {
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
-              <span>Registration Fee - ₹200 per team</span>
+              <span>Registration Fee - ₹50 per individual</span>
             </div>
-            <div className="mt-[10px]">
+            {/* <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">
                 All the teams must have 4 members each.
               </span>
-            </div>
+            </div> */}
             <Link
               to={`https://erp.skit.ac.in/register/r/crackthecircuit`}
               target='_blank'
@@ -58,14 +58,14 @@ const crackthecircuit= () => {
               <span>
                 <b>
                   {' '}
-                  For more details - Nainika Agrawal:{' '}
+                  For more details - ***:{' '}
                   <a
                     href='https://wa.me/9001799799'
                     target='blank'
                     className='underline'
                   >
                     {' '}
-                    +91 9116017683
+                    +91 ***
                   </a>
                 </b>
               </span>
@@ -223,4 +223,4 @@ const crackthecircuit= () => {
   );
 };
 
-export default crackthecircuit;
+export default EVWORKSHOP;

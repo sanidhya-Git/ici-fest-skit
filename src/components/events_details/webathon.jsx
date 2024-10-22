@@ -20,7 +20,7 @@ const WALKATHON = () => {
           <div className="bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center">
             <div>
               <span className="font-extrabold text-[38px] md:text-[50px] uppercase">
-                Cyclothon & Walkathon
+                 webathon
               </span>
             </div>
             <div className="flex justify-center">
@@ -29,15 +29,20 @@ const WALKATHON = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - 17<sup>th </sup>September 2023
+                  Date - <sup></sup>
                 </span>
               </div>
               <div className="mt-[10px]">
-                <span>Time - 07:00 am to 09:00 am</span>
+                <span>Time - </span>
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px]  mt-[10px] ">
-              <span>Registration Fee - ₹50 per individual</span>
+              <span>Registration Fee - ₹250 per individual</span>
+            </div>
+            <div className="mt-[10px]">
+              <span className="font-semibold text-[18px]">
+                All the teams must have 4 members each.
+              </span>
             </div>
             <a href="https://erp.skit.ac.in/register/r/Cyclo_Walka">
               <div className="mt-[10px] font-semibold">
@@ -55,10 +60,10 @@ const WALKATHON = () => {
             </Link> */}
             <div className="mt-[10px]">
               <span>
-                <b> For more details - Nitesh Mishra: {" "}
+                <b> For more details - Nainika Agrawal : {" "}
                 <a href="https://wa.me/9113128774" target="blank" className="underline">
                   {" "}
-                  +91 9113128774
+                  +91 9116017683
                 </a>
                 </b>
               </span>
