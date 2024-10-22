@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import { EventData } from './eventdata';
 
 const FestEvent = () => {
@@ -30,10 +30,31 @@ const FestEvent = () => {
                 }`}
               />
             </div>
-            <div className='relative z-10 w-full h-full flex justify-center items-center'>
-              <p className='text-xl text-center font-bold text-white'>
-                {data.title}
-              </p>
+            <div className='z-10 relative w-full h-full'>
+              <div className='w-full h-full flex justify-center items-center'>
+                <p className='text-xl text-center font-bold text-white'>
+                  {data.title}
+                </p>
+              </div>
+              <button
+                disabled={data.registration_status !== 'live'}
+                onClick={() => {
+                  window.open(`/${data.slug}`, '_blank');
+                }}
+                className={`bg-black absolute bottom-0 w-full h-[40px] flex items-center justify-center ${
+                  data.registration_status === 'live'
+                    ? 'cursor-pointer'
+                    : 'cursor-not-allowed'
+                }`}
+              >
+                {/* <Link to={`/events/${data.slug}`}> */}
+                <span className='text-white font-semibold hover:text-[#ff583e] duration-200'>
+                  {data.registration_status === 'live'
+                    ? 'Register Now'
+                    : 'Registration Closed'}
+                </span>
+                {/* </Link> */}
+              </button>
             </div>
           </div>
         ))}

@@ -101,6 +101,9 @@ import collabSeven from "./collaborator/seven.png";
 import collabEight from "./collaborator/eight.png";
 import collabNine from "./collaborator/nine.png";
 
+// logo
+import light_logo from "./light_logo.png";
+
 export {
   skit_logo,
   ici_logo,
@@ -184,5 +187,7 @@ export {
   collabSix,
   collabSeven, 
   collabEight,
-  collabNine
+  collabNine,
+
+  light_logo
 };
