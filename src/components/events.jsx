@@ -11,9 +11,9 @@ const FestEvent = () => {
         </span>
       </div>
 
-      <div className='text-center mb-[20px] md:mb-[40px] mt-[50px] text-[26px] md:text-[30px] font-extrabold'>
+      {/* <div className='text-center mb-[20px] md:mb-[40px] mt-[50px] text-[26px] md:text-[30px] font-extrabold'>
         Registration opening soon
-      </div>
+      </div> */}
 
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-5 '>
         {EventData.map((data, index) => (
