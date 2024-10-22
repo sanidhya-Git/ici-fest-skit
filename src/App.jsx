@@ -1,33 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// gvgjgfgjfgfhj
-
 import Navbar from './components/navbar';
 import FestEvent from './components/events';
 import Footer from './components/footer';
 import Accommodation from './components/accommodation';
 import TempReg from './components/temp_regis';
 import AboutTeam from './components/aboutteam';
-
 import JK from './components/events_details/joistkwik';
 import BYC  from './components/events_details/beyondthecanvas';
 import BA from './components/events_details/bowlingalley';
 import BOB from './components/events_details/brickobrick';
-import ES from './components/events_details/engineexotics';
-import EV from './components/events_details/egammingvalorent';
-import EVWORKSHOP from './components/events_details/EVworkshop';
 import WALKATHON from './components/events_details/webathon';
-
-import Fabric from './components/events_details/fabricoffantasy';
-
-import JENGA from './components/events_details/jengapalooza';
-import MUN from './components/events_details/mun';
-import TECH from './components/events_details/techconnecttheexhibition';
-import OAT from './components/events_details/Quizathon';
-import pp from './components/events_details/pitchperfect';
-import EBGMI from './components/events_details/egammingbgmi';
-import DN from './components/events_details/doneworkshop';
-import CC from './components/events_details/coordinationclash';
-
 import SH from './components/events_details/scavenger';
 import TOGGLE from './components/events_details/toggle';
 import TOWER from './components/events_details/towercraft';
@@ -39,11 +21,24 @@ import CRACKTHECIRCUIT from './components/events_details/crackthecircuit';
 import MUDADVENTURE from './components/events_details/mudadventure';
 import BRUSHTALK from './components/events_details/brushtalk';
 import WORKSHOP from './components/events_details/cementworkshop';
-
 import Layout from './layout';
 import GALLERY from './components/gallery';
 import RESPONSE from './components/response';
 import JECRC from './components/jecrc';
+
+import JENGA from './components/events_details/jengapalooza';
+import MUN from './components/events_details/mun';
+import TECH from './components/events_details/techconnecttheexhibition';
+import OAT from './components/events_details/Quizathon';
+import pp from './components/events_details/pitchperfect';
+import EBGMI from './components/events_details/egammingbgmi';
+import DN from './components/events_details/doneworkshop';
+import CC from './components/events_details/coordinationclash';
+import Fabric from './components/events_details/fabricoffantasy';
+import ES from './components/events_details/engineexotics';
+import EV from './components/events_details/egammingvalorent';
+import EVWORKSHOP from './components/events_details/EVworkshop';
+import { i } from './assets';
 
 const App = () => {
   return (
@@ -58,6 +53,12 @@ const App = () => {
             <Route path='/registrations' element={<TempReg />} />
             <Route path='/aboutteam' element={<AboutTeam />} />
             <Route path='/joist-kwik' element={<JK />} />
+            <Route path='/jengaplooza' element={<JENGA />} />
+            <Route path='/ici_mun' element={<MUN />} />
+            <Route path='/techconnect' element={<TECH />} />
+            <Route path='/quiz_a_thon' element={<OAT />} />
+            <Route path='/pitch_perfect' element={<pp />} />
+            <Route path='/egamingbgmi' element={<EBGMI />} />
             <Route path='/bowling_alley' element={<BA />} />
             <Route path='/pitch_perfect' element={<pp />} />
             <Route path='/beyond_the_canvas' element={<BYC />} />
