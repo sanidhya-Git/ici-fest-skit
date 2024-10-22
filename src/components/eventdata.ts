@@ -30,7 +30,7 @@ export const EventData: EventDataProps[] = [
     title: 'beyond the canvas',
     image: jw,
     slug: 'beyond_the_canvas',
-    registration_status: 'live',
+    registration_status: 'closed',
   },
   {
     title: 'Bowling Alley',

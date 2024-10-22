@@ -36,25 +36,29 @@ const FestEvent = () => {
                   {data.title}
                 </p>
               </div>
-              <button
+              <div
                 disabled={data.registration_status !== 'live'}
-                onClick={() => {
-                  window.open(`/${data.slug}`, '_blank');
-                }}
+                // onClick={() => {
+                //   window.open(`/${data.slug}`, '_blank');
+                // }}
                 className={`bg-black absolute bottom-0 w-full h-[40px] flex items-center justify-center ${
                   data.registration_status === 'live'
                     ? 'cursor-pointer'
                     : 'cursor-not-allowed'
                 }`}
               >
-                {/* <Link to={`/events/${data.slug}`}> */}
-                <span className='text-white font-semibold hover:text-[#ff583e] duration-200'>
-                  {data.registration_status === 'live'
-                    ? 'Register Now'
-                    : 'Registration Closed'}
-                </span>
-                {/* </Link> */}
-              </button>
+                <Link
+                  to={
+                    data.registration_status === 'live' ? `/${data.slug}` : ``
+                  }
+                >
+                  <span className='text-white font-semibold hover:text-[#ff583e] duration-200'>
+                    {data.registration_status === 'live'
+                      ? 'Register Now'
+                      : 'Registration Closed'}
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
         ))}
