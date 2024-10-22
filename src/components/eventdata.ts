@@ -45,11 +45,10 @@ export const EventData: EventDataProps[] = [
   },
   {
     title: 'coordination Clash',
+    slug: 'coordination_clash',
     image:
       'https://img.freepik.com/premium-photo/two-businessmen-having-tug-war-modern-cityscape-concept-corporate-rivalry-competition-business-world-striving-dominance_643966-4540.jpg?w=1380',
     brightness_adj: true,
-
-    slug: '',
     registration_status: 'live',
   },
   {
@@ -175,6 +174,12 @@ export const EventData: EventDataProps[] = [
     title: 'Crack the Circuit',
     image: ctc,
     slug: 'crackthecircuit',
+    registration_status: 'live',
+  },
+  {
+    title: 'EV - Workshop',
+    image: 'https://img.freepik.com/free-vector/electric-car-concept-illustration_114360-927.jpg?t=st=1729620622~exp=1729624222~hmac=b7a9ae6fb46ddfc354e0f8fd1302292999f698676c39d339689d39229b201d27&w=1060',
+    slug: 'ev_workshop',
     registration_status: 'live',
   },
 
