@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { tower_img } from "../../assets";
+import { bob_img, next } from "../../assets";
 
 const materialData = [
-  { material: "Newspaper", quantity: "30 single sheets" },
-  { material: "Adhesive Tape", quantity: "2" },
-  { material: "Paper Cutter", quantity: "1" },
+  { material: "Bricks", quantity: "27" },
+  { material: "Cement", quantity: "3 Kg" },
+  { material: "Trowel", quantity: "2" },
+  { material: "Sand", quantity: "15 Kg" },
+  { material: "Water", quantity: "4 Liters" },
+  { material: "Hand Pan", quantity: "2" },
 ];
 
-const TOWER = () => {
+const EV = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -17,7 +20,7 @@ const TOWER = () => {
   };
 
   return (
-    <div>
+    <div className="w-full min-h-screen">
       <br />
       <br />
       <br />
@@ -26,8 +29,9 @@ const TOWER = () => {
         <div className=" mx-[10px] md:mx-[60px] lg:mx-[200px] w-full">
           <div className="bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center">
             <div>
-              <span className="font-extrabold text-[38px] md:text-[50px] uppercase ">
-                Tower Craft
+              <span className="font-extrabold text-[38px] md:text-[50px]">
+                E-Gamming 
+                valorent
               </span>
             </div>
             <div className="flex justify-center">
@@ -36,22 +40,22 @@ const TOWER = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - <sup> </sup>
+                  Date - <sup></sup>
                 </span>
               </div>
-              <div className="mt-[10px]">
+              <div>
                 <span>Time - 00:00</span>
               </div>
-              <div className="mt-[10px]">
+              <div>
                 <span>Venue - </span>
               </div>
             </div>
-            <div className="font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] ">
+            <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 ">
               <span>Registration Fee - ₹250 per team</span>
             </div>
             <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">
-                All the teams must have 4 members each.
+                All the teams must have 5 members each.
               </span>
             </div>
             <Link to="/response">
@@ -64,10 +68,10 @@ const TOWER = () => {
           
             <div className="mt-[10px]">
               <span>
-                <b> For more details - Virendra Sharma: {" "}
-                <a href="https://wa.me/7209770701" target="blank" className="underline">
+                <b> For more details - Somay Roy {" "}
+                <a href="https://wa.me/8529058592" target="blank" className="underline">
                   {" "}
-                  +91 7878378114
+                  +91 9829571129
                 </a>
                 </b>
               </span>
@@ -123,17 +127,28 @@ const TOWER = () => {
                 </div>
                 <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
                   <span className="text-[17px] font-semibold">
-                    In the era marked by rapid urbanization and architectural
-                    innovation, one of the biggest challenges in building a
-                    tower that reaches into space is the issue of structural
-                    stability. As a tower gets taller, it becomes increasingly
-                    difficult to support its weight and resist wind and other
-                    environmental forces. In this event, you have to construct a
-                    tower, which is taller and stable in natural forces.
+                    Construct a structurally sound L-shaped step wall using
+                    bricks. The challenge is to create a design that showcases
+                    the versatility of brick as a building material, while
+                    ensuring the wall's stability and safety for users.
                   </span>
                 </div>
                 <div className="flex justify-center">
-                  <img src={tower_img} className="h-[250px]" />
+                  <img src={bob_img} />
+                </div>
+                <div className="mt-[20px]">
+                  <span className="font-semibold">Dimensions</span>
+                </div>
+                <div>
+                  <div>
+                    <span>First side - 31 inches</span>
+                  </div>
+                  <div>
+                    <span>Other side - 36 inches</span>
+                  </div>
+                  <div>
+                    <span>Height of the structure - 19 inches</span>
+                  </div>
                 </div>
               </div>
 
@@ -143,7 +158,7 @@ const TOWER = () => {
                 </div>
                 <div>
                   <span className="font-semibold text-[17px]">
-                    Your team consist of 4 members.
+                    All the teams must have 4 members each.
                   </span>
                 </div>
               </div>
@@ -157,11 +172,8 @@ const TOWER = () => {
                 <div className="flex justify-center text-left">
                   <table className="table-auto text-[17px]">
                     <thead>
-                      <tr className="">
-                        <th className="pr-[50px]">
-                          Materials
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </th>
+                      <tr className="p-[20px]">
+                        <th className="pr-[50px]">Materials</th>
                         <th>Quantity</th>
                       </tr>
                     </thead>
@@ -183,16 +195,23 @@ const TOWER = () => {
               activeButton === 1 ? "active-div" : "deactive-div"
             } text-[18px] `}
           >
-            <div className="flex justify-center mt-[10px] mx-[10px] text-center">
-              <div className="mx-[20px] md:mx-[120px] xl:mx-[220px]">
-                <div>
-                  <span>
-                    This is a single round event. Teams will be given{" "}
-                    <b>1 hour and 30 minutes</b> to make their tower and submit
-                    the model for judgement. No submissions are allowed after
-                    the given time.
-                  </span>
-                </div>
+            <div className="text-center">
+              <span className="font-bold underline text-[20px] uppercase ">
+                Time Limits
+              </span>
+            </div>
+            <div className="text-center mt-[10px]">
+              <div>
+                <span>Event timing - 2hrs</span>
+              </div>
+              <div>
+                <span>Briefing Time - 15min (starting)</span>
+              </div>
+              <div>
+                <span>Time limit for the task - 45 min</span>
+              </div>
+              <div>
+                <span>Result and checking - 1hr</span>
               </div>
             </div>
           </div>
@@ -206,14 +225,28 @@ const TOWER = () => {
                 JUDGING CRITERIA
               </span>
             </div>
-            <div className="flex justify-center text-[17px] ">
+            <div>
+              <span className="text-[17px] ">
+                Judgement will be done on the basis of - .
+              </span>
+            </div>
+            <div className=" flex justify-center text-[17px]">
               <div>
-                <ul>
-                  <li>
-                    1. Your tower must be structurally sound with a stable base.
-                  </li>
-                  <li>2. Height of the tower should be maximum.</li>
-                </ul>
+                <div>
+                  <span>1. Appearance and Geometry.</span>
+                </div>
+                <div>
+                  <span>2. Placement of Bricks and it's bond alignment.</span>
+                </div>
+                <div>
+                  <span>3. 90° angle between the corners of wall.</span>
+                </div>
+                <div>
+                  <span>4. Straightness of wall.</span>
+                </div>
+                <div>
+                  <span>5. Length of each step must be same.</span>
+                </div>
               </div>
             </div>
           </div>
@@ -223,4 +256,4 @@ const TOWER = () => {
   );
 };
 
-export default TOWER;
+export default EV;

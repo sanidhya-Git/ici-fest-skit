@@ -28,17 +28,17 @@ const SH = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - 17<sup>th </sup>September 2023
+                  Date -<sup> </sup>
                 </span>
               </div>
               <div className="mt-[10px]">
-                <span>Time - 09:00 am to 10:30 am</span>
+                <span>Time - </span>
               </div>
               {/* <div className='mt-[10px]'><span>Venue - </span></div> */}
               {/* <div><span>Tech zone in football ground</span></div> */}
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] ">
-              <span>Registration Fee - ₹200 per team</span>
+              <span>Registration Fee - ₹250 per team</span>
             </div>
             <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">
@@ -63,14 +63,14 @@ const SH = () => {
               <span>
                 <b>
                   {" "}
-                  For more details - Aditya Poonia:{" "}
+                  For more details - Palak Soni :{" "}
                   <a
                     href="https://wa.me/8302367735"
                     target="blank"
                     className="underline"
                   >
                     {" "}
-                    +91 8302367735
+                    +91 7597646465
                   </a>
                 </b>
               </span>

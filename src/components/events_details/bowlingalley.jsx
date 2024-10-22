@@ -41,12 +41,12 @@ const BA = () => {
                 <div>
                   <div>Date</div>
                   <div>
-                    Round 1 - 15<sup>th </sup>September 2023
+                    Round 1 - --<sup> </sup>
                   </div>{' '}
                   <div>
                     {' '}
-                    Round 2 - 16
-                    <sup>th </sup>September 2023
+                    Round 2 - 
+                    --<sup></sup>
                   </div>
                 </div>
                 <div>
@@ -55,14 +55,13 @@ const BA = () => {
                   </div>
                   <div>
                     <span>
-                      <span className='inline md:hidden'> Round 1</span> - 11:30
-                      AM to 01:00 PM
+                      <span className='inline md:hidden'> Round 1</span> - 
                     </span>
                   </div>
                   <div>
                     <span>
-                      <span className='inline md:hidden'> Round 2</span> - 08:15
-                      AM to 11:00 AM
+                      <span className='inline md:hidden'> Round 2</span> -
+                      
                     </span>
                   </div>
                 </div>
@@ -74,7 +73,7 @@ const BA = () => {
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
-              <span>Registration Fee - ₹200 per team</span>
+              <span>Registration Fee - ₹250 per team</span>
             </div>
             <div className='mt-[10px]'>
               <span className='font-semibold text-[18px]'>
@@ -92,14 +91,14 @@ const BA = () => {
               <span>
                 <b>
                   {' '}
-                  For more details - Kunal Vishnoi:{' '}
+                  For more details - Aman Mishra:{' '}
                   <a
                     href='https://wa.me/8769177678'
                     target='blank'
                     className='underline'
                   >
                     {' '}
-                    &nbsp;+91 8769177678
+                    &nbsp;+91 0000000000
                   </a>
                 </b>
               </span>

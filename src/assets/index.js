@@ -41,6 +41,7 @@ import new_spon_seven from "./new_spon_seven.png";
 import loader from './loader_logo.png';
 
 import jw from './jw.png';
+
 import ba from './ba.png';
 import bob from './bob.png';
 import cw from './c&w.png';
@@ -121,6 +122,7 @@ export {
   loader,
   jw,
   ba,
+
   bob,
   cw,
   th,

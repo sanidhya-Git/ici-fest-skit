@@ -39,18 +39,18 @@ const BOB = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - 16<sup>th </sup>September 2023
+                  Date - <sup> </sup>
                 </span>
               </div>
               <div>
-                <span>Time - 09:00 AM to 11:00 AM</span>
+                <span>Time - 00:00</span>
               </div>
               <div>
-                <span>Venue - Tech zone in football ground</span>
+                <span>Venue - </span>
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 ">
-              <span>Registration Fee - ₹200 per team</span>
+              <span>Registration Fee - ₹250 per team</span>
             </div>
             <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">
@@ -67,10 +67,10 @@ const BOB = () => {
           
             <div className="mt-[10px]">
               <span>
-                <b> For more details - Kaushal Meena: {" "}
+                <b> For more details -  Siddharth Lawaniya: {" "}
                 <a href="https://wa.me/8529058592" target="blank" className="underline">
                   {" "}
-                  +91 8529058592
+                  +91 6377766785
                 </a>
                 </b>
               </span>
