@@ -1,4 +1,3 @@
-
 import skit_logo from './skit_logo.png';
 import ici_logo from './ici_logo.png';
 
@@ -30,13 +29,13 @@ import img21 from './anutech.png';
 import img22 from './triangle.png';
 
 // new sponsors
-import new_spon_one from "./new_spon_one.jpg";
-import new_spon_two from "./new_spon_two.png";
-import new_spon_three from "./new_spon_three.png";
-import new_spon_four from "./new_spon_four.png";
-import new_spon_five from "./new_spon_five.png";
-import new_spon_six from "./new_spon_six.avif";
-import new_spon_seven from "./new_spon_seven.png";
+import new_spon_one from './new_spon_one.jpg';
+import new_spon_two from './new_spon_two.png';
+import new_spon_three from './new_spon_three.png';
+import new_spon_four from './new_spon_four.png';
+import new_spon_five from './new_spon_five.png';
+import new_spon_six from './new_spon_six.avif';
+import new_spon_seven from './new_spon_seven.png';
 
 import loader from './loader_logo.png';
 
@@ -92,18 +91,21 @@ import PrizePool from './prize.png';
 import ResponseLogo from './responselogo.png';
 
 // collaboration
-import collabOne from "./collaborator/one.png";
-import collabTwo from "./collaborator/two.png";
-import collabThree from "./collaborator/three.png";
-import collabFour from "./collaborator/four.png";
-import collabFive from "./collaborator/five.png";
-import collabSix from "./collaborator/six.png";
-import collabSeven from "./collaborator/seven.png";
-import collabEight from "./collaborator/eight.png";
-import collabNine from "./collaborator/nine.png";
+import collabOne from './collaborator/one.png';
+import collabTwo from './collaborator/two.png';
+import collabThree from './collaborator/three.png';
+import collabFour from './collaborator/four.png';
+import collabFive from './collaborator/five.png';
+import collabSix from './collaborator/six.png';
+import collabSeven from './collaborator/seven.png';
+import collabEight from './collaborator/eight.png';
+import collabNine from './collaborator/nine.png';
 
 // logo
-import light_logo from "./light_logo.png";
+import light_logo from './light_logo.png';
+
+import coor_one from './coor_one.jpg';
+import coor_two from './coor_two.jpg';
 
 export {
   skit_logo,
@@ -122,7 +124,6 @@ export {
   loader,
   jw,
   ba,
-
   bob,
   cw,
   th,
@@ -180,16 +181,16 @@ export {
   new_spon_five,
   new_spon_six,
   new_spon_seven,
-
   collabOne,
   collabTwo,
   collabThree,
   collabFour,
   collabFive,
   collabSix,
-  collabSeven, 
+  collabSeven,
   collabEight,
   collabNine,
-
-  light_logo
+  light_logo,
+  coor_one,
+  coor_two
 };
