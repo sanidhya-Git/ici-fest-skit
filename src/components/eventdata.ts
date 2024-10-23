@@ -195,16 +195,16 @@ export const EventData: EventDataProps[] = [
     registration_status: 'live',
     category: 'event',
   },
-  {
-    title: 'Advance Construction Technology',
-    image:
-      'https://img.freepik.com/free-photo/african-american-woman-using-vr-glasses-work_482257-10518.jpg?t=st=1729664844~exp=1729668444~hmac=c892a6baabbee8abd62f5585d0dcada0bf5eef2ec0440f35c5ca75757e09329f&w=996',
-    slug: 'adv_construction',
-    brightness_adj: true,
+  // {
+  //   title: 'Advance Construction Technology',
+  //   image:
+  //     'https://img.freepik.com/free-photo/african-american-woman-using-vr-glasses-work_482257-10518.jpg?t=st=1729664844~exp=1729668444~hmac=c892a6baabbee8abd62f5585d0dcada0bf5eef2ec0440f35c5ca75757e09329f&w=996',
+  //   slug: 'adv_construction',
+  //   brightness_adj: true,
 
-    registration_status: 'live',
-    category: 'event',
-  },
+  //   registration_status: 'live',
+  //   category: 'event',
+  // },
   // {
   //   title: 'Crack the Circuit',
   //   image: ctc,

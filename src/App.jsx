@@ -73,7 +73,7 @@ const App = () => {
             {/* <Route path='/robo_soccer' element={<ROBOSOCCER />} /> */}
             <Route path='/pitch_perfect' element={<PP />} />
             <Route path='/drag_race' element={<DRAG_RAGE />} />
-            <Route path='/adv_construction' element={<AVD_CONSTRUCT />} />
+            {/* <Route path='/adv_construction' element={<AVD_CONSTRUCT />} /> */}
             {/* <Route path='/robo_soccer' element={<ROBO_SOCCER />} /> */}
 
 
