@@ -50,7 +50,7 @@ const Fabric = () => {
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 ">
-              <span>Registration Fee - ₹250 per team</span>
+              <span>Registration Fee - ₹150 per team</span>
             </div>
             <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">
