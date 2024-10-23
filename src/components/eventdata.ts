@@ -14,6 +14,7 @@ import {
   inno_img,
   mud_img,
   brush_img,
+  joist_img,
 } from '../assets';
 
 interface EventDataProps {
@@ -44,7 +45,7 @@ export const EventData: EventDataProps[] = [
     registration_status: 'live',
   },
   {
-    title: 'coordination Clash',
+    title: 'Coordination Clash',
     slug: 'coordination_clash',
     image:
       'https://img.freepik.com/premium-photo/two-businessmen-having-tug-war-modern-cityscape-concept-corporate-rivalry-competition-business-world-striving-dominance_643966-4540.jpg?w=1380',
@@ -52,7 +53,7 @@ export const EventData: EventDataProps[] = [
     registration_status: 'live',
   },
   {
-    title: 'crack the circuit',
+    title: 'Crack the circuit',
     image:
       'https://img.freepik.com/premium-vector/close-up-hand-with-screwdriver-fixing-circuit-flat_1324820-1993.jpg?w=1380',
     slug: 'crackthecircuit',
@@ -60,7 +61,7 @@ export const EventData: EventDataProps[] = [
     brightness_adj: true,
   },
   {
-    title: 'drone workshop',
+    title: 'Drone Workshop',
     image:
       'https://img.freepik.com/premium-photo/drone-flies-rural-country-road_134345-7534.jpg?w=740',
     slug: 'drone_workshop',
@@ -111,10 +112,11 @@ export const EventData: EventDataProps[] = [
     brightness_adj: true,
   },
   {
-    title: 'joist Kwik',
-    image: essay_img,
+    title: 'Joist Kwik',
+    image: joist_img,
     slug: 'joist_kwik',
     registration_status: 'live',
+    brightness_adj: true,
   },
   {
     title: 'MUN',
@@ -148,7 +150,7 @@ export const EventData: EventDataProps[] = [
   },
 
   {
-    title: ' The Pitch Perfect',
+    title: 'The Pitch Perfect',
     image:
       'https://img.freepik.com/free-vector/people-starting-business-project-illustrated_23-2148865214.jpg?size=626&ext=jpg&ga=GA1.1.1629078878.1726675673&semt=ais_hybrid',
     slug: 'pitch_perfect',
@@ -157,15 +159,16 @@ export const EventData: EventDataProps[] = [
   },
   {
     title: 'Tower Craft',
-    image: th,
+    image: tower_1,
     slug: 'tower_craft',
     registration_status: 'live',
+    brightness_adj: true,
   },
   {
     title: 'Web-A-Thon',
     image:
       'https://img.freepik.com/free-photo/web-hosting-development-connection-networking-concept_53876-165256.jpg?t=st=1729614322~exp=1729617922~hmac=a6a47a473a62c2d4ab1a7f32a2c1f64a341e5eff534c1c860644df55b62a43a3&w=826',
-    slug: 'webathon',
+    slug: 'web_a_thon',
     brightness_adj: true,
 
     registration_status: 'live',
@@ -176,12 +179,34 @@ export const EventData: EventDataProps[] = [
     slug: 'crackthecircuit',
     registration_status: 'live',
   },
+  // {
+  //   title: 'Robo Soccer',
+  //   image: ctc,
+  //   slug: 'robo_soccer',
+  //   registration_status: 'live',
+  // },
   {
-    title: 'EV - Workshop',
-    image: 'https://img.freepik.com/free-vector/electric-car-concept-illustration_114360-927.jpg?t=st=1729620622~exp=1729624222~hmac=b7a9ae6fb46ddfc354e0f8fd1302292999f698676c39d339689d39229b201d27&w=1060',
-    slug: 'ev_workshop',
-    registration_status: 'live',
-  },
+      title: 'Off Road Odyssey',
+      image: "https://img.freepik.com/free-photo/black-white-view-off-road-vehicle-driven-rough-terrain_23-2151476145.jpg?t=st=1729653960~exp=1729657560~hmac=664437ea4ea3befb0ebfffd4cebce02d4e9cc992fcffcff96888e17b7f58c273&w=996",
+      slug: 'offroad_odyssey',
+      registration_status: 'live',
+      brightness_adj: true, 
+    },
+
+    {
+      title: 'Drag Race',
+      image: "https://img.freepik.com/free-photo/view-car-running-high-speed_23-2150635442.jpg?t=st=1729654034~exp=1729657634~hmac=f4b2a48e26717f42abfa840edb526ab18c8de904e7ac07f5ff09aab0743d0b1c&w=996",
+      slug: 'drag_race',
+      registration_status: 'live',
+      brightness_adj: true, 
+    },
+  // {
+  //   title: 'EV - Workshop',
+  //   image: 'https://img.freepik.com/free-vector/electric-car-concept-illustration_114360-927.jpg?t=st=1729620622~exp=1729624222~hmac=b7a9ae6fb46ddfc354e0f8fd1302292999f698676c39d339689d39229b201d27&w=1060',
+  //   slug: 'ev_workshop',
+  //   registration_status: 'live',
+  //   brightness_adj:true
+  // },
 
   // {
   //   title: 'IGBC',

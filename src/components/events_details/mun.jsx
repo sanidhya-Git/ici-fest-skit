@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const MUN= () => {
+const MUN = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -19,7 +19,7 @@ const MUN= () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px] uppercase'>
-                MUN 
+                MUN
               </span>
             </div>
             <div className='flex justify-center'>
@@ -59,13 +59,9 @@ const MUN= () => {
                 <b>
                   {' '}
                   For more details - Jagrati pareek:{' '}
-                  <a
-                    
-                    target='blank'
-                    className='underline'
-                  >
+                  <a target='blank' className='underline'>
                     {' '}
-                    +91 
+                    +91
                   </a>
                 </b>
               </span>
@@ -112,57 +108,44 @@ const MUN= () => {
           </div>
 
           <div className='flex justify-center mt-[20px]'>
-            <div className={activeButton === 0 ? 'active-div' : 'deactive-div'}>
-              <div className='text-center  mb-[50px] font-semibold'>
-                <div className=' mb-[10px] '>
-                  <span className='font-bold  text-[20px] underline  '>
-                    PROBLEM STATEMENT
-                  </span>
-                </div>
-                <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
-                  <span className='text-[17px]'>
-                    Your task is to design a residential house using AutoCAD
-                    software.Design a residential house with a footprint of 30'
-                    by 60' using AutoCAD, incorporating essential elements to
-                    meet the basic residential requirements. The design should
-                    ensure optimal space utilization, functionality, and a
-                    balanced integration of indoor and outdoor spaces.
-                  </span>
-                </div>
-
-                <div className='text-center my-[30px] '>
-                  <div className=' mb-[10px] underline'>
-                    <span className='font-bold  text-[20px]'>
-                      PARTICIPATION
+            <div className='flex justify-center mt-[20px]'>
+              <div
+                className={activeButton === 0 ? 'active-div' : 'deactive-div'}
+              >
+                <div className='text-center mb-[50px] font-semibold'>
+                  <div className='mb-[10px]'>
+                    <span className='font-bold text-[20px] underline'>
+                      PROBLEM STATEMENT
                     </span>
                   </div>
-                  <div>
-                    <span className='font-semibold text-[17px]'>
-                      Participate Individually.
+                  <div className='mx-[20px] md:mx-[120px] xl:mx-[220px]'>
+                    <span className='text-[17px]'>
+                      The All India Political Party Meet (AIPPM) is organizing a
+                      Model United Nations (MUN) conference to address the
+                      critical and long-standing issue of terrorism in Kashmir.
+                      The agenda of the meeting focuses on facilitating a
+                      thorough debate among delegates representing various
+                      political parties, concentrating on the security,
+                      geopolitical, and human rights dimensions of the Kashmir
+                      conflict. Participants are expected to engage in
+                      constructive discussions, propose actionable solutions,
+                      and develop policy recommendations in line with their
+                      party's stance. The outcome should include a comprehensive
+                      strategy to combat terrorism, promote peace, and address
+                      the social and political concerns in the Kashmir region.
                     </span>
                   </div>
-                </div>
 
-                <div className='mx-[10px] flex justify-center'>
-                  <div>
-                    <div className='mt-[10px] '>
-                      <span className='font-bold text-[18px] '>
-                        Basic Requirements
-                      </span>
-                    </div>
-                    <div className='flex justify-center  '>
-                      <span>
-                        Living room, Dining room, Kitchen with adequate
-                        countertop space and storage, Master bedroom with
-                        attached bathroom,
-                        <br className='hidden lg:block' /> Additional bedrooms
-                        with shared bathrooms, Home office/study room, Utility
-                        room
+                  <div className='text-center my-[30px]'>
+                    <div className='mb-[10px] underline'>
+                      <span className='font-bold text-[20px]'>
+                        PARTICIPATION
                       </span>
                     </div>
                     <div>
-                      <span className='font-bold text-[18px] '>NOTE: </span>
-                      <span>Computers will be provided</span>
+                      <span className='font-semibold text-[17px]'>
+                        Individual participation.
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -172,18 +155,59 @@ const MUN= () => {
           <div
             className={`${
               activeButton === 1 ? 'active-div' : 'deactive-div'
-            } text-[18px] `}
+            } text-[18px]`}
           >
             <div className='flex justify-center mt-[10px] text-center'>
               <div>
-                <span>
-                  This is the single round event. Participant will be given{' '}
-                  <b>1 hour</b> to complete their task. No submissions are
-                  allowed after 1 hour.
-                </span>
+                <div className='mb-[10px] underline'>
+                  <span className='font-bold text-[20px]'>EVENT STRUCTURE</span>
+                </div>
+                <div>
+                  <span>
+                    <b>Round 1:</b> Each delegate will present their stance on
+                    the issue within the allotted time.
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    <b>Round 2:</b> Engage in debates based on the event
+                    structure provided.
+                  </span>
+                </div>
+
+                <div className='mt-[30px] underline'>
+                  <span className='font-bold text-[20px]'>
+                    DISQUALIFICATION CRITERIA
+                  </span>
+                </div>
+                <div className='text-[17px]'>
+                  <ul>
+                    <li>
+                      Breach of Decorum: Offensive language, disrespectful
+                      behaviour, or disrupting the session.
+                    </li>
+                    <li>
+                      Rule Violations: Ignoring the chair’s instructions or
+                      exceeding speaking time despite warnings.
+                    </li>
+                    <li>
+                      Inconsistent Representation: Failing to align with the
+                      assigned party’s ideology.
+                    </li>
+                    <li>
+                      Non-Participation: Absence during voting or debates
+                      without valid reasons.
+                    </li>
+                    <li>
+                      Unapproved Communication: Unauthorized use of devices or
+                      passing unapproved notes.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+
           <div
             className={`${
               activeButton === 2 ? 'active-div' : 'deactive-div'
@@ -194,27 +218,55 @@ const MUN= () => {
                 JUDGING CRITERIA
               </span>
             </div>
-            <div className=''>
-              <span className='font-bold text-[18px] '>
-                You will be judged based on the following criterias:-
+            <div className='text-[17px]'>
+              <ul>
+                <li>1. Research and Knowledge: 30 points</li>
+                <li>2. Communication Skills: 25 points</li>
+                <li>3. Diplomacy and Negotiation: 20 points</li>
+                <li>4. Decorum and Conduct: 15 points</li>
+                <li>5. Creativity and Initiative: 10 points</li>
+              </ul>
+            </div>
+
+            <div className='mt-[30px] text-center underline'>
+              <span className='font-bold text-[20px]'>
+                RULES AND REGULATIONS
               </span>
             </div>
-            <div className='flex justify-center  text-[17px]'>
-              <ul>
+            <div className='text-[17px]'>
+              <ol>
                 <li>
-                  1. Adherence to the specified dimensions and requirements
+                  1. Conduct:
+                  <ul>
+                    <li>Formal or ethnic wear is mandatory.</li>
+                    <li>
+                      Language: English or Hindi only, respectful and formal.
+                    </li>
+                  </ul>
                 </li>
-                <li>2. Logical and efficient layout of rooms</li>
-                <li>3. Proper allocation of spaces for different functions.</li>
                 <li>
-                  4. Adequate consideration for ventilation, lighting, safety,
-                  and privacy
+                  2. Speaking Rules:
+                  <ul>
+                    <li>Opening Speech: 2 minutes per delegate.</li>
+                    <li>Speakers List: 1 minute per speech.</li>
+                    <li>Moderated Caucus: 45 seconds per delegate.</li>
+                  </ul>
                 </li>
                 <li>
-                  5. Clear and professional presentation of the design using
-                  AutoCAD tools.
+                  3. Motions and Points:
+                  <ul>
+                    <li>
+                      Point of Order: For rule violations; misuse leads to
+                      penalties.
+                    </li>
+                    <li>Motion to Adjourn: Simple majority vote required.</li>
+                  </ul>
                 </li>
-              </ul>
+                <li>
+                  4. Voting: A simple majority (>50%) is needed to pass
+                  resolutions.
+                </li>
+              </ol>
             </div>
           </div>
         </div>
