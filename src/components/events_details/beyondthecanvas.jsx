@@ -57,7 +57,9 @@ const BYC = () => {
                 All the teams must have 4 members each.
               </span> */}
             </div>
-            <Link to="/response">
+            <Link 
+            to={`https://erp.skit.ac.in/register/r/beyond_the_canvas`} 
+            target='_blank'>
               <div className="mt-[10px] font-semibold">
                 <button className="bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center">
                   Register Now
@@ -68,7 +70,8 @@ const BYC = () => {
             <div className="mt-[10px]">
               <span>
                 <b> For more details - Anuj Tomar {" "}
-                <a href="https://wa.me/8529058592" target="blank" className="underline">
+                <a 
+                target="blank" className="underline">
                   {" "}
                   +91 7737008369
                 </a>
@@ -126,28 +129,23 @@ const BYC = () => {
                 </div>
                 <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
                   <span className="text-[17px] font-semibold">
-                    Construct a structurally sound L-shaped step wall using
-                    bricks. The challenge is to create a design that showcases
-                    the versatility of brick as a building material, while
-                    ensuring the wall's stability and safety for users.
+                  ”Beyond the Canvas” is an immersive two-day art exhibition aimed at providing a plat-
+form for artists to showcase their diverse range of artwork. The event will feature multiple.<br/>
+
+forms of art, such as:<br/>
+• Mandala Art<br/>
+• Origami<br/>
+• Sketches<br/>
+• Portraits<br/>
+• Watercolor Painting<br/>
+
+• Charcoal Art<br/>
+• Calligraphy<br/>
+• Digital Art<br/>
+
+In addition to the exhibition, workshops will be conducted on Day 2 to teach partic-
+ipants the skills required for various art forms.
                   </span>
-                </div>
-                <div className="flex justify-center">
-                  <img src={bob_img} />
-                </div>
-                <div className="mt-[20px]">
-                  <span className="font-semibold">Dimensions</span>
-                </div>
-                <div>
-                  <div>
-                    <span>First side - 31 inches</span>
-                  </div>
-                  <div>
-                    <span>Other side - 36 inches</span>
-                  </div>
-                  <div>
-                    <span>Height of the structure - 19 inches</span>
-                  </div>
                 </div>
               </div>
 
@@ -157,34 +155,8 @@ const BYC = () => {
                 </div>
                 <div>
                   <span className="font-semibold text-[17px]">
-                    All the teams must have 4 members each.
+                  Participate Individually.
                   </span>
-                </div>
-              </div>
-
-              <div className="text-center  mb-[50px]">
-                <div className=" mb-[10px] underline">
-                  <span className="font-bold  text-[20px]">
-                    MATERIALS PROVIDED
-                  </span>
-                </div>
-                <div className="flex justify-center text-left">
-                  <table className="table-auto text-[17px]">
-                    <thead>
-                      <tr className="p-[20px]">
-                        <th className="pr-[50px]">Materials</th>
-                        <th>Quantity</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {materialData.map((item, index) => (
-                        <tr key={index}>
-                          <td>{item.material}</td>
-                          <td>{item.quantity}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
                 </div>
               </div>
             </div>
@@ -201,16 +173,11 @@ const BYC = () => {
             </div>
             <div className="text-center mt-[10px]">
               <div>
-                <span>Event timing - 2hrs</span>
-              </div>
-              <div>
-                <span>Briefing Time - 15min (starting)</span>
-              </div>
-              <div>
-                <span>Time limit for the task - 45 min</span>
-              </div>
-              <div>
-                <span>Result and checking - 1hr</span>
+                <span>• There is no maximum limit to the number of artworks an artist can submit
+                      for consideration.<br/>
+                      • Artworks must be original, and the artist should have full ownership of the
+                      piece.<br/>
+                      • The submission period for artworks is 2 days from the date of notification.</span>
               </div>
             </div>
           </div>
@@ -226,27 +193,10 @@ const BYC = () => {
             </div>
             <div>
               <span className="text-[17px] ">
-                Judgement will be done on the basis of - .
+              • The organizing committee will evaluate the submissions based on creativity,
+originality, and relevance to the event.<br/>
+• Selected artists will be notified via call/email..
               </span>
-            </div>
-            <div className=" flex justify-center text-[17px]">
-              <div>
-                <div>
-                  <span>1. Appearance and Geometry.</span>
-                </div>
-                <div>
-                  <span>2. Placement of Bricks and it's bond alignment.</span>
-                </div>
-                <div>
-                  <span>3. 90° angle between the corners of wall.</span>
-                </div>
-                <div>
-                  <span>4. Straightness of wall.</span>
-                </div>
-                <div>
-                  <span>5. Length of each step must be same.</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

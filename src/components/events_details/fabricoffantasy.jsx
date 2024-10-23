@@ -30,7 +30,7 @@ const Fabric = () => {
           <div className="bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center">
             <div>
               <span className="font-extrabold text-[38px] md:text-[50px]">
-                Fabric Of Fantasy
+                Fabric Of Fantacy
               </span>
             </div>
             <div className="flex justify-center">
@@ -57,7 +57,8 @@ const Fabric = () => {
                 All the teams must have 3 members each.
               </span>
             </div>
-            <Link to="/response">
+            <Link to={`https://erp.skit.ac.in/register/r/fabricoffantacy`} 
+            target='_blank'>
               <div className="mt-[10px] font-semibold">
                 <button className="bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center">
                   Register Now
@@ -68,7 +69,7 @@ const Fabric = () => {
             <div className="mt-[10px]">
               <span>
                 <b> For more details - Krishna Awasthi {" "}
-                <a href="https://wa.me/8529058592" target="blank" className="underline">
+                <a  target="blank" className="underline">
                   {" "}
                   +91 9649722470
                 </a>
@@ -126,29 +127,23 @@ const Fabric = () => {
                 </div>
                 <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
                   <span className="text-[17px] font-semibold">
-                    Construct a structurally sound L-shaped step wall using
-                    bricks. The challenge is to create a design that showcases
-                    the versatility of brick as a building material, while
-                    ensuring the wall's stability and safety for users.
+                  <b>Fabric of Fantasy</b> is a creative event where teams of three will turn plain T-shirts into unique
+                  pieces of art. Participants must bring their own colors and tools, allowing full artistic freedom. Held
+                  at the <b>CAEG Lab</b>, the event encourages creativity in a fun and relaxed environment.
                   </span>
                 </div>
-                <div className="flex justify-center">
-                  <img src={bob_img} />
+                <div className=" mb-[10px] ">
+                  <span className="font-bold  text-[20px] underline  ">
+                  Materials:
+                  </span>
                 </div>
-                <div className="mt-[20px]">
-                  <span className="font-semibold">Dimensions</span>
+                <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
+                  <span className="text-[17px] font-semibold">
+                  Teams must bring their own colors and tools (paint, markers, etc.) to decorate the T-shirts.<br/>
+ No sharp or hazardous objects are allowed in the decoration process.
+                  </span>
                 </div>
-                <div>
-                  <div>
-                    <span>First side - 31 inches</span>
-                  </div>
-                  <div>
-                    <span>Other side - 36 inches</span>
-                  </div>
-                  <div>
-                    <span>Height of the structure - 19 inches</span>
-                  </div>
-                </div>
+                
               </div>
 
               <div className="text-center  mb-[50px]">
@@ -157,36 +152,12 @@ const Fabric = () => {
                 </div>
                 <div>
                   <span className="font-semibold text-[17px]">
-                    All the teams must have 4 members each.
+                    All the teams must have 3 members each.
                   </span>
                 </div>
               </div>
 
-              <div className="text-center  mb-[50px]">
-                <div className=" mb-[10px] underline">
-                  <span className="font-bold  text-[20px]">
-                    MATERIALS PROVIDED
-                  </span>
-                </div>
-                <div className="flex justify-center text-left">
-                  <table className="table-auto text-[17px]">
-                    <thead>
-                      <tr className="p-[20px]">
-                        <th className="pr-[50px]">Materials</th>
-                        <th>Quantity</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {materialData.map((item, index) => (
-                        <tr key={index}>
-                          <td>{item.material}</td>
-                          <td>{item.quantity}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+              
             </div>
           </div>
           <div
@@ -201,17 +172,11 @@ const Fabric = () => {
             </div>
             <div className="text-center mt-[10px]">
               <div>
-                <span>Event timing - 2hrs</span>
+                <span> Each team will have 2 hours to complete their T-shirt design.<br/>
+Participants must complete their work within this time frame.<br/>
+ A warning will be given 15 minutes before the event ends to help teams manage their time.</span>
               </div>
-              <div>
-                <span>Briefing Time - 15min (starting)</span>
-              </div>
-              <div>
-                <span>Time limit for the task - 45 min</span>
-              </div>
-              <div>
-                <span>Result and checking - 1hr</span>
-              </div>
+             
             </div>
           </div>
           <div
@@ -226,26 +191,46 @@ const Fabric = () => {
             </div>
             <div>
               <span className="text-[17px] ">
-                Judgement will be done on the basis of - .
+               <b> Judgement will be done on the basis of - </b>
               </span>
             </div>
             <div className=" flex justify-center text-[17px]">
               <div>
                 <div>
-                  <span>1. Appearance and Geometry.</span>
+                  <span>Creativity and Originality (30%): How unique and innovative the design is.<br/>
+                        Aesthetic Appeal (25%): The overall visual impact of the design on the T-shirt.<br/>
+                        Theme Integration (20%): How well the design aligns with any chosen theme (if applicable).<br/>
+                        Skill and Technique (15%): The level of artistry and skill displayed in applying the design.<br/> 
+                        Completion (10%): Whether the design is fully realized within the given time.</span>
                 </div>
+                
+              </div>
+            </div>
+            <div className="text-center mb-[10px]">
+              <span className="font-bold text-[20px] underline">
+                DISQUALIFICATION CRITERIA
+              </span>
+            </div>
+            <div>
+              <span className="text-[17px] ">
+               <b> Participants may be disqualified from the competition for the following reasons: </b>
+              </span>
+            </div>
+            <div className=" flex justify-center text-[17px]">
+              <div>
                 <div>
-                  <span>2. Placement of Bricks and it's bond alignment.</span>
+                  <span><b>Inappropriate Content:</b> Any design that includes offensive, vulgar, or<br/> inappropriate imagery or
+                        language will lead to immediate disqualification.<br/>
+                       <b>Damage to Materials:</b> Deliberate damage to the provided T-shirts or <br/>other participants' materials
+                        will result in disqualification.<br/>
+                        <b>Team Composition Violation:</b> Only registered team members are allowed to participate. If any<br/>
+                        external individual is found contributing to the design, the team will be disqualified.<br/>
+                        <b>Misconduct:</b> Teams found engaging in misconduct, including disturbing other <br/>participants or
+                        violating the venue’s rules, will be disqualified.<br/>
+                        <b>Use of Hazardous Materials:</b> Teams using any materials that pose safety hazards,<br/> such as
+                        flammable or toxic substances, will face disqualification.</span>
                 </div>
-                <div>
-                  <span>3. 90° angle between the corners of wall.</span>
-                </div>
-                <div>
-                  <span>4. Straightness of wall.</span>
-                </div>
-                <div>
-                  <span>5. Length of each step must be same.</span>
-                </div>
+                
               </div>
             </div>
           </div>

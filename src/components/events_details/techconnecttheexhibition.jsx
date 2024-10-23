@@ -45,7 +45,7 @@ const TECH = () => {
               </span>
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/crackthecircuit`}
+              to={`https://erp.skit.ac.in/register/r/techconnect`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -60,7 +60,7 @@ const TECH = () => {
                   {' '}
                   For more details - Gaurav Gupta:{' '}
                   <a
-                    href='https://wa.me/9001799799'
+                    
                     target='blank'
                     className='underline'
                   >

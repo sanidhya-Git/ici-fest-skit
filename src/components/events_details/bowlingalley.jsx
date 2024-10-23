@@ -10,6 +10,7 @@ const materialData = [
   { material: 'Poly Bags', quantity: '1' },
   { material: 'Trovel and Pans', quantity: '1' },
   { material: 'Bottles', quantity: '1' },
+  { material: 'Bricks', quantity: '10' },
 ];
 
 const BA = () => {
@@ -69,7 +70,7 @@ const BA = () => {
 
               <div className='mt-[10px]'>
                 <span>Venue: </span>
-                <span>Tech zone in football ground</span>
+                <span>-</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
@@ -80,7 +81,8 @@ const BA = () => {
                 All the teams must have 4 members each.
               </span>
             </div>
-            <Link to={`/response`} target='_blank'>
+            <Link to={`https://erp.skit.ac.in/register/r/bowling_alley`} 
+            target='_blank'>
               <div className='mt-[10px] font-semibold'>
                 <button className='bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center'>
                   Register Now
@@ -93,11 +95,10 @@ const BA = () => {
                   {' '}
                   For more details - Aman Mishra:{' '}
                   <a
-                    href='https://wa.me/8769177678'
                     target='blank'
                     className='underline'
                   >
-                    {' '}
+                    {' 8290078495'}
                     &nbsp;
                   </a>
                 </b>
@@ -154,8 +155,19 @@ const BA = () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px] font-semibold'>
-                    Cast a perfect ball using cement concrete and hit the brick
-                    pins aiming maximum score
+                  To design and cast durable concrete balls using a cement-concrete mix inside plastic molds, ensuring they are strong,
+                  balanced, and smooth enough for use in alley games involving bricks
+                  </span>
+                </div>
+                <div className=' mb-[10px] '>
+                  <span className='font-bold  text-[20px] underline  '>
+                  Rules and Regulation
+                  </span>
+                </div>
+                <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
+                  <span className='text-[17px] font-semibold'>
+                  ● You have to cast the concrete balls within the given time period.<br/>
+● Material is provided by the organizing team
                   </span>
                 </div>
               </div>
@@ -174,7 +186,7 @@ const BA = () => {
               <div className='text-center  mb-[50px]'>
                 <div className=' mb-[10px] underline'>
                   <span className='font-bold  text-[20px]'>
-                    MATERIALS PROVIDED
+                    MATERIALS REQUIRED
                   </span>
                 </div>
                 <div className='flex justify-center text-left'>
@@ -221,8 +233,7 @@ const BA = () => {
                   </div>
                   <div>
                     <span>
-                      Cast the ball in a given time (1.5 hrs.) and leave it for
-                      a day to settle.
+                    90 Minutes
                     </span>
                   </div>
                 </div>
@@ -235,8 +246,7 @@ const BA = () => {
                   <div>
                     <ul>
                       <li>
-                        Aim at the bricks arranged in the form of pins and swing
-                        your ball through the alley.
+                      180 Minutes
                       </li>
                     </ul>
                   </div>
@@ -261,6 +271,21 @@ const BA = () => {
                 </div>
                 <div>
                   <span>The team with maximum score will win.</span>
+                </div>
+              </div>
+            </div>
+            <div className='text-center mb-[10px]'>
+              <span className='font-bold text-[20px] underline'>
+              Disqualification CRITERIA
+              </span>
+            </div>
+            <div className='flex justify-center text-[17px] text-center'>
+              <div>
+                <div>
+                  <span>Use of the external agent in the making of the ball is prohibited.</span>
+                </div>
+                <div>
+                  <span>Member other than the team member is found then the team will be disqualified.</span>
                 </div>
               </div>
             </div>

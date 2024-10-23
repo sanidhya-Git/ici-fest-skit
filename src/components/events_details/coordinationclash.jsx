@@ -45,7 +45,7 @@ const CC = () => {
               </span>
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/crackthecircuit`}
+              to={`https://erp.skit.ac.in/register/r/coordination_clash`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -60,7 +60,7 @@ const CC = () => {
                   {' '}
                   For more details - Anjali Choudhary:{' '}
                   <a
-                    href='https://wa.me/9001799799'
+                    
                     target='blank'
                     className='underline'
                   >
@@ -121,12 +121,10 @@ const CC = () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px]'>
-                    Your task is to design a residential house using AutoCAD
-                    software.Design a residential house with a footprint of 30'
-                    by 60' using AutoCAD, incorporating essential elements to
-                    meet the basic residential requirements. The design should
-                    ensure optimal space utilization, functionality, and a
-                    balanced integration of indoor and outdoor spaces.
+                  Teams of four must demonstrate their coordination, communication, and
+                  precision in a two-part challenge. In the first round, participants will balance a ball
+                  on the tip of a pen while walking to the finish line , qualifying the team based on
+                  time and balance control.
                   </span>
                 </div>
 
@@ -138,7 +136,7 @@ const CC = () => {
                   </div>
                   <div>
                     <span className='font-semibold text-[17px]'>
-                      Participate Individually.
+                    In teams. Must have 4 members each.
                     </span>
                   </div>
                 </div>
@@ -152,17 +150,10 @@ const CC = () => {
                     </div>
                     <div className='flex justify-center  '>
                       <span>
-                        Living room, Dining room, Kitchen with adequate
-                        countertop space and storage, Master bedroom with
-                        attached bathroom,
-                        <br className='hidden lg:block' /> Additional bedrooms
-                        with shared bathrooms, Home office/study room, Utility
-                        room
+                      Sketch Pens ,Soft Tennis Balls ,Threads ,Pens, Bottles ,Blindfolds, Stopwatch
                       </span>
                     </div>
                     <div>
-                      <span className='font-bold text-[18px] '>NOTE: </span>
-                      <span>Computers will be provided</span>
                     </div>
                   </div>
                 </div>
@@ -177,9 +168,7 @@ const CC = () => {
             <div className='flex justify-center mt-[10px] text-center'>
               <div>
                 <span>
-                  This is the single round event. Participant will be given{' '}
-                  <b>1 hour</b> to complete their task. No submissions are
-                  allowed after 1 hour.
+                Event requires 2:00 Hours.
                 </span>
               </div>
             </div>
@@ -202,17 +191,27 @@ const CC = () => {
             <div className='flex justify-center  text-[17px]'>
               <ul>
                 <li>
-                  1. Adherence to the specified dimensions and requirements
+                1. <b>Performance:</b>  Rank and time taken , with penalties applied for any drops.<br/>
+                2. <b>Team Coordination:</b> Effective communication and movement during both
+                rounds.<br/>
+                3. <b>Adherence to Rules:</b> Compliance with all event rules and regulations.
                 </li>
-                <li>2. Logical and efficient layout of rooms</li>
-                <li>3. Proper allocation of spaces for different functions.</li>
+              </ul>
+            </div>
+            <div className='text-center mb-[10px]'>
+              <span className='font-bold text-[20px] underline'>
+                DISQUALIFICATION CRITERIA
+              </span>
+            </div>
+            <div className='flex justify-center  text-[17px]'>
+              <ul>
                 <li>
-                  4. Adequate consideration for ventilation, lighting, safety,
-                  and privacy
-                </li>
-                <li>
-                  5. Clear and professional presentation of the design using
-                  AutoCAD tools.
+                1.Reckless actions endangering participants.<br/>
+                2. Consistently ignoring rules or penalties.<br/>
+                3. Disrespectful or disruptive behavior.<br/>
+                4. Modifying or mishandling event equipment.<br/>
+                5. If your Team not coming on time you may get disqualified from the
+                Event.
                 </li>
               </ul>
             </div>

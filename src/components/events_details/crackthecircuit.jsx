@@ -60,7 +60,7 @@ const crackthecircuit= () => {
                   {' '}
                   For more details - Nainika Agrawal:{' '}
                   <a
-                    href='https://wa.me/9001799799'
+                   
                     target='blank'
                     className='underline'
                   >
@@ -121,12 +121,9 @@ const crackthecircuit= () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px]'>
-                    Your task is to design a residential house using AutoCAD
-                    software.Design a residential house with a footprint of 30'
-                    by 60' using AutoCAD, incorporating essential elements to
-                    meet the basic residential requirements. The design should
-                    ensure optimal space utilization, functionality, and a
-                    balanced integration of indoor and outdoor spaces.
+                  Participants will be provided with an electronic circuit that contains deliberate faults or incorrect
+                  connections. The objective is to analyze the given circuit, identify the issues, and fix them so
+                  that it functions according to the predefined specification.
                   </span>
                 </div>
 
@@ -138,7 +135,7 @@ const crackthecircuit= () => {
                   </div>
                   <div>
                     <span className='font-semibold text-[17px]'>
-                      Participate Individually.
+                    In teams. Must have 4 members each.
                     </span>
                   </div>
                 </div>
@@ -147,22 +144,19 @@ const crackthecircuit= () => {
                   <div>
                     <div className='mt-[10px] '>
                       <span className='font-bold text-[18px] '>
-                        Basic Requirements
+                      Rules and Regulations:
                       </span>
                     </div>
                     <div className='flex justify-center  '>
                       <span>
-                        Living room, Dining room, Kitchen with adequate
-                        countertop space and storage, Master bedroom with
-                        attached bathroom,
-                        <br className='hidden lg:block' /> Additional bedrooms
-                        with shared bathrooms, Home office/study room, Utility
-                        room
+                      Participants must follow instructions given by coordinators.<br/>
+Teams will be given a specific time to decode the circuit.<br/>
+Mobile phones are not allowed during the competition<br/>
+Helping other teams is not allowed<br/>
+Asking for external help is not allowed
                       </span>
                     </div>
                     <div>
-                      <span className='font-bold text-[18px] '>NOTE: </span>
-                      <span>Computers will be provided</span>
                     </div>
                   </div>
                 </div>
@@ -178,8 +172,8 @@ const crackthecircuit= () => {
               <div>
                 <span>
                   This is the single round event. Participant will be given{' '}
-                  <b>1 hour</b> to complete their task. No submissions are
-                  allowed after 1 hour.
+                  <b>2 hour</b> to complete their task. No submissions are
+                  allowed after 2 hour.
                 </span>
               </div>
             </div>
@@ -202,17 +196,24 @@ const crackthecircuit= () => {
             <div className='flex justify-center  text-[17px]'>
               <ul>
                 <li>
-                  1. Adherence to the specified dimensions and requirements
+                The tam to solve to clear all rounds first and press the buzzer will be the winner.<br/>
+                Damaging material provided will lead to disqualification.
                 </li>
-                <li>2. Logical and efficient layout of rooms</li>
-                <li>3. Proper allocation of spaces for different functions.</li>
+              </ul>
+            </div>
+            <div className='text-center mb-[10px]'>
+              <span className='font-bold text-[20px] underline'>
+                DISQUALIFICATION CRITERIA
+              </span>
+            </div>
+            <div className='flex justify-center  text-[17px]'>
+              <ul>
                 <li>
-                  4. Adequate consideration for ventilation, lighting, safety,
-                  and privacy
-                </li>
-                <li>
-                  5. Clear and professional presentation of the design using
-                  AutoCAD tools.
+                Participants will be disqualified for late arrival,
+disruptive behavior, safety violations.<br/>
+Participants will be disqualified if they found using
+external help and using any extra material other than those
+provided.
                 </li>
               </ul>
             </div>

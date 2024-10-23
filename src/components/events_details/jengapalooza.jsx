@@ -45,7 +45,7 @@ const JENGA = () => {
               </span>
             </div> */}
             <Link
-              to={`https://erp.skit.ac.in/register/r/crackthecircuit`}
+              to={`https://erp.skit.ac.in/register/r/jengaplooza`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -60,7 +60,7 @@ const JENGA = () => {
                   {' '}
                   For more details - Nancy Jain:{' '}
                   <a
-                    href='https://wa.me/9001799799'
+                   
                     target='blank'
                     className='underline'
                   >

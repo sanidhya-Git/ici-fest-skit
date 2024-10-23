@@ -45,7 +45,7 @@ const DN= () => {
               </span>
             </div> */}
             <Link
-              to={`https://erp.skit.ac.in/register/r/crackthecircuit`}
+              to={`https://erp.skit.ac.in/register/r/drone_workshop`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -60,7 +60,7 @@ const DN= () => {
                   {' '}
                   For more details - Maytri Singh Ahluwalia: {' '}
                   <a
-                    href='https://wa.me/9001799799'
+                    
                     target='blank'
                     className='underline'
                   >
@@ -121,12 +121,15 @@ const DN= () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px]'>
-                    Your task is to design a residential house using AutoCAD
-                    software.Design a residential house with a footprint of 30'
-                    by 60' using AutoCAD, incorporating essential elements to
-                    meet the basic residential requirements. The design should
-                    ensure optimal space utilization, functionality, and a
-                    balanced integration of indoor and outdoor spaces.
+                  As drone technology continues to expand into industries such as
+                  agriculture, logistics, and surveillance, there is a significant need for
+                  practical, hands-on understanding of drone assembly, programming,
+                  and operation. Many tech enthusiasts lack direct experience with
+                  drones, limiting their ability to innovate and contribute to this
+                  growing field. The Drone Workshop at ICI Techno Fest 2024 aims to
+                  address this gap by equipping participants with essential skills in
+                  drone building, control, and safety, empowering them to apply drone
+                  technology in real-world scenarios and drive future advancements.
                   </span>
                 </div>
 
@@ -147,22 +150,24 @@ const DN= () => {
                   <div>
                     <div className='mt-[10px] '>
                       <span className='font-bold text-[18px] '>
-                        Basic Requirements
+                      Rules and Regulations:
                       </span>
                     </div>
                     <div className='flex justify-center  '>
                       <span>
-                        Living room, Dining room, Kitchen with adequate
-                        countertop space and storage, Master bedroom with
-                        attached bathroom,
-                        <br className='hidden lg:block' /> Additional bedrooms
-                        with shared bathrooms, Home office/study room, Utility
-                        room
+                      1. Participants must be registered for the workshop and have
+basic knowledge of electronics or programming.<br/>
+2. Attendees must arrive on time. Late arrivals may miss essential
+instructions and may not be accommodated.<br/>
+3. Respect fellow participants, instructors, and staff. Disruptive
+behaviour or violation of any rules will lead to removal from the
+workshop.<br/>
+4. A certificate of participation will be provided to those who
+complete the workshop successfully.
                       </span>
                     </div>
                     <div>
-                      <span className='font-bold text-[18px] '>NOTE: </span>
-                      <span>Computers will be provided</span>
+                      
                     </div>
                   </div>
                 </div>
@@ -177,9 +182,7 @@ const DN= () => {
             <div className='flex justify-center mt-[10px] text-center'>
               <div>
                 <span>
-                  This is the single round event. Participant will be given{' '}
-                  <b>1 hour</b> to complete their task. No submissions are
-                  allowed after 1 hour.
+                The workshop will be of 2.5 hours.
                 </span>
               </div>
             </div>
@@ -191,29 +194,23 @@ const DN= () => {
           >
             <div className='text-center mb-[10px]'>
               <span className='font-bold text-[20px] underline'>
-                JUDGING CRITERIA
+                DISQUALIFICATION CRITERIA
               </span>
             </div>
             <div className=''>
-              <span className='font-bold text-[18px] '>
-                You will be judged based on the following criterias:-
-              </span>
+              
             </div>
             <div className='flex justify-center  text-[17px]'>
               <ul>
                 <li>
-                  1. Adherence to the specified dimensions and requirements
+                1. Engaging in rude, inappropriate, or disruptive behaviour
+towards instructors, staff, or fellow participants will result in
+disqualification.<br/>
+2. Breaking any other rules outlined by the organizers, such as
+team collaboration guidelines, punctuality, or conduct codes,
+will result in disqualification.
                 </li>
-                <li>2. Logical and efficient layout of rooms</li>
-                <li>3. Proper allocation of spaces for different functions.</li>
-                <li>
-                  4. Adequate consideration for ventilation, lighting, safety,
-                  and privacy
-                </li>
-                <li>
-                  5. Clear and professional presentation of the design using
-                  AutoCAD tools.
-                </li>
+                
               </ul>
             </div>
           </div>
