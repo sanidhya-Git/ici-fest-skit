@@ -120,9 +120,10 @@ export const EventData: EventDataProps[] = [
   },
   {
     title: 'MUN',
-    image: essay_img,
+    image: "https://img.freepik.com/free-photo/rear-view-female-business-executive-giving-speech_107420-63815.jpg?t=st=1729664530~exp=1729668130~hmac=4f2be49154366e3803e270e3db7265bec402ae553dd9958f60da8b1728675f20&w=996",
     slug: 'ici_mun',
     registration_status: 'live',
+    brightness_adj: true,
   },
   {
     title: 'Quiz-A-Thon',
@@ -173,6 +174,15 @@ export const EventData: EventDataProps[] = [
 
     registration_status: 'live',
   },
+  {
+    title: 'Advance Construction Technology',
+    image:
+      'https://img.freepik.com/free-photo/african-american-woman-using-vr-glasses-work_482257-10518.jpg?t=st=1729664844~exp=1729668444~hmac=c892a6baabbee8abd62f5585d0dcada0bf5eef2ec0440f35c5ca75757e09329f&w=996',
+    slug: 'adv_construction',
+    brightness_adj: true,
+
+    registration_status: 'live',
+  },
   // {
   //   title: 'Crack the Circuit',
   //   image: ctc,
@@ -181,9 +191,10 @@ export const EventData: EventDataProps[] = [
   // },
   // {
   //   title: 'Robo Soccer',
-  //   image: ctc,
+  //   image: "https://res.cloudinary.com/dm2pha7cn/image/upload/v1729666150/ici-fest-24/qo3iez58b3tsvqizrtnr.png",
   //   slug: 'robo_soccer',
   //   registration_status: 'live',
+  //   brightness_adj: true
   // },
   {
       title: 'Off Road Odyssey',

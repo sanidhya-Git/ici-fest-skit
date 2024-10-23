@@ -58,7 +58,7 @@ const BYC = () => {
               </span> */}
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/beyond_the_canvas`}
+              to={`https://erp.skit.ac.in/register/r/beyondthecanvas`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
