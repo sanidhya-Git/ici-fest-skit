@@ -21,39 +21,36 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'Greening the Gap' },
-      Timing: '11:00 AM - 1:00 AM',
+      Timing: '11:00 AM - 01:00 PM',
     },
     {
       Event: { 1: 'EV WORKSHOP' },
-      Timing: '11:00 AM - 1:00 AM',
+      Timing: '11:00 AM - 01:00 PM',
     },
     {
       Event: { 1: 'BEYOND CANVAS/BRICK-O-BRICK/IDEA FUSION' },
-      Timing: '11:00 AM - 1:00 AM',
+      Timing: '11:00 AM - 01:00 PM',
     },
     {
       Event: { 1: 'LUNCH' },
-      Timing: '01:00 AM - 02:00 PM',
+      Timing: '01:00 PM - 02:00 PM',
     },
     {
       Event: { 1: 'QUIZ-A-THON' },
-      Timing: '02:00 AM - 03:00 PM',
+      Timing: '01:00 PM - 02:00 PM',
     },
     {
       Event: { 1: 'ADVANCE CONSTRUCTION TECHNOLOGY' },
-      Timing: '1:00 AM - 3:30 PM',
+      Timing: '01:00 PM - 03:30 PM',
     },
     {
       Event: { 1: 'BOWLING ALLEY' },
-      Timing: '1:30 PM - 3:30 PM',
+      Timing: '01:30 PM - 03:30 PM',
     },
-    {
-      Event: { 1: 'DRONE WORKSHOP' },
-      Timing: '2:00 PM - 3:30 PM',
-    },
+
     {
       Event: { 1: 'REJOICE' },
-      Timing: '3:30 PM - 5:00 AM',
+      Timing: '03:30 PM - 05:00 AM',
     },
   ];
   const DataDayTwo = [
@@ -63,11 +60,11 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'MUN' },
-      Timing: '9:00 AM - 12:00 PM',
+      Timing: '9:00 AM - 12:00 NOON',
     },
     {
       Event: { 1: 'TECH CONNECT EXHIBITION' },
-      Timing: '9:00 AM - 12:00 PM',
+      Timing: '9:00 AM - 12:00 NOON',
     },
     {
       Event: { 1: 'WEB-A-THON' },
@@ -87,56 +84,60 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'CRACK THE CAD' },
-      Timing: '12:00 PM - 1:00 PM',
+      Timing: '12:00 NOON - 1:00 PM',
+    },
+    {
+      Event: { 1: 'DRONE WORKSHOP' },
+      Timing: '01:00 PM - 03:00 PM',
     },
     {
       Event: { 1: 'BEYOND THE CANVAS (WORKSHOP)' },
-      Timing: '12:00 PM - 1:30 PM',
+      Timing: '12:00 NOON - 01:30 PM',
     },
     {
       Event: { 1: 'TOWER CRAFT' },
-      Timing: '1:00 PM - 2:30 PM',
+      Timing: '01:00 PM - 02:30 PM',
     },
     {
       Event: { 1: 'REJOICE' },
-      Timing: '3:30 PM - 5:00 PM',
+      Timing: '03:30 PM - 05:00 PM',
     },
   ];
 
   const DataDayThree = [
     {
       Event: { 1: 'SCAVENGER HUNT' },
-      Timing: '8:00 AM - 10:00 AM',
+      Timing: '08:00 AM - 10:00 AM',
     },
     {
       Event: { 1: 'OFFROAD-O-DESEY' },
-      Timing: '10:00 AM - 12:00 PM',
+      Timing: '10:00 AM - 12:00 NOON',
     },
     {
       Event: { 1: 'JOIST QUICK' },
-      Timing: '12:00 PM - 2:00 PM',
+      Timing: '12:00 NOON - 02:00 PM',
     },
     {
       Event: { 1: 'COORDINATION CLASH' },
-      Timing: '12:00 PM - 2:00 PM',
+      Timing: '12:00 NOON - 02:00 PM',
     },
     {
       Event: { 1: 'E-GAMING' },
-      Timing: '12:00 PM - 2:00 PM',
+      Timing: '12:00 NOON - 02:00 PM',
     },
     {
       Event: { 1: 'JENGA-PLOOZA' },
-      Timing: '12:00 PM - 2:00 PM',
+      Timing: '12:00 NOON - 02:00 PM',
     },
     {
       Event: { 1: 'FABRIC OF FANTASY' },
-      Timing: '12:00 PM - 2:00 PM',
+      Timing: '12:00 NOON - 2:00 PM',
     },
     {
       Event: { 1: 'VALIDECTORY' },
-      Timing: '2:00 PM onwards', 
+      Timing: '02:00 PM onwards',
     },
-  ];  
+  ];
 
   return (
     <>

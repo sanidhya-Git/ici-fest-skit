@@ -172,7 +172,7 @@ const CC = () => {
                     <span className='  text-[20px]'>Rules and Regulations</span>
                   </div>
                   <div className='flex justify-center'>
-                    <ul className='list-disc font-normal text-left w-full sm:w-[800px]'>
+                    <ul className='list-disc font-normal text-left w-full sm:max-w-[800px]'>
                       <li>Each team must consist of four members.</li>
                       <li>
                         Teams have to report at least 20-25 minutes before Time.
@@ -244,7 +244,7 @@ const CC = () => {
               <div>
                 <div>
                   <p className='font-semibold'>Round 1</p>
-                  <p className='w-full sm:w-[800px]'>
+                  <p className='w-full sm:max-w-[800px]'>
                     In the first round challenge is that the teams of four
                     members will participate in a fun balancing game. Each team
                     will start at a starting point with a ball and Four pens for
@@ -258,7 +258,7 @@ const CC = () => {
                 </div>
                 <div className='mt-3'>
                   <p className='font-semibold'>Round 2</p>
-                  <p className='w-full sm:w-[800px]'>
+                  <p className='w-full sm:max-w-[800px]'>
                     In this round, each qualified team will choose three players
                     to be blindfolded, while one player acts as the guide. The
                     blindfolded players will tie or hold one end of a thread,

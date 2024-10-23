@@ -28,11 +28,11 @@ const DN = () => {
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
-                  Date - 8<sup>th </sup>November 2024
+                  Date - 9<sup>th </sup>November 2024
                 </span>
               </div>
               <div>
-                <span>Time - 02:00 PM - 03:00 PM</span>
+                <span>Time - 01:00 PM - 03:00 PM</span>
               </div>
               <div>
                 <span>Venue - JC Bose Auditorium</span>

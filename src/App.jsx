@@ -18,6 +18,7 @@ import MIXANDMOULD from './components/events_details/mixandmould';
 import ARTOFPERSUASION from './components/events_details/artofpersuasion';
 import INNOSTRUCT from './components/events_details/innostruct';
 import CRACKTHECIRCUIT from './components/events_details/crackthecircuit';
+import CRACKTHECAD from './components/events_details/crackthecad';
 import MUDADVENTURE from './components/events_details/mudadventure';
 import BRUSHTALK from './components/events_details/brushtalk';
 import WORKSHOP from './components/events_details/cementworkshop';
@@ -95,6 +96,7 @@ const App = () => {
             <Route path='/art-of-persuasion' element={<ARTOFPERSUASION />} />
             <Route path='/innostruct' element={<INNOSTRUCT />} />
             <Route path='/crackthecircuit' element={<CRACKTHECIRCUIT />} />
+            <Route path='/crackthecad' element={<CRACKTHECAD />} />
             <Route path='/the-mud-adventure' element={<MUDADVENTURE />} />
             <Route path='/let-the-brush-talk' element={<BRUSHTALK />} />
             <Route path='/cement-workshop' element={<WORKSHOP />} />

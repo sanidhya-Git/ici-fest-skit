@@ -39,11 +39,11 @@ const OFFROAD = () => {
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px]">
-              <span>Registration Fee - ₹250 per team</span>
+              <span>Registration Fee - ₹200 per team</span>
             </div>
             <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">
-                All the teams must have 4 members each.
+                All the teams must have 2 members each.
               </span>
             </div>
             <a href="https://erp.skit.ac.in/register/r/offroad_odyssey">

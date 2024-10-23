@@ -186,12 +186,9 @@ export const EventData: EventDataProps[] = [
     brightness_adj: true,
   },
   {
-    title: 'Web-A-Thon',
-    image:
-      'https://img.freepik.com/free-photo/web-hosting-development-connection-networking-concept_53876-165256.jpg?t=st=1729614322~exp=1729617922~hmac=a6a47a473a62c2d4ab1a7f32a2c1f64a341e5eff534c1c860644df55b62a43a3&w=826',
-    slug: 'web_a_thon',
-    brightness_adj: true,
-
+    title: 'Crack The Cad',
+    image: ctc,
+    slug: 'crackthecad',
     registration_status: 'live',
     category: 'event',
   },

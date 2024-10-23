@@ -92,7 +92,7 @@ import ResponseLogo from './responselogo.png';
 
 // collaboration
 import collabOne from './collaborator/one.png';
-import collabTwo from './collaborator/two.png';
+import collabTwo from './collaborator/two.jpg';
 import collabThree from './collaborator/three.png';
 import collabFour from './collaborator/four.png';
 import collabFive from './collaborator/five.png';

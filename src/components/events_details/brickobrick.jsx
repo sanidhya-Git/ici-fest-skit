@@ -138,7 +138,6 @@ const BOB = () => {
                     participants.
                   </span>
                 </div>
-                iv className="text-center mb-[50px]"
                 <div className=' mb-[10px] '>
                   <span className='font-bold  text-[20px] underline  '>
                     Rules And Regulations
