@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const WEBATHON = () => {
+const OFFROAD = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -19,7 +19,7 @@ const WEBATHON = () => {
           <div className="bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center">
             <div>
               <span className="font-extrabold text-[38px] md:text-[50px] uppercase">
-                WEB-A-THON
+                Offroad Odyssey
               </span>
             </div>
             <div className="flex justify-center">
@@ -27,10 +27,10 @@ const WEBATHON = () => {
             </div>
             <div className="mt-[15px] font-bold text-[16px] md:text-[18px]">
               <div>
-                <span>Date - 10 November, 2024</span>
+                <span>Date - to be announced</span>
               </div>
               <div className="mt-[10px]">
-                <span>Time - 8:00 AM to 10:00 AM</span>
+                <span>Time - to be announced</span>
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px]">
@@ -38,10 +38,10 @@ const WEBATHON = () => {
             </div>
             <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">
-                All teams must have 4 members each.
+                All the teams must have 4 members each.
               </span>
             </div>
-            <a href="https://erp.skit.ac.in/register/r/webathon">
+            <a href="https://erp.skit.ac.in/register/r/offroad_odyssey">
               <div className="mt-[10px] font-semibold">
                 <button className="bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px] self-center">
                   Register Now
@@ -51,13 +51,13 @@ const WEBATHON = () => {
             <div className="mt-[10px]">
               <span>
                 <b>
-                  For more details - Sanskar Chaturvedi :{" "}
+                  For more details - Tanmay Vyas :{" "}
                   <a
-                    href="https://wa.me/6377829943"
+                    href="https://wa.me/8302583012"
                     target="blank"
                     className="underline"
                   >
-                    +91 6377829943
+                    +91 8302583012
                   </a>
                 </b>
               </span>
@@ -76,7 +76,7 @@ const WEBATHON = () => {
                 } tracking-wide px-[35px] py-[18px] font-extrabold text-[14px] rounded-full`}
                 onClick={() => handleButtonClick(0)}
               >
-                ABOUT
+                EVENT OVERVIEW
               </button>
             </div>
 
@@ -87,7 +87,7 @@ const WEBATHON = () => {
                 } tracking-wide px-[35px] py-[18px] font-extrabold text-[14px] rounded-full`}
                 onClick={() => handleButtonClick(1)}
               >
-                STRUCTURE
+                RACE FORMAT
               </button>
             </div>
 
@@ -98,7 +98,7 @@ const WEBATHON = () => {
                 } tracking-wide px-[35px] py-[18px] font-extrabold text-[14px] rounded-full`}
                 onClick={() => handleButtonClick(2)}
               >
-                JUDGEMENT CRITERIA
+                JUDGING CRITERIA
               </button>
             </div>
           </div>
@@ -111,56 +111,45 @@ const WEBATHON = () => {
                 </div>
                 <div className="mx-[20px] md:mx-[120px] xl:mx-[220px]">
                   <span className="text-[17px] font-semibold">
-                    A Webathon is a competitive event where participants build websites or web applications within a limited time frame. It encourages creativity, innovation, and collaboration among web developers and designers, often focusing on solving real-world challenges using web technologies.
-                  </span>
-                </div>
-                <div className="text-left flex justify-center">
-                  <div>
-                    <div className="mt-[20px]">
-                      <span className="font-bold text-[18px]">Rules & Regulations</span>
-                    </div>
-                    <div className="text-[18px]">
-                      <ul>
-                        <li>1. Only registered students of the college are allowed to participate.</li>
-                        <li>2. Participants may join as part of a team, with 4 members per team.</li>
-                        <li>3. All code must be original and written during the competition. Teams found using pre-written or plagiarized code will be disqualified.</li>
-                        <li>4. Maintain respect for all participants and judges. Harassment or discrimination will not be tolerated.</li>
-                        <li>5. Teams should handle disagreements professionally and work collaboratively to resolve issues.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="text-center mb-[50px]">
-                <div className="mb-[10px] underline">
-                  <span className="font-bold text-[20px]">PARTICIPATION</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-[17px]">
-                    Teams of 4 members are mandatory for participation.
+                    Welcome to the Offroad Odyssey! Participants will compete using robots provided by the organizers in an exciting off-road racing challenge. Join us for a day of adventure, strategy, and fun!
                   </span>
                 </div>
               </div>
             </div>
           </div>
+
           <div className={`${activeButton === 1 ? "active-div" : "deactive-div"} text-[18px]`}>
-            <div className="text-center">
-              <span>
-                The event will last for 8 hours. The first 6 hours will be spent designing a website based on the given problem statement, followed by 2 hours for project evaluation and presentation.
-              </span>
+            <div className="text-center mb-[10px]">
+              <span className="font-bold text-[20px] underline">RACE FORMAT</span>
+            </div>
+            <div className="flex justify-center text-[17px] text-center font-semibold">
+              <div>
+                <ul className="list-disc list-inside">
+                  <li><b>Heats:</b> The event will consist of single heat, with only single participant racing at a time. The race will consist of multiple checkpoints, and the bot will move forward only after clearing a checkpoint. If the bot falls down before the checkpoint, it will go to the previous checkpoint.</li>
+                  <li><b>Race Track:</b> The track will include various obstacles, such as ramps, bumps, and rough terrain.</li>
+                  <li><b>Timing:</b> Each race will last 6 minutes.</li>
+                </ul>
+              </div>
             </div>
           </div>
+
           <div className={`${activeButton === 2 ? "active-div" : "deactive-div"} mx-[20px]`}>
             <div className="text-center mb-[10px]">
               <span className="font-bold text-[20px] underline">JUDGING CRITERIA</span>
             </div>
             <div className="flex justify-center text-[17px] text-center font-semibold">
               <div>
-                <div>
-                  <span>
-                    Judging will be based on creativity, technical implementation, UI/UX, scalability, and functionality.
-                  </span>
-                </div>
+                <ul className="list-disc list-inside">
+                  <li><b>Time:</b> Minimum time to clear all the checkpoints.</li>
+                  <li><b>Control:</b> Smoothness and precision in controlling the robot.</li>
+                </ul>
+                <div className="mt-[20px] font-bold text-[18px] underline">Disqualification Criteria</div>
+                <ul className="list-disc list-inside">
+                  <li>Unauthorized modifications to the provided robot.</li>
+                  <li>Unsportsmanlike conduct such as cheating or attempting to sabotage others.</li>
+                  <li>Failure to control the robot exhibiting erratic behavior.</li>
+                  <li>Course cutting or taking shortcuts.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -170,4 +159,4 @@ const WEBATHON = () => {
   );
 };
 
-export default WEBATHON;
+export default OFFROAD;

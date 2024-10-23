@@ -9,7 +9,7 @@ import JK from './components/events_details/joistkwik';
 import BYC  from './components/events_details/beyondthecanvas';
 import BA from './components/events_details/bowlingalley';
 import BOB from './components/events_details/brickobrick';
-import WALKATHON from './components/events_details/webathon';
+import WEBATHON from './components/events_details/webathon';
 import SH from './components/events_details/scavenger';
 import TOGGLE from './components/events_details/toggle';
 import TOWER from './components/events_details/towercraft';
@@ -30,7 +30,7 @@ import JENGA from './components/events_details/jengapalooza';
 import MUN from './components/events_details/mun';
 import TECH from './components/events_details/techconnecttheexhibition';
 import OAT from './components/events_details/Quizathon';
-import pp from './components/events_details/pitchperfect';
+import PP from './components/events_details/pitchperfect';
 import EBGMI from './components/events_details/egammingbgmi';
 import DN from './components/events_details/doneworkshop';
 import CC from './components/events_details/coordinationclash';
@@ -38,7 +38,12 @@ import Fabric from './components/events_details/fabricoffantasy';
 import ES from './components/events_details/engineexotics';
 import EV from './components/events_details/egammingvalorent';
 import EVWORKSHOP from './components/events_details/EVworkshop';
-import { i } from './assets';
+// import ROBOSOCCER from './components/events_details/robosoccer';
+import OFFROAD from './components/events_details/offroad_odyssey';
+import DRAG_RAGE from './components/events_details/drag_race';
+
+
+// import { i } from './assets';
 
 const App = () => {
   return (
@@ -52,18 +57,24 @@ const App = () => {
             <Route path='/accommodation' element={<Accommodation />} />
             <Route path='/registrations' element={<TempReg />} />
             <Route path='/aboutteam' element={<AboutTeam />} />
-            <Route path='/joist-kwik' element={<JK />} />
+            <Route path='/joist_kwik' element={<JK />} />
             <Route path='/drone_workshop' element={<DN />} />
             <Route path='/fabricoffantacy' element={<Fabric />} />
             <Route path='/jengaplooza' element={<JENGA />} />
             <Route path='/ici_mun' element={<MUN />} />
+            <Route path='/offroad_odyssey' element={<OFFROAD />} />
 
             <Route path='/engine_exotics' element={<ES />} />
             <Route path='/egamingvalorant' element={<EV />} />
             <Route path='/coordination_clash' element={<CC />} />
             <Route path='/ev_workshop' element={<EVWORKSHOP />} />
+            {/* <Route path='/robo_soccer' element={<ROBOSOCCER />} /> */}
+            <Route path='/pitch_perfect' element={<PP />} />
+            <Route path='/drag_race' element={<DRAG_RAGE />} />
+
 
             <Route path='/techconnect' element={<TECH />} />
+            <Route path='/web_a_thon' element={<WEBATHON />} />
             <Route path='/quiz_a_thon' element={<OAT />} />
             <Route path='/pitch_perfect' element={<pp />} />
             <Route path='/egamingbgmi' element={<EBGMI />} />
@@ -72,9 +83,9 @@ const App = () => {
             <Route path='/beyond_the_canvas' element={<BYC />} />
             <Route path='/brick-o-brick' element={<BOB />} />
             <Route path='/pitch_perfect' element={<pp />} />
-            <Route path='/scanvenger-hunt' element={<SH />} />
+            <Route path='/scavenger_hunt' element={<SH />} />
             <Route path='/toggle' element={<TOGGLE />} />
-            <Route path='/tower-craft' element={<TOWER />} />
+            <Route path='/tower_craft' element={<TOWER />} />
             <Route path='/quakeproof' element={<QUAKE />} />
             <Route path='/mix-and-mould' element={<MIXANDMOULD />} />
             <Route path='/art-of-persuasion' element={<ARTOFPERSUASION />} />
@@ -83,7 +94,6 @@ const App = () => {
             <Route path='/the-mud-adventure' element={<MUDADVENTURE />} />
             <Route path='/let-the-brush-talk' element={<BRUSHTALK />} />
             <Route path='/cement-workshop' element={<WORKSHOP />} />
-            <Route path='/cyclothon-walkathon' element={<WALKATHON />} />
             <Route path='/gallery' element={<GALLERY />} />
             <Route path='/response' element={<RESPONSE />} />
             <Route path='/jecrc' element={<JECRC />} />
