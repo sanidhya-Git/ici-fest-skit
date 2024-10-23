@@ -36,14 +36,14 @@ const TOWER = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - <sup> </sup>
+                  Date - 9<sup>th </sup>November 2024
                 </span>
               </div>
-              <div className="mt-[10px]">
-                <span>Time - 00:00</span>
+              <div>
+                <span>Time - 01:00 PM - 02:30 PM</span>
               </div>
-              <div className="mt-[10px]">
-                <span>Venue - </span>
+              <div>
+                <span>Venue - Badminton Court</span>
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] ">

@@ -25,15 +25,17 @@ const CC = () => {
             <div className='flex justify-center'>
               <div className='w-[100px] h-[4px] bg-[#ff583e]  ' />
             </div>
-            <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
+            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
-                <span>Date -</span>
+                <span>
+                  Date - 10<sup>th </sup>November 2024
+                </span>
               </div>
-              <div className='mt-[10px]'>
-                <span>Time -</span>
+              <div>
+                <span>Time - 12:00 NOON - 02:00 PM</span>
               </div>
-              <div className='mt-[10px]'>
-                <span>Venue -</span>
+              <div>
+                <span>Venue - Ground</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>

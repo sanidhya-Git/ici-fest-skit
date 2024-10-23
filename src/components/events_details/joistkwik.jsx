@@ -38,12 +38,11 @@ const JK = () => {
                 <div>
                   <div>Date</div>
                   <div>
-                    Round 1 - <sup></sup>
+                    Round 1 - 09<sup>th </sup>November 2024
                   </div>{" "}
                   <div>
                     {" "}
-                    Round 2 - 
-                    <sup> </sup>
+                    Round 2 -  10<sup>th </sup>November 2024
                   </div>
                 </div>
                 <div>
@@ -51,10 +50,10 @@ const JK = () => {
                     <span>Time</span>
                   </div>
                   <div>
-                    <span><span className="inline md:hidden"> Round 1</span> - </span>
+                    <span><span className="inline md:hidden"> Round 1</span> - 09:00 AM - 11:00 AM</span>
                   </div>
                   <div>
-                    <span><span className="inline md:hidden"> Round 2</span> - </span>
+                    <span><span className="inline md:hidden"> Round 2</span> - 12:00 NOON - 02:00 PM</span>
                   </div>
                 </div>
               </div>
