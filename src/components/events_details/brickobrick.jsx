@@ -57,7 +57,8 @@ const BOB = () => {
                 All the teams must have 4 members each.
               </span>
             </div>
-            <Link to="/response">
+            <Link to={`https://erp.skit.ac.in/register/r/brick_o_brick`} 
+            target='_blank'>
               <div className="mt-[10px] font-semibold">
                 <button className="bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center">
                   Register Now
@@ -68,7 +69,7 @@ const BOB = () => {
             <div className="mt-[10px]">
               <span>
                 <b> For more details -  Siddharth Lawaniya: {" "}
-                <a href="https://wa.me/8529058592" target="blank" className="underline">
+                <a  target="blank" className="underline">
                   {" "}
                   +91 6377766785
                 </a>
@@ -126,10 +127,29 @@ const BOB = () => {
                 </div>
                 <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
                   <span className="text-[17px] font-semibold">
-                    Construct a structurally sound L-shaped step wall using
-                    bricks. The challenge is to create a design that showcases
-                    the versatility of brick as a building material, while
-                    ensuring the wall's stability and safety for users.
+                  In Brick O Brick, teams of four will construct a wall using
+                  bricks, cement, and water. Focus on teamwork, creativity, and
+                  mindfulness. Each team is encouraged to collaborate
+                  effectively, ensuring a fun and engaging experience for all
+                  participants.
+                  </span>
+                </div>
+                iv className="text-center  mb-[50px]"
+                <div className=" mb-[10px] ">
+                  <span className="font-bold  text-[20px] underline  ">
+                  Rules And Regulations
+                  </span>
+                </div>
+                <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
+                  <span className="text-[17px] font-semibold">
+                  1. Participants must have a team of 4 members.<br/>
+2. Use of unfair means and getting help from others will
+result in disqualification.<br/>
+3. All the members of the team should be present on time
+of commencement.<br/>
+4. Limited quantity of cement and bricks will be provided.<br/>
+5. We will not be responsible for any injuries caused
+during the game.
                   </span>
                 </div>
                 <div className="flex justify-center">
@@ -157,7 +177,8 @@ const BOB = () => {
                 </div>
                 <div>
                   <span className="font-semibold text-[17px]">
-                    All the teams must have 4 members each.
+                  In teams. Must have 4 members each.
+
                   </span>
                 </div>
               </div>
@@ -232,20 +253,23 @@ const BOB = () => {
             <div className=" flex justify-center text-[17px]">
               <div>
                 <div>
-                  <span>1. Appearance and Geometry.</span>
-                </div>
-                <div>
-                  <span>2. Placement of Bricks and it's bond alignment.</span>
-                </div>
-                <div>
-                  <span>3. 90° angle between the corners of wall.</span>
-                </div>
-                <div>
-                  <span>4. Straightness of wall.</span>
-                </div>
-                <div>
-                  <span>5. Length of each step must be same.</span>
-                </div>
+                  <span>● On the basis of appearance/geometry.<br/>
+                        ● Placement of Bricks and its bond alignment.<br/>
+                        ● 90° angle between the corners of wall.<br/>
+                        ● Straightness of wall.<br/>
+                        ● Space of each step must be same.</span>
+                </div> 
+                <div className="text-center mb-[10px]">
+              <span className="font-bold text-[20px] underline">
+              DISQUALIFICATIO CRITERIA
+              </span>
+            </div>
+            <div>
+                  <span>1.Participant will be disqualified if they are found getting
+external help.<br/>
+2. Participants will be disqualified for late arrival.<br/>
+3. Sabotaging other teams will lead in disqualification.</span>
+                </div>               
               </div>
             </div>
           </div>
