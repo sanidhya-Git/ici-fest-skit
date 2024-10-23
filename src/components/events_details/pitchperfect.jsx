@@ -19,7 +19,7 @@ const ThePitchPerfect = () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px] uppercase'>
-                The Pitch Perfect
+                Startup Mela
               </span>
             </div>
             <div className='flex justify-center'>
@@ -27,10 +27,13 @@ const ThePitchPerfect = () => {
             </div>
             <div className='mt-[15px] font-bold text-[16px] md:text-[18px]'>
               <div>
-                <span>Date - To Be Announced</span>
+                <span>Date - 08<sup>th </sup>November 2024</span>
               </div>
               <div className='mt-[10px]'>
-                <span>Time - To Be Announced</span>
+                <span>Time - 02:00 PM - 03:30 PM</span>
+              </div>
+              <div className='mt-[10px]'>
+                <span>Venue - Meghnath Auditorium</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none mt-[10px]'>

@@ -30,7 +30,7 @@ const Fabric = () => {
           <div className="bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center">
             <div>
               <span className="font-extrabold text-[38px] md:text-[50px]">
-                Fabric Of Fantacy
+                Fabric Of Fantasy
               </span>
             </div>
             <div className="flex justify-center">

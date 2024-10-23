@@ -169,10 +169,10 @@ export const EventData: EventDataProps[] = [
   },
 
   {
-    title: 'The Pitch Perfect',
+    title: 'Startup Mela',
     image:
       'https://img.freepik.com/free-vector/people-starting-business-project-illustrated_23-2148865214.jpg?size=626&ext=jpg&ga=GA1.1.1629078878.1726675673&semt=ais_hybrid',
-    slug: 'pitch_perfect',
+    slug: 'startup_mela',
     registration_status: 'live',
     category: 'event',
     brightness_adj: true,
@@ -192,6 +192,17 @@ export const EventData: EventDataProps[] = [
     registration_status: 'live',
     category: 'event',
   },
+  {
+    title: 'Web-A-Thon',
+    image:
+      'https://img.freepik.com/free-vector/illustration-technology-vector_53876-18164.jpg?t=st=1729705272~exp=1729708872~hmac=1b09a832880511706404cbc40a7010b4b06e88054f0235fd3d9cf0d7ad32f35f&w=900',
+    slug: 'web_a_thon',
+    registration_status: 'live',
+    brightness_adj: true,
+    category: 'event',
+  },
+
+
   // {
   //   title: 'Advance Construction Technology',
   //   image:
