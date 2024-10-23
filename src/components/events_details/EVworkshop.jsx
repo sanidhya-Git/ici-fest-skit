@@ -27,13 +27,13 @@ const EVWORKSHOP = () => {
             </div>
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
-                <span>Date -</span>
+                <span>Date - 08th November 2024</span>
               </div>
               <div className='mt-[10px]'>
-                <span>Time -</span>
+                <span>Time - 10:00 AM to 11:00 AM</span>
               </div>
               <div className='mt-[10px]'>
-                <span>Venue -</span>
+                <span>Venue - JC Bose Auditorium</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>

@@ -37,40 +37,17 @@ const BA = () => {
             <div className='flex justify-center'>
               <div className='w-[100px] h-[4px] bg-[#ff583e]  ' />
             </div>
-            <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
-              <div className='flex flex-col items-center justify-center gap-[10px] md:flex-row'>
-                <div>
-                  <div>Date</div>
-                  <div>
-                    Round 1 - --<sup> </sup>
-                  </div>{' '}
-                  <div>
-                    {' '}
-                    Round 2 - 
-                    --<sup></sup>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <span>Time</span>
-                  </div>
-                  <div>
-                    <span>
-                      <span className='inline md:hidden'> Round 1</span> - 
-                    </span>
-                  </div>
-                  <div>
-                    <span>
-                      <span className='inline md:hidden'> Round 2</span> -
-                      
-                    </span>
-                  </div>
-                </div>
+            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
+              <div>
+                <span>
+                  Date - 9<sup>th </sup>November 2024
+                </span>
               </div>
-
-              <div className='mt-[10px]'>
-                <span>Venue: </span>
-                <span>-</span>
+              <div>
+                <span>Time - 09:00 AM - 11:00 AM</span>
+              </div>
+              <div>
+                <span>Venue - Ground</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
@@ -81,8 +58,10 @@ const BA = () => {
                 All the teams must have 4 members each.
               </span>
             </div>
-            <Link to={`https://erp.skit.ac.in/register/r/bowling_alley`} 
-            target='_blank'>
+            <Link
+              to={`https://erp.skit.ac.in/register/r/bowling_alley`}
+              target='_blank'
+            >
               <div className='mt-[10px] font-semibold'>
                 <button className='bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center'>
                   Register Now
@@ -94,10 +73,7 @@ const BA = () => {
                 <b>
                   {' '}
                   For more details - Aman Mishra:{' '}
-                  <a
-                    target='blank'
-                    className='underline'
-                  >
+                  <a target='blank' className='underline'>
                     {' 8290078495'}
                     &nbsp;
                   </a>
@@ -155,19 +131,22 @@ const BA = () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px] font-semibold'>
-                  To design and cast durable concrete balls using a cement-concrete mix inside plastic molds, ensuring they are strong,
-                  balanced, and smooth enough for use in alley games involving bricks
+                    To design and cast durable concrete balls using a
+                    cement-concrete mix inside plastic molds, ensuring they are
+                    strong, balanced, and smooth enough for use in alley games
+                    involving bricks
                   </span>
                 </div>
                 <div className=' mb-[10px] '>
                   <span className='font-bold  text-[20px] underline  '>
-                  Rules and Regulation
+                    Rules and Regulation
                   </span>
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px] font-semibold'>
-                  ● You have to cast the concrete balls within the given time period.<br/>
-● Material is provided by the organizing team
+                    ● You have to cast the concrete balls within the given time
+                    period.
+                    <br />● Material is provided by the organizing team
                   </span>
                 </div>
               </div>
@@ -232,9 +211,7 @@ const BA = () => {
                     </span>
                   </div>
                   <div>
-                    <span>
-                    90 Minutes
-                    </span>
+                    <span>90 Minutes</span>
                   </div>
                 </div>
                 <div className='mt-[10px]'>
@@ -245,9 +222,7 @@ const BA = () => {
                   </div>
                   <div>
                     <ul>
-                      <li>
-                      180 Minutes
-                      </li>
+                      <li>180 Minutes</li>
                     </ul>
                   </div>
                 </div>
@@ -276,16 +251,22 @@ const BA = () => {
             </div>
             <div className='text-center mb-[10px]'>
               <span className='font-bold text-[20px] underline'>
-              Disqualification CRITERIA
+                Disqualification CRITERIA
               </span>
             </div>
             <div className='flex justify-center text-[17px] text-center'>
               <div>
                 <div>
-                  <span>Use of the external agent in the making of the ball is prohibited.</span>
+                  <span>
+                    Use of the external agent in the making of the ball is
+                    prohibited.
+                  </span>
                 </div>
                 <div>
-                  <span>Member other than the team member is found then the team will be disqualified.</span>
+                  <span>
+                    Member other than the team member is found then the team
+                    will be disqualified.
+                  </span>
                 </div>
               </div>
             </div>

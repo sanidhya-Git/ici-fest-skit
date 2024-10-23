@@ -25,15 +25,17 @@ const MUN = () => {
             <div className='flex justify-center'>
               <div className='w-[100px] h-[4px] bg-[#ff583e]  ' />
             </div>
-            <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
+            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
-                <span>Date -</span>
+                <span>
+                  Date - 9<sup>th </sup>November 2024
+                </span>
               </div>
-              <div className='mt-[10px]'>
-                <span>Time -</span>
+              <div>
+                <span>Time - 09:00 AM - 12:00 NOON</span>
               </div>
-              <div className='mt-[10px]'>
-                <span>Venue -</span>
+              <div>
+                <span>Venue - Kautilya Auditorium</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
@@ -263,7 +265,7 @@ const MUN = () => {
                   </ul>
                 </li>
                 <li>
-                  4. Voting: A simple majority (>50%) is needed to pass
+                  4. Voting: A simple majority (more than 50%) is needed to pass
                   resolutions.
                 </li>
               </ol>

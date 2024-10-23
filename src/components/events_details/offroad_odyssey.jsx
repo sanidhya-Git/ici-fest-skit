@@ -25,12 +25,17 @@ const OFFROAD = () => {
             <div className="flex justify-center">
               <div className="w-[100px] h-[4px] bg-[#ff583e]" />
             </div>
-            <div className="mt-[15px] font-bold text-[16px] md:text-[18px]">
+            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
-                <span>Date - to be announced</span>
+                <span>
+                  Date - 10<sup>th </sup>November 2024
+                </span>
               </div>
-              <div className="mt-[10px]">
-                <span>Time - to be announced</span>
+              <div>
+                <span>Time - 10:00 AM - 12:00 NOON</span>
+              </div>
+              <div>
+                <span>Venue - D-Garden</span>
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px]">

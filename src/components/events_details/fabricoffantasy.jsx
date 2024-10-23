@@ -39,14 +39,14 @@ const Fabric = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - <sup></sup>
+                  Date - 10<sup>th </sup>November 2024
                 </span>
               </div>
               <div>
-                <span>Time - 00:00</span>
+                <span>Time - 12:00 NOON - 02:00 PM</span>
               </div>
               <div>
-                <span>Venue - </span>
+                <span>Venue - CAEG Lab</span>
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 ">

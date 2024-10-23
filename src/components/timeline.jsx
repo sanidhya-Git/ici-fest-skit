@@ -10,9 +10,9 @@ const Timeline = () => {
   const DataDayOne = [
     {
       Event: {
-        1: 'Inaugural + Expo + Exhibition',
+        1: 'Inaugural',
       },
-      Timing: '10:00 am - 11:15 am',
+      Timing: '09:30 am - 11:00 am',
     },
     {
       Event: {
@@ -44,36 +44,6 @@ const Timeline = () => {
       },
       Timing: '01:00 pm - 03:45 pm',
     },
-    // {
-    //   Event: {
-    //     1: 'Mix & Mould (Round 1)',
-    //   },
-    //   Timing: '01:00 pm - 02:00 pm',
-    // },
-    // {
-    //   Event: {
-    //     1: 'Crack the Cad',
-    //   },
-    //   Timing: '01:00 pm - 02:00 pm',
-    // },
-    // {
-    //   Event: {
-    //     1: 'The Mudventure',
-    //   },
-    //   Timing: '01:00 pm - 02:00 pm',
-    // },
-    // {
-    //   Event: {
-    //     1: 'Engineers Day Celebration',
-    //   },
-    //   Timing: '02:00 pm - 03:30 pm',
-    // },
-    // {
-    //   Event: {
-    //     1: 'Rejoice',
-    //   },
-    //   Timing: '03:30 pm onwards',
-    // },
   ];
 
   const DataDayTwo = [
@@ -113,30 +83,7 @@ const Timeline = () => {
       },
       Timing: '02:00 pm - 03:00 pm',
     },
-    // {
-    //   Event: {
-    //     1: 'Tower Craft',
-    //   },
-    //   Timing: '12:30 pm - 02:00 pm',
-    // },
-    // {
-    //   Event: {
-    //     1: 'Kabad se Jugaad!',
-    //   },
-    //   Timing: '12:30 pm - 02:00 pm',
-    // },
-    // {
-    //   Event: {
-    //     1: 'Workshop',
-    //   },
-    //   Timing: '01:00 pm - 02:00 pm',
-    // },
-    // {
-    //   Event: {
-    //     1: 'Validatory',
-    //   },
-    //   Timing: '02:00 pm onwards',
-    // },
+    
   ];
 
   const DataDayThree = [
@@ -194,9 +141,9 @@ const Timeline = () => {
         </p>
         <p className='mt-1 text-base font-medium'>coming soon</p>
       </div>
-      {/*
+      
 
-      <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
+      {/* <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
         <div>
           <button
             className={`${
@@ -309,8 +256,8 @@ const Timeline = () => {
             </div>
           ))}
         </div>
-      </div>
-      */}
+      </div> */}
+     
     </>
   );
 };
