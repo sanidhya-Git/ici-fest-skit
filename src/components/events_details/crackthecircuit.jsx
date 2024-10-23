@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const crackthecircuit= () => {
+const crackthecircuit = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -25,7 +25,7 @@ const crackthecircuit= () => {
             <div className='flex justify-center'>
               <div className='w-[100px] h-[4px] bg-[#ff583e]  ' />
             </div>
-            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
+            <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
                   Date - 9<sup>th </sup>November 2024
@@ -41,8 +41,8 @@ const crackthecircuit= () => {
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
               <span>Registration Fee - ₹200 per team</span>
             </div>
-            <div className="mt-[10px]">
-              <span className="font-semibold text-[18px]">
+            <div className='mt-[10px]'>
+              <span className='font-semibold text-[18px]'>
                 All the teams must have 4 members each.
               </span>
             </div>
@@ -61,11 +61,7 @@ const crackthecircuit= () => {
                 <b>
                   {' '}
                   For more details - Nainika Agrawal:{' '}
-                  <a
-                   
-                    target='blank'
-                    className='underline'
-                  >
+                  <a target='blank' className='underline'>
                     {' '}
                     +91 9116017683
                   </a>
@@ -123,9 +119,11 @@ const crackthecircuit= () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px]'>
-                  Participants will be provided with an electronic circuit that contains deliberate faults or incorrect
-                  connections. The objective is to analyze the given circuit, identify the issues, and fix them so
-                  that it functions according to the predefined specification.
+                    Participants will be provided with an electronic circuit
+                    that contains deliberate faults or incorrect connections.
+                    The objective is to analyze the given circuit, identify the
+                    issues, and fix them so that it functions according to the
+                    predefined specification.
                   </span>
                 </div>
 
@@ -137,7 +135,7 @@ const crackthecircuit= () => {
                   </div>
                   <div>
                     <span className='font-semibold text-[17px]'>
-                    In teams. Must have 4 members each.
+                      In teams. Must have 4 members each.
                     </span>
                   </div>
                 </div>
@@ -146,20 +144,25 @@ const crackthecircuit= () => {
                   <div>
                     <div className='mt-[10px] '>
                       <span className='font-bold text-[18px] '>
-                      Rules and Regulations:
+                        Rules and Regulations:
                       </span>
                     </div>
                     <div className='flex justify-center  '>
                       <span>
-                      Participants must follow instructions given by coordinators.<br/>
-Teams will be given a specific time to decode the circuit.<br/>
-Mobile phones are not allowed during the competition<br/>
-Helping other teams is not allowed<br/>
-Asking for external help is not allowed
+                        Participants must follow instructions given by
+                        coordinators.
+                        <br />
+                        Teams will be given a specific time to decode the
+                        circuit.
+                        <br />
+                        Mobile phones are not allowed during the competition
+                        <br />
+                        Helping other teams is not allowed
+                        <br />
+                        Asking for external help is not allowed
                       </span>
                     </div>
-                    <div>
-                    </div>
+                    <div></div>
                   </div>
                 </div>
               </div>
@@ -192,14 +195,16 @@ Asking for external help is not allowed
             </div>
             <div className=''>
               <span className='font-bold text-[18px] '>
-                You will be judged based on the following criterias:-
+                You will be judged based on the following criteria:-
               </span>
             </div>
             <div className='flex justify-center  text-[17px]'>
               <ul>
                 <li>
-                The tam to solve to clear all rounds first and press the buzzer will be the winner.<br/>
-                Damaging material provided will lead to disqualification.
+                  The tam to solve to clear all rounds first and press the
+                  buzzer will be the winner.
+                  <br />
+                  Damaging material provided will lead to disqualification.
                 </li>
               </ul>
             </div>
@@ -211,11 +216,11 @@ Asking for external help is not allowed
             <div className='flex justify-center  text-[17px]'>
               <ul>
                 <li>
-                Participants will be disqualified for late arrival,
-disruptive behavior, safety violations.<br/>
-Participants will be disqualified if they found using
-external help and using any extra material other than those
-provided.
+                  Participants will be disqualified for late arrival, disruptive
+                  behavior, safety violations.
+                  <br />
+                  Participants will be disqualified if they found using external
+                  help and using any extra material other than those provided.
                 </li>
               </ul>
             </div>

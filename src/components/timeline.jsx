@@ -6,130 +6,137 @@ const Timeline = () => {
   const handleButtonClick = (index) => {
     setActiveButton(index);
   };
-
   const DataDayOne = [
     {
-      Event: {
-        1: 'Inaugural',
-      },
-      Timing: '09:30 am - 11:00 am',
+      Event: { 1: 'INAUGRAL' },
+      Timing: '9:30 AM - 11:00 AM',
     },
     {
-      Event: {
-        1: 'Panel Discussion',
-      },
-      Timing: '11:30 am - 12:30 pm',
+      Event: { 1: 'EXPO/EXHIBITION' },
+      Timing: '11:00 AM - 11:15 AM',
     },
     {
-      Event: {
-        1: 'Bowling Alley, Joist Kwik',
-      },
-      Timing: '12:30 pm - 02:00 pm',
+      Event: { 1: 'High tea' },
+      Timing: '11:15 AM - 11:30 AM',
     },
     {
-      Event: {
-        1: 'Startup Expo',
-      },
-      Timing: '12:30 pm - 01:30 pm',
+      Event: { 1: 'Greening the Gap' },
+      Timing: '11:00 AM - 1:00 AM',
     },
     {
-      Event: {
-        1: 'Crack the Circuit',
-      },
-      Timing: '01:00 pm - 02:00 pm',
+      Event: { 1: 'EV WORKSHOP' },
+      Timing: '11:00 AM - 1:00 AM',
     },
     {
-      Event: {
-        1: 'EV and GeoPolymer Workshop',
-      },
-      Timing: '01:00 pm - 03:45 pm',
+      Event: { 1: 'BEYOND CANVAS/BRICK-O-BRICK/IDEA FUSION' },
+      Timing: '11:00 AM - 1:00 AM',
+    },
+    {
+      Event: { 1: 'LUNCH' },
+      Timing: '1:00 AM - 2:00 PM',
+    },
+    {
+      Event: { 1: 'QUIZ-A-THON' },
+      Timing: '1:00 AM - 2:00 PM',
+    },
+    {
+      Event: { 1: 'ADVANCE CONSTRUCTION TECHNOLOGY' },
+      Timing: '1:00 AM - 3:30 PM',
+    },
+    {
+      Event: { 1: 'BOWLING ALLEY' },
+      Timing: '1:30 PM - 3:30 PM',
+    },
+    {
+      Event: { 1: 'DRONE WORKSHOP' },
+      Timing: '2:00 PM - 3:30 PM',
+    },
+    {
+      Event: { 1: 'REJOICE' },
+      Timing: '3:30 PM - 5:00 AM',
     },
   ];
-
   const DataDayTwo = [
     {
-      Event: {
-        1: 'Brick-O-Brick',
-      },
-      Timing: '09:00 am - 11:30 pm',
+      Event: { 1: 'BOWLLING ALLEY/JOIST QUICK' },
+      Timing: '9:00 AM - 11:00 AM',
     },
     {
-      Event: {
-        1: 'Bowling Alley, Joist Kwik',
-      },
-      Timing: '10:00 am - 12:00 noon',
+      Event: { 1: 'MUN' },
+      Timing: '9:00 AM - 12:00 PM',
     },
     {
-      Event: {
-        1: 'Drone and Art of Sensation Workshop',
-      },
-      Timing: '12:00 noon - 01:30 pm',
+      Event: { 1: 'TECH CONNECT EXHIBITION' },
+      Timing: '9:00 AM - 12:00 PM',
     },
     {
-      Event: {
-        1: 'IGBC',
-      },
-      Timing: '02:00 pm - 03:30 pm',
+      Event: { 1: 'WEB-A-THON' },
+      Timing: '9:00 AM - 3:00 PM',
     },
     {
-      Event: {
-        1: 'MUN',
-      },
-      Timing: '12:00 noon - 03:00 pm',
+      Event: { 1: 'ROBO SOCCER' },
+      Timing: '9:00 AM - 11:00 AM',
     },
     {
-      Event: {
-        1: 'Robo Soccer',
-      },
-      Timing: '02:00 pm - 03:00 pm',
+      Event: { 1: 'CRACK THE CIRCUIT' },
+      Timing: '10:00 AM - 11:00 AM',
     },
-    
+    {
+      Event: { 1: 'DRAG RACE' },
+      Timing: '11:00 AM - 1:00 PM',
+    },
+    {
+      Event: { 1: 'CRACK THE CAD' },
+      Timing: '12:00 PM - 1:00 PM',
+    },
+    {
+      Event: { 1: 'BEYOND THE CANVAS (WORKSHOP)' },
+      Timing: '12:00 PM - 1:30 PM',
+    },
+    {
+      Event: { 1: 'TOWER CRAFT' },
+      Timing: '1:00 PM - 2:30 PM',
+    },
+    {
+      Event: { 1: 'REJOICE' },
+      Timing: '3:30 PM - 5:00 PM',
+    },
   ];
 
   const DataDayThree = [
     {
-      Event: {
-        1: 'Walkathon & Cyclothon',
-      },
-      Timing: '06:00 am - 07:00 am',
+      Event: { 1: 'SCAVENGER HUNT' },
+      Timing: '8:00 AM - 10:00 AM',
     },
     {
-      Event: {
-        1: 'Scavenger Hunt',
-      },
-      Timing: '08:00 am - 11:00 am',
+      Event: { 1: 'OFFROAD-O-DESEY' },
+      Timing: '10:00 AM - 12:00 PM',
     },
     {
-      Event: {
-        1: 'E Sports',
-      },
-      Timing: '11:00 am = 12:00 noon',
+      Event: { 1: 'JOIST QUICK' },
+      Timing: '12:00 PM - 2:00 PM',
     },
     {
-      Event: {
-        1: 'Jenga Palooza',
-      },
-      Timing: '11:00 am = 12:00 noon',
+      Event: { 1: 'COORDINATION CLASH' },
+      Timing: '12:00 PM - 2:00 PM',
     },
     {
-      Event: {
-        1: 'Face Painting',
-      },
-      Timing: '12:00 noon - 01:00 pm',
+      Event: { 1: 'E-GAMING' },
+      Timing: '12:00 PM - 2:00 PM',
     },
     {
-      Event: {
-        1: 'Ball and Pen Showdown',
-      },
-      Timing: '12:00 noon - 01:00 pm',
+      Event: { 1: 'JENGA-PLOOZA' },
+      Timing: '12:00 PM - 2:00 PM',
     },
     {
-      Event: {
-        1: 'Valedictory Ceremony',
-      },
-      Timing: '02:00 pm onwards',
+      Event: { 1: 'FABRIC OF FANTASY' },
+      Timing: '12:00 PM - 2:00 PM',
     },
-  ];
+    {
+      Event: { 1: 'VALIDECTORY' },
+      Timing: '2:00 PM onwards', 
+    },
+  ];  
 
   return (
     <>
@@ -139,11 +146,10 @@ const Timeline = () => {
           Timeline for ICI FEST{"'"}
           <span className='text-[#ff583e]'>24</span>
         </p>
-        <p className='mt-1 text-base font-medium'>coming soon</p>
+        {/* <p className='mt-1 text-base font-medium'>coming soon</p> */}
       </div>
-      
 
-      {/* <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
+      <div className='flex flex-wrap justify-center  gap-3 md:gap-5 mt-[20px]'>
         <div>
           <button
             className={`${
@@ -256,8 +262,7 @@ const Timeline = () => {
             </div>
           ))}
         </div>
-      </div> */}
-     
+      </div>
     </>
   );
 };

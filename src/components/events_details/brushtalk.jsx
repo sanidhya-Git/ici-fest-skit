@@ -126,7 +126,7 @@ const BRUSHTALK = () => {
                 <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
                   <span className="text-[17px] font-semibold">
                     In this event, all the participants have to design a poster
-                    on the provided theme. Postes will be designed on the sheet
+                    on the provided theme. Posters will be designed on the sheet
                     of paper and not digitally. The colors and other sketches
                     are to be brought by participants according to their ideas.
                   </span>
@@ -150,7 +150,7 @@ const BRUSHTALK = () => {
                 </div>
                 <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
                   <span className="text-[17px] font-semibold">
-                    Create eye-catching posters on theme <b>“Engineers' Day”</b>{" "}
+                    Create eye-catching posters on theme <b>{"'"}Engineers{"'"} Day{"'"}</b>{" "}
                     by skillfully applying masking methods, fusing engineering
                     ingenuity with artistic expression. These posters should
                     aesthetically arrestingly commemorate the anniversary while

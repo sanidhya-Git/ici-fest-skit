@@ -27,7 +27,7 @@ interface EventDataProps {
 
 export const EventData: EventDataProps[] = [
   {
-    title: 'beyond the canvas',
+    title: 'Beyond The Canvas',
     image: jw,
     slug: 'beyond_the_canvas',
     registration_status: 'live',
@@ -53,7 +53,7 @@ export const EventData: EventDataProps[] = [
     registration_status: 'live',
   },
   {
-    title: 'Crack the circuit',
+    title: 'Crack The circuit',
     image:
       'https://img.freepik.com/premium-vector/close-up-hand-with-screwdriver-fixing-circuit-flat_1324820-1993.jpg?w=1380',
     slug: 'crackthecircuit',
@@ -69,7 +69,7 @@ export const EventData: EventDataProps[] = [
     brightness_adj: true,
   },
   {
-    title: 'E - Gamming (VALORANT)',
+    title: 'E-Gaming (VALORANT)',
     image:
       'https://img.freepik.com/free-photo/cartoon-soldier-with-combat-war_23-2151624782.jpg?t=st=1729618960~exp=1729622560~hmac=53ae6e45b998d48579baf6cc158489c62b74965d3929149f26aa52f7ed536ea1&w=900',
     slug: 'egamingvalorant',
@@ -78,7 +78,7 @@ export const EventData: EventDataProps[] = [
     registration_status: 'live',
   },
   {
-    title: 'E - Gamming (BGMI)',
+    title: 'E-Gaming (BGMI)',
     image:
       'https://img.freepik.com/free-photo/front-view-soldier-wearing-camouflage-equipment_23-2151001978.jpg?t=st=1729619013~exp=1729622613~hmac=e26179608c80b96a8a4e60b24430f9f6c0e790b56d97f7311ce5e54518cbd79c&w=1060',
     slug: 'egamingbgmi',
@@ -173,12 +173,12 @@ export const EventData: EventDataProps[] = [
 
     registration_status: 'live',
   },
-  {
-    title: 'Crack the Circuit',
-    image: ctc,
-    slug: 'crackthecircuit',
-    registration_status: 'live',
-  },
+  // {
+  //   title: 'Crack the Circuit',
+  //   image: ctc,
+  //   slug: 'crackthecircuit',
+  //   registration_status: 'live',
+  // },
   // {
   //   title: 'Robo Soccer',
   //   image: ctc,

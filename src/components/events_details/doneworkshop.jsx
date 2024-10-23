@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const DN= () => {
+const DN = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -25,7 +25,7 @@ const DN= () => {
             <div className='flex justify-center'>
               <div className='w-[100px] h-[4px] bg-[#ff583e]  ' />
             </div>
-            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
+            <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
                   Date - 8<sup>th </sup>November 2024
@@ -60,12 +60,8 @@ const DN= () => {
               <span>
                 <b>
                   {' '}
-                  For more details - Maytri Singh Ahluwalia: {' '}
-                  <a
-                    
-                    target='blank'
-                    className='underline'
-                  >
+                  For more details - Maytri Singh Ahluwalia:{' '}
+                  <a target='blank' className='underline'>
                     {' '}
                     +91 7597404429
                   </a>
@@ -123,15 +119,17 @@ const DN= () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px]'>
-                  As drone technology continues to expand into industries such as
-                  agriculture, logistics, and surveillance, there is a significant need for
-                  practical, hands-on understanding of drone assembly, programming,
-                  and operation. Many tech enthusiasts lack direct experience with
-                  drones, limiting their ability to innovate and contribute to this
-                  growing field. The Drone Workshop at ICI Techno Fest 2024 aims to
-                  address this gap by equipping participants with essential skills in
-                  drone building, control, and safety, empowering them to apply drone
-                  technology in real-world scenarios and drive future advancements.
+                    As drone technology continues to expand into industries such
+                    as agriculture, logistics, and surveillance, there is a
+                    significant need for practical, hands-on understanding of
+                    drone assembly, programming, and operation. Many tech
+                    enthusiasts lack direct experience with drones, limiting
+                    their ability to innovate and contribute to this growing
+                    field. The Drone Workshop at ICI Techno Fest 2024 aims to
+                    address this gap by equipping participants with essential
+                    skills in drone building, control, and safety, empowering
+                    them to apply drone technology in real-world scenarios and
+                    drive future advancements.
                   </span>
                 </div>
 
@@ -152,25 +150,26 @@ const DN= () => {
                   <div>
                     <div className='mt-[10px] '>
                       <span className='font-bold text-[18px] '>
-                      Rules and Regulations:
+                        Rules and Regulations:
                       </span>
                     </div>
                     <div className='flex justify-center  '>
                       <span>
-                      1. Participants must be registered for the workshop and have
-basic knowledge of electronics or programming.<br/>
-2. Attendees must arrive on time. Late arrivals may miss essential
-instructions and may not be accommodated.<br/>
-3. Respect fellow participants, instructors, and staff. Disruptive
-behaviour or violation of any rules will lead to removal from the
-workshop.<br/>
-4. A certificate of participation will be provided to those who
-complete the workshop successfully.
+                        1. Participants must be registered for the workshop and
+                        have basic knowledge of electronics or programming.
+                        <br />
+                        2. Attendees must arrive on time. Late arrivals may miss
+                        essential instructions and may not be accommodated.
+                        <br />
+                        3. Respect fellow participants, instructors, and staff.
+                        Disruptive behavior or violation of any rules will lead
+                        to removal from the workshop.
+                        <br />
+                        4. A certificate of participation will be provided to
+                        those who complete the workshop successfully.
                       </span>
                     </div>
-                    <div>
-                      
-                    </div>
+                    <div></div>
                   </div>
                 </div>
               </div>
@@ -183,9 +182,7 @@ complete the workshop successfully.
           >
             <div className='flex justify-center mt-[10px] text-center'>
               <div>
-                <span>
-                The workshop will be of 2.5 hours.
-                </span>
+                <span>The workshop will be of 2.5 hours.</span>
               </div>
             </div>
           </div>
@@ -199,20 +196,18 @@ complete the workshop successfully.
                 DISQUALIFICATION CRITERIA
               </span>
             </div>
-            <div className=''>
-              
-            </div>
+            <div className=''></div>
             <div className='flex justify-center  text-[17px]'>
               <ul>
                 <li>
-                1. Engaging in rude, inappropriate, or disruptive behaviour
-towards instructors, staff, or fellow participants will result in
-disqualification.<br/>
-2. Breaking any other rules outlined by the organizers, such as
-team collaboration guidelines, punctuality, or conduct codes,
-will result in disqualification.
+                  1. Engaging in rude, inappropriate, or disruptive behavior
+                  towards instructors, staff, or fellow participants will result
+                  in disqualification.
+                  <br />
+                  2. Breaking any other rules outlined by the organizers, such
+                  as team collaboration guidelines, punctuality, or conduct
+                  codes, will result in disqualification.
                 </li>
-                
               </ul>
             </div>
           </div>
