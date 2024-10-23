@@ -33,11 +33,11 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'LUNCH' },
-      Timing: '02:00 AM - 03:00 PM',
+      Timing: '01:00 AM - 02:00 PM',
     },
     {
       Event: { 1: 'QUIZ-A-THON' },
-      Timing: '1:00 AM - 2:00 PM',
+      Timing: '02:00 AM - 03:00 PM',
     },
     {
       Event: { 1: 'ADVANCE CONSTRUCTION TECHNOLOGY' },
