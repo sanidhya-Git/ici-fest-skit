@@ -30,7 +30,7 @@ const Fabric = () => {
           <div className="bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center">
             <div>
               <span className="font-extrabold text-[38px] md:text-[50px]">
-                Fabric Of Fantacy
+                Fabric Of Fantasy
               </span>
             </div>
             <div className="flex justify-center">
@@ -50,7 +50,7 @@ const Fabric = () => {
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 ">
-              <span>Registration Fee - ₹250 per team</span>
+              <span>Registration Fee - ₹150 per team</span>
             </div>
             <div className="mt-[10px]">
               <span className="font-semibold text-[18px]">

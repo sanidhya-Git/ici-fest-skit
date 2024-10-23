@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const JENGA = () => {
+const crackthecad = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -19,7 +19,7 @@ const JENGA = () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px] uppercase'>
-                Jenga Palooza
+                Crack The Cad
               </span>
             </div>
             <div className='flex justify-center'>
@@ -28,26 +28,21 @@ const JENGA = () => {
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
-                  Date - 10<sup>th </sup>November 2024
+                  Date - 9<sup>th </sup>November 2024
                 </span>
               </div>
               <div>
-                <span>Time - 12:00 NOON - 02:00 PM</span>
+                <span>Time - 12:00 NOON - 01:00 PM</span>
               </div>
               <div>
-                <span>Venue - G-Lift area</span>
+                <span>Venue - CAD Lab, Civil Block</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
               <span>Registration Fee - ₹50 per individual</span>
             </div>
-            {/* <div className="mt-[10px]">
-              <span className="font-semibold text-[18px]">
-                All the teams must have 4 members each.
-              </span>
-            </div> */}
             <Link
-              to={`https://erp.skit.ac.in/register/r/jengaplooza`}
+              to={`https://erp.skit.ac.in/register/r/crack_the_cad`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -56,18 +51,18 @@ const JENGA = () => {
                 </button>
               </div>
             </Link>
-            <div className='mt-[10px]'>
+            {/* <div className='mt-[10px]'>
               <span>
                 <b>
                   {' '}
-                  For more details - Nancy Jain:{' '}
+                  For more details - Nainika Agrawal:{' '}
                   <a target='blank' className='underline'>
                     {' '}
-                    +91 9024756521
+                    +91 9116017683
                   </a>
                 </b>
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -109,136 +104,108 @@ const JENGA = () => {
             </div>
           </div>
 
-          <div className='flex justify-center mt-[20px]'>
-            <div className={activeButton === 0 ? 'active-div' : 'deactive-div'}>
-              <div className='text-center  mb-[50px] font-semibold'>
-                <div className=' mb-[10px] '>
-                  <span className='font-bold  text-[20px] underline  '>
+          <div className="flex justify-center mt-[20px]">
+            <div className={activeButton === 0 ? "active-div" : "deactive-div"}>
+              <div className="text-center  mb-[50px] font-semibold">
+                <div className=" mb-[10px] ">
+                  <span className="font-bold  text-[20px] underline  ">
                     PROBLEM STATEMENT
                   </span>
                 </div>
-                <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
-                  <span className='text-[17px]'>
-                    Participants will compete in a Jenga tournament where they
-                    must carefully remove and stack wooden blocks without
-                    causing the tower to fall. The objective is to successfully
-                    extract blocks from the existing tower and place them on top
-                    while maintaining the balance of the structure. The
-                    challenge is to stay in the game as long as possible without
-                    collapsing the tower.
+                <div className="mx-[20px] md:mx-[120px] xl:mx-[220px] ">
+                  <span className="text-[17px]">
+                    Your task is to design a residential house using AutoCAD
+                    software.Design a residential house with a footprint of 30'
+                    by 60' using AutoCAD, incorporating essential elements to
+                    meet the basic residential requirements. The design should
+                    ensure optimal space utilization, functionality, and a
+                    balanced integration of indoor and outdoor spaces.
                   </span>
                 </div>
 
-                <div className='text-center my-[30px] '>
-                  <div className=' mb-[10px] underline'>
-                    <span className='font-bold  text-[20px]'>
+                <div className="text-center my-[30px] ">
+                  <div className=" mb-[10px] underline">
+                    <span className="font-bold  text-[20px]">
                       PARTICIPATION
                     </span>
                   </div>
                   <div>
-                    <span className='font-semibold text-[17px]'>
+                    <span className="font-semibold text-[17px]">
                       Participate Individually.
                     </span>
                   </div>
                 </div>
 
-                {/* <div className='mx-[10px] flex justify-center'>
+                <div className="mx-[10px] flex justify-center">
                   <div>
-                    <div className='mt-[10px] '>
-                      <span className='font-bold text-[18px] '>
+                    <div className="mt-[10px] ">
+                      <span className="font-bold text-[18px] ">
                         Basic Requirements
                       </span>
                     </div>
-                    <div className='flex justify-center  '>
+                    <div className="flex justify-center  ">
                       <span>
                         Living room, Dining room, Kitchen with adequate
                         countertop space and storage, Master bedroom with
                         attached bathroom,
-                        <br className='hidden lg:block' /> Additional bedrooms
+                        <br className="hidden lg:block" /> Additional bedrooms
                         with shared bathrooms, Home office/study room, Utility
                         room
                       </span>
                     </div>
                     <div>
-                      <span className='font-bold text-[18px] '>NOTE: </span>
+                      <span className="font-bold text-[18px] ">NOTE: </span>
                       <span>Computers will be provided</span>
                     </div>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
           <div
             className={`${
-              activeButton === 1 ? 'active-div' : 'deactive-div'
+              activeButton === 1 ? "active-div" : "deactive-div"
             } text-[18px] `}
           >
-            <div className='flex justify-center mt-[10px] text-center'>
+            <div className="flex justify-center mt-[10px] text-center">
               <div>
-                <span>The Game will last 2 to 2.5 hours(approx.)</span>
+                <span>
+                  This is the single round event. Participant will be given{" "}
+                  <b>1 hour</b> to complete their task. No submissions are
+                  allowed after 1 hour.
+                </span>
               </div>
             </div>
           </div>
           <div
             className={`${
-              activeButton === 2 ? 'active-div' : 'deactive-div'
+              activeButton === 2 ? "active-div" : "deactive-div"
             } mx-[20px]`}
           >
-            <div className='text-center mb-[10px]'>
-              <span className='font-bold text-[20px] underline'>
+            <div className="text-center mb-[10px]">
+              <span className="font-bold text-[20px] underline">
                 JUDGING CRITERIA
               </span>
             </div>
-
-            <div className='flex justify-center  text-[17px]'>
-              <div>
-                <div className=' '>
-                  <p className='font-bold text-[18px] w-full sm:max-w-[800px] '>
-                    You will be judged based on the following criterias:-
-                  </p>
-                </div>
-                <ul className='w-full sm:max-w-[800px]'>
-                  <li>
-                    1. A player wins the match if their opponent causes the
-                    tower to collapse.
-                  </li>
-                  <li>
-                    2. If a player places their block successfully and the tower
-                    collapses due to the instability of the move, the last
-                    successful player wins.
-                  </li>
-                  <li>
-                    3. Matches will be conducted using a knockout format.
-                    Winners of each match proceed to the next round until the
-                    final match determines the champion..
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className='text-center mt-[50px]'>
-              <span className='font-bold text-[20px] underline'>
-                DISQUALIFICATION CRITERIA
+            <div className="">
+              <span className="font-bold text-[18px] ">
+                You will be judged based on the following criterias:-
               </span>
             </div>
-            <div className='flex justify-center  text-[17px] mt-4'>
+            <div className="flex justify-center  text-[17px]">
               <ul>
                 <li>
-                  1. A player will be disqualified if they cause the tower to
-                  fall during their turn
+                  1. Adherence to the specified dimensions and requirements
+                </li>
+                <li>2. Logical and efficient layout of rooms</li>
+                <li>3. Proper allocation of spaces for different functions.</li>
+                <li>
+                  4. Adequate consideration for ventilation, lighting, safety,
+                  and privacy
                 </li>
                 <li>
-                  2. If a player fails to make a move within the allotted 20
-                  Seconds, they will automatically forfeit that match.
-                </li>
-                <li>
-                  3. Removing a block from the top three levels is not allowed
-                  and will result in disqualification.
-                </li>
-                <li>
-                  4. Attempting to move a block and then changing to another
-                  block after starting to remove one will lead to
-                  disqualification.
+                  5. Clear and professional presentation of the design using
+                  AutoCAD tools.
                 </li>
               </ul>
             </div>
@@ -249,4 +216,4 @@ const JENGA = () => {
   );
 };
 
-export default JENGA;
+export default crackthecad;

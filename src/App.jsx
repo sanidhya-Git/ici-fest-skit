@@ -18,6 +18,7 @@ import MIXANDMOULD from './components/events_details/mixandmould';
 import ARTOFPERSUASION from './components/events_details/artofpersuasion';
 import INNOSTRUCT from './components/events_details/innostruct';
 import CRACKTHECIRCUIT from './components/events_details/crackthecircuit';
+import CRACKTHECAD from './components/events_details/crackthecad';
 import MUDADVENTURE from './components/events_details/mudadventure';
 import BRUSHTALK from './components/events_details/brushtalk';
 import WORKSHOP from './components/events_details/cementworkshop';
@@ -71,22 +72,19 @@ const App = () => {
             <Route path='/coordination_clash' element={<CC />} />
             <Route path='/ev_workshop' element={<EVWORKSHOP />} />
             {/* <Route path='/robo_soccer' element={<ROBOSOCCER />} /> */}
-            <Route path='/pitch_perfect' element={<PP />} />
+            <Route path='/startup_mela' element={<PP />} />
             <Route path='/drag_race' element={<DRAG_RAGE />} />
-            <Route path='/adv_construction' element={<AVD_CONSTRUCT />} />
+            {/* <Route path='/adv_construction' element={<AVD_CONSTRUCT />} /> */}
             {/* <Route path='/robo_soccer' element={<ROBO_SOCCER />} /> */}
 
 
             <Route path='/techconnect' element={<TECH />} />
             <Route path='/web_a_thon' element={<WEBATHON />} />
             <Route path='/quiz_a_thon' element={<OAT />} />
-            <Route path='/pitch_perfect' element={<pp />} />
             <Route path='/egamingbgmi' element={<EBGMI />} />
             <Route path='/bowling_alley' element={<BA />} />
-            <Route path='/pitch_perfect' element={<pp />} />
             <Route path='/beyond_the_canvas' element={<BYC />} />
             <Route path='/brick-o-brick' element={<BOB />} />
-            <Route path='/pitch_perfect' element={<pp />} />
             <Route path='/scavenger_hunt' element={<SH />} />
             <Route path='/toggle' element={<TOGGLE />} />
             <Route path='/tower_craft' element={<TOWER />} />
@@ -95,6 +93,7 @@ const App = () => {
             <Route path='/art-of-persuasion' element={<ARTOFPERSUASION />} />
             <Route path='/innostruct' element={<INNOSTRUCT />} />
             <Route path='/crackthecircuit' element={<CRACKTHECIRCUIT />} />
+            <Route path='/crackthecad' element={<CRACKTHECAD />} />
             <Route path='/the-mud-adventure' element={<MUDADVENTURE />} />
             <Route path='/let-the-brush-talk' element={<BRUSHTALK />} />
             <Route path='/cement-workshop' element={<WORKSHOP />} />

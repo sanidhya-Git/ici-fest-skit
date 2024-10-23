@@ -12,7 +12,7 @@ const Timeline = () => {
       Timing: '9:30 AM - 11:00 AM',
     },
     {
-      Event: { 1: 'EXPO/EXHIBITION' },
+      Event: { 1: 'EXPO/EXHIBITION/BEYOND CANVAS' },
       Timing: '11:00 AM - 11:15 AM',
     },
     {
@@ -28,27 +28,31 @@ const Timeline = () => {
       Timing: '11:00 AM - 1:00 AM',
     },
     {
-      Event: { 1: 'BEYOND CANVAS/BRICK-O-BRICK/IDEA FUSION' },
+      Event: { 1: 'BRICK-O-BRICK/IDEA FUSION/THE MUDVENTURE' },
       Timing: '11:00 AM - 1:00 AM',
     },
     {
+      Event: { 1: 'Essay Writing' },
+      Timing: '12:30 PM - 1:30 PM',
+    },
+    {
       Event: { 1: 'LUNCH' },
-      Timing: '01:00 AM - 02:00 PM',
+      Timing: '1:00 AM - 2:00 PM',
     },
     {
       Event: { 1: 'QUIZ-A-THON' },
-      Timing: '02:00 AM - 03:00 PM',
-    },
-    {
-      Event: { 1: 'ADVANCE CONSTRUCTION TECHNOLOGY' },
-      Timing: '1:00 AM - 3:30 PM',
+      Timing: '1:00 AM - 2:00 PM',
     },
     {
       Event: { 1: 'BOWLING ALLEY' },
       Timing: '1:30 PM - 3:30 PM',
     },
     {
-      Event: { 1: 'DRONE WORKSHOP' },
+      Event: { 1: 'Startup Mela' },
+      Timing: '2:00 PM - 3:30 PM',
+    },
+    {
+      Event: { 1: 'Engine Exotic' },
       Timing: '2:00 PM - 3:30 PM',
     },
     {
@@ -58,7 +62,7 @@ const Timeline = () => {
   ];
   const DataDayTwo = [
     {
-      Event: { 1: 'BOWLLING ALLEY/JOIST QUICK' },
+      Event: { 1: 'BOWLLING ALLEY/JOIST QUICK/KABAD SE JUGAAD' },
       Timing: '9:00 AM - 11:00 AM',
     },
     {
@@ -98,6 +102,10 @@ const Timeline = () => {
       Timing: '1:00 PM - 2:30 PM',
     },
     {
+      Event: { 1: 'Drone Workshop' },
+      Timing: '1:00 PM - 3:30 PM',
+    },
+    {
       Event: { 1: 'REJOICE' },
       Timing: '3:30 PM - 5:00 PM',
     },
@@ -113,7 +121,7 @@ const Timeline = () => {
       Timing: '10:00 AM - 12:00 PM',
     },
     {
-      Event: { 1: 'JOIST QUICK' },
+      Event: { 1: 'JOIST QUICK/KABAD SE JUGAAD' },
       Timing: '12:00 PM - 2:00 PM',
     },
     {
@@ -134,10 +142,9 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'VALIDECTORY' },
-      Timing: '2:00 PM onwards', 
+      Timing: '2:00 PM',
     },
-  ];  
-
+  ];
   return (
     <>
       <div className='text-center text-[30px] md:text-[36px] font-extrabold mt-[20px]'>
