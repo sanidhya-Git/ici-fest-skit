@@ -93,7 +93,7 @@ export const Collaborators = () => {
     <div className='block gap-[150px] lg:gap-[250px]'>
       <div className='flex justify-center mt-[50px]'>
         <span className='text-[30px] md:text-[36px] font-extrabold'>
-          Student Chapter<span className='text-[#ff583e]'>.</span>
+          In association with
         </span>
       </div>
 

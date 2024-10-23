@@ -132,8 +132,8 @@ const ARTOFPERSUASION = () => {
                   <span className="text-[18px] font-bold ">
                     {" "}
                     <br />
-                    Topic - "Beyond Blueprints: Integrating multidisciplinary
-                    knowledge into civil engineering".
+                    Topic -{"'"}Beyond Blueprints: Integrating multidisciplinary
+                    knowledge into civil engineering{"'"}.
                   </span>
                 </div>
                 <div>
@@ -202,12 +202,12 @@ const ARTOFPERSUASION = () => {
 
                 <div className="mt-[10px]">
                   <span className="font-bold">
-                    Reviewing and Finalzing Winners
+                    Reviewing and Finalizing Winners
                   </span>
                 </div>
                 <div>
                   <span>
-                    Your essay will be judged on word limit and grammer.
+                    Your essay will be judged on word limit and grammar.
                   </span>
                 </div>
               </div>
@@ -232,7 +232,7 @@ const ARTOFPERSUASION = () => {
                 </div>
                 <div>
                   <span>
-                    Your essay will be judged on word limit and grammer.
+                    Your essay will be judged on word limit and grammar.
                   </span>
                 </div>
               </div>

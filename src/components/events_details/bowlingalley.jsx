@@ -37,7 +37,7 @@ const BA = () => {
             <div className='flex justify-center'>
               <div className='w-[100px] h-[4px] bg-[#ff583e]  ' />
             </div>
-            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
+            <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
                   Date - 9<sup>th </sup>November 2024

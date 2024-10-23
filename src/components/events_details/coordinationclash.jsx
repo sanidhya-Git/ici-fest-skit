@@ -19,7 +19,7 @@ const CC = () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px] uppercase'>
-                Cordination Clash
+                Coordination Clash
               </span>
             </div>
             <div className='flex justify-center'>
@@ -187,7 +187,7 @@ const CC = () => {
             </div>
             <div className=''>
               <span className='font-bold text-[18px] '>
-                You will be judged based on the following criterias:-
+                You will be judged based on the following criteria:-
               </span>
             </div>
             <div className='flex justify-center  text-[17px]'>
