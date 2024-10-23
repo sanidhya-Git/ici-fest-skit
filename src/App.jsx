@@ -41,6 +41,8 @@ import EVWORKSHOP from './components/events_details/EVworkshop';
 // import ROBOSOCCER from './components/events_details/robosoccer';
 import OFFROAD from './components/events_details/offroad_odyssey';
 import DRAG_RAGE from './components/events_details/drag_race';
+import AVD_CONSTRUCT from './components/events_details/adv_construction';
+import ROBO_SOCCER from './components/events_details/robo_soccer';
 
 
 // import { i } from './assets';
@@ -71,6 +73,8 @@ const App = () => {
             {/* <Route path='/robo_soccer' element={<ROBOSOCCER />} /> */}
             <Route path='/pitch_perfect' element={<PP />} />
             <Route path='/drag_race' element={<DRAG_RAGE />} />
+            <Route path='/adv_construction' element={<AVD_CONSTRUCT />} />
+            {/* <Route path='/robo_soccer' element={<ROBO_SOCCER />} /> */}
 
 
             <Route path='/techconnect' element={<TECH />} />
