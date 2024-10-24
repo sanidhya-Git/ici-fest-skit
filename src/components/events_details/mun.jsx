@@ -25,7 +25,7 @@ const MUN = () => {
             <div className='flex justify-center'>
               <div className='w-[100px] h-[4px] bg-[#ff583e]  ' />
             </div>
-            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
+            <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
                   Date - 9<sup>th </sup>November 2024
@@ -63,7 +63,7 @@ const MUN = () => {
                   For more details - Jagrati pareek:{' '}
                   <a target='blank' className='underline'>
                     {' '}
-                    +91
+                    9772111651
                   </a>
                 </b>
               </span>

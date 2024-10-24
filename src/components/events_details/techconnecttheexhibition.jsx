@@ -19,7 +19,7 @@ const Exhibition = () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px] uppercase'>
-                TechConnect: The Exhibition
+                TechConnect - The Exhibition
               </span>
             </div>
             <div className='flex justify-center'>
@@ -43,8 +43,7 @@ const Exhibition = () => {
             </div>
             <div className='mt-[10px]'>
               <span className='font-semibold text-[18px]'>
-                Teams of 2-4 members from undergraduate and postgraduate
-                programs.
+                Teams of 2-4 members
               </span>
             </div>
             <a href='https://erp.skit.ac.in/register/r/techconnect'>
