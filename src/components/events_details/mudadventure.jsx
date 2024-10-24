@@ -52,7 +52,7 @@ const MUDADVENTURE = () => {
                 All the teams must have 4 memebers each.
               </span>
             </div>
-            <a href="https://erp.skit.ac.in/register/r/mudventure">
+            <a href="https://erp.skit.ac.in/register/r/mud_24">
               <div className="mt-[10px] font-semibold">
                 <button className="bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center">
                   Register Now
