@@ -12,7 +12,7 @@ const materialData = [
   { material: 'Hand Pan', quantity: '2' },
 ];
 
-const BYC = () => {
+const BYC_EXHIBITION = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -30,7 +30,7 @@ const BYC = () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px]'>
-                Beyond The Canvas
+                Beyond The Canvas Exhibition
               </span>
             </div>
             <div className='flex justify-center'>
@@ -39,20 +39,20 @@ const BYC = () => {
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
-                  Date - 8<sup>th </sup>November 2024 (event)
+                  Date - 8<sup>th </sup>November 2024 (exhibition)
                 </span>
               </div>
               <div>
-                <span>Time - 11:00 AM - 11:15 AM</span>
+                <span>Time - 11:00 AM Onwards</span>
               </div>
-              <div>
+              {/* <div>
                 <span>
                   Date - 9<sup>th </sup>November 2024 (workshop)
                 </span>
               </div>
               <div>
                 <span>Time - 12:00 NOON - 01:30 PM</span>
-              </div>
+              </div> */}
               <div>
                 <span>Venue - Ground</span>
               </div>
@@ -66,7 +66,7 @@ const BYC = () => {
               </span> */}
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/beyondthecanvas`}
+              to={`https://erp.skit.ac.in/register/r/btc_exhibition`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -229,4 +229,4 @@ const BYC = () => {
   );
 };
 
-export default BYC;
+export default BYC_EXHIBITION;

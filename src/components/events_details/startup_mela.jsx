@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const ThePitchPerfect = () => {
+const StartupMela = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -44,7 +44,7 @@ const ThePitchPerfect = () => {
                 Each team can have up to 4 members.
               </span>
             </div>
-            <a href='https://erp.skit.ac.in/register/r/pitch_perfect'>
+            <a href='https://erp.skit.ac.in/register/r/startup_mela'>
               <div className='mt-[10px] font-semibold'>
                 <button className='bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px] self-center'>
                   Register Now
@@ -116,7 +116,7 @@ const ThePitchPerfect = () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px]'>
                   <span className='text-[17px] font-semibold'>
-                    The Pitch Perfect is an exciting event at SKIT where student
+                    The Startup Mela is an exciting event at SKIT where student
                     entrepreneurs pitch their innovative business ideas to a
                     panel of judges. Teams are evaluated on innovation, market
                     potential, and business model strength. This is not just a
@@ -213,4 +213,4 @@ const ThePitchPerfect = () => {
   );
 };
 
-export default ThePitchPerfect;
+export default StartupMela;

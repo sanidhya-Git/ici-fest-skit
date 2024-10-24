@@ -42,7 +42,7 @@ const ROBO_SOCCER = () => {
               <span>Registration Fee - ₹100 per individual</span>
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/grab_and_go`}
+              to={`https://erp.skit.ac.in/register/r/robo_soccer`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>

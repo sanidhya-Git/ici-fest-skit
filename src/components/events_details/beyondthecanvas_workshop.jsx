@@ -12,7 +12,7 @@ const materialData = [
   { material: 'Hand Pan', quantity: '2' },
 ];
 
-const EBGMI = () => {
+const BYC_WORKSHOP = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -30,7 +30,7 @@ const EBGMI = () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px]'>
-                E-Gaming BGMI
+                Beyond The Canvas Workshop
               </span>
             </div>
             <div className='flex justify-center'>
@@ -39,26 +39,34 @@ const EBGMI = () => {
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
-                  Date - 10<sup>th </sup>November 2024
+                  Date - 8<sup>th </sup>November 2024 (workshop)
                 </span>
               </div>
               <div>
-                <span>Time - 12:00 NOON - 02:00 PM</span>
+                <span>Time - 11:00 AM Onwards</span>
+              </div>
+              {/* <div>
+                <span>
+                  Date - 9<sup>th </sup>November 2024 (workshop)
+                </span>
               </div>
               <div>
-                <span>Venue - CRT Lab</span>
+                <span>Time - 12:00 NOON - 01:30 PM</span>
+              </div> */}
+              <div>
+                <span>Venue - Ground</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 '>
-              <span>Registration Fee - ₹200 per team</span>
+              <span>Registration Fee - ₹50 per individual</span>
             </div>
             <div className='mt-[10px]'>
-              <span className='font-semibold text-[18px]'>
+              {/* <span className="font-semibold text-[18px]">
                 All the teams must have 4 members each.
-              </span>
+              </span> */}
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/egamingbgmi`}
+              to={`https://erp.skit.ac.in/register/r/btc_worskhop`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -72,10 +80,10 @@ const EBGMI = () => {
               <span>
                 <b>
                   {' '}
-                  For more details - Somya Roy:{' '}
+                  For more details - Anuj Tomar{' '}
                   <a target='blank' className='underline'>
                     {' '}
-                    +91 9829571129
+                    +91 7737008369
                   </a>
                 </b>
               </span>
@@ -131,11 +139,32 @@ const EBGMI = () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
                   <span className='text-[17px] font-semibold'>
-                    To promote e-sports and teamspirit among players and
-                    showcase extraordinary skills. Our e-gaming event provides a
-                    platform for top players to compete in <b>BGMI</b>, while
-                    offering brands unique opportunities to engage with a
-                    growing, tech-savvy audience in the e- sports community.
+                    ”Beyond the Canvas” is an immersive two-day art exhibition
+                    aimed at providing a plat- form for artists to showcase
+                    their diverse range of artwork. The event will feature
+                    multiple.
+                    <br />
+                    forms of art, such as:
+                    <br />
+                    • Mandala Art
+                    <br />
+                    • Origami
+                    <br />
+                    • Sketches
+                    <br />
+                    • Portraits
+                    <br />
+                    • Watercolor Painting
+                    <br />
+                    • Charcoal Art
+                    <br />
+                    • Calligraphy
+                    <br />
+                    • Digital Art
+                    <br />
+                    In addition to the exhibition, workshops will be conducted
+                    on Day 2 to teach partic- ipants the skills required for
+                    various art forms.
                   </span>
                 </div>
               </div>
@@ -146,7 +175,7 @@ const EBGMI = () => {
                 </div>
                 <div>
                   <span className='font-semibold text-[17px]'>
-                    All the teams must have 4 members each.
+                    Participate Individually.
                   </span>
                 </div>
               </div>
@@ -164,7 +193,15 @@ const EBGMI = () => {
             </div>
             <div className='text-center mt-[10px]'>
               <div>
-                <span>Event timing - 1hrs</span>
+                <span>
+                  • There is no maximum limit to the number of artworks an
+                  artist can submit for consideration.
+                  <br />
+                  • Artworks must be original, and the artist should have full
+                  ownership of the piece.
+                  <br />• The submission period for artworks is 2 days from the
+                  date of notification.
+                </span>
               </div>
             </div>
           </div>
@@ -175,27 +212,15 @@ const EBGMI = () => {
           >
             <div className='text-center mb-[10px]'>
               <span className='font-bold text-[20px] underline'>
-                Code of Conduct:
+                JUDGING CRITERIA
               </span>
             </div>
-            <div></div>
-            <div className=' flex justify-center text-[17px]'>
-              <div>
-                <div>
-                  <span>
-                    o Players must behave respectfully towards other
-                    participants, organizers, and officials.
-                    <br />
-                    o Toxic behaviour, offensive language, or unsportsmanlike
-                    conduct will result in disqualification.
-                    <br />
-                    o Cheating, hacking, or exploiting game bugs is strictly
-                    prohibited and will result in an immediate ban.
-                    <br />o Players cannot get up from their place while in
-                    game.
-                  </span>
-                </div>
-              </div>
+            <div>
+              <span className='text-[17px] '>
+                • The organizing committee will evaluate the submissions based
+                on creativity, originality, and relevance to the event.
+                <br />• Selected artists will be notified via call/email..
+              </span>
             </div>
           </div>
         </div>
@@ -204,4 +229,4 @@ const EBGMI = () => {
   );
 };
 
-export default EBGMI;
+export default BYC_WORKSHOP;

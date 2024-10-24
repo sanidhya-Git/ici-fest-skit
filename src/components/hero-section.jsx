@@ -12,7 +12,7 @@ const HeroSection = () => {
         >
           {/* Desktop */}
           <source
-            src='https://res.cloudinary.com/dm2pha7cn/video/upload/v1729411929/ici-fest-24/fqajalcvosxpmq6vhchp.mp4'
+            src='https://res.cloudinary.com/dfpbty6rt/video/upload/v1729768597/ici-24/quziglvf359z6mktlj5b.mp4'
             type='video/mp4'
           />
         </video>
@@ -48,7 +48,7 @@ const HeroSection = () => {
         >
           {/* Mobile */}
           <source
-            src='https://res.cloudinary.com/dm2pha7cn/video/upload/v1729411924/ici-fest-24/r7kkzjrwyqrmpps3ngbd.mp4'
+            src='https://res.cloudinary.com/dfpbty6rt/video/upload/v1729768586/ici-24/nwcpttekzr6bv0m37evy.mp4'
             type='video/mp4'
           />
         </video>

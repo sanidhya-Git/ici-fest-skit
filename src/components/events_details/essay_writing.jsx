@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const materialData = [{ material: "A4 Size Sheets", quantity: "2-3" }];
 
-const ARTOFPERSUASION = () => {
+const ESSAY_WRITING = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -21,12 +21,7 @@ const ARTOFPERSUASION = () => {
           <div className="bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center">
             <div>
               <span className="font-extrabold text-[38px] md:text-[50px] uppercase">
-                ART OF PERSUASION
-              </span>
-            </div>
-            <div className="text-center mb-[10px]">
-              <span className="font-semibold text-[18px] uppercase">
-                Essay Writing Competition
+                Essay Writing
               </span>
             </div>
             <div className="flex justify-center">
@@ -35,14 +30,14 @@ const ARTOFPERSUASION = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - 15<sup>th </sup>September 2023
+                  Date - 08<sup>th </sup>November 2024
                 </span>
               </div>
               <div className="mt-[10px]">
-                <span>Time - 11:30 am - 12:30 pm</span>
+                <span>Time - 12:30 PM - 01:30 PM</span>
               </div>
               <div className="mt-[10px]">
-                <span>Venue - COS Lab 2nd Floor, Civil Block</span>
+                <span>Venue - 2F1, Civil Block</span>
               </div>
               {/* <div><span>Tech zone in football ground</span></div> */}
             </div>
@@ -51,22 +46,15 @@ const ARTOFPERSUASION = () => {
               <span>Registration Fee - ₹50 per individual</span>
             </div>
 
-            {/* <a href="https://erp.skit.ac.in/register/r/Cyclo_Walka">
-              <div className="mt-[10px] font-semibold">
-                <button className="bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center">
-                  Register Now
-                </button>
-              </div>
-            </a> */}
 
-            <Link to="/response">
+            <Link to="https://erp.skit.ac.in/register/r/ici_essay">
               <div className="mt-[10px] font-semibold">
                 <button className="bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center">
                   Register Now
                 </button>
               </div>
             </Link>
-            <div className="mt-[10px]">
+            {/* <div className="mt-[10px]">
               <span>
                 <b> For more details -</b> Anushka Jain: {" "}
                 <a href="https://wa.me/6377561290" target="blank" className="underline">
@@ -74,7 +62,7 @@ const ARTOFPERSUASION = () => {
                   &nbsp;+91 6377561290
                 </a>
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -244,4 +232,4 @@ const ARTOFPERSUASION = () => {
   );
 };
 
-export default ARTOFPERSUASION;
+export default ESSAY_WRITING;

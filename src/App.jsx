@@ -6,7 +6,8 @@ import Accommodation from './components/accommodation';
 import TempReg from './components/temp_regis';
 import AboutTeam from './components/aboutteam';
 import JK from './components/events_details/joistkwik';
-import BYC  from './components/events_details/beyondthecanvas';
+import BYC_EXHIBITION  from './components/events_details/beyondthecanvas_exhibition';
+import BYC_WORKSHOP  from './components/events_details/beyondthecanvas_workshop';
 import BA from './components/events_details/bowlingalley';
 import BOB from './components/events_details/brickobrick';
 import WEBATHON from './components/events_details/webathon';
@@ -15,7 +16,7 @@ import TOGGLE from './components/events_details/toggle';
 import TOWER from './components/events_details/towercraft';
 import QUAKE from './components/events_details/quakeproof';
 import MIXANDMOULD from './components/events_details/mixandmould';
-import ARTOFPERSUASION from './components/events_details/artofpersuasion';
+import ESSAY_WRITING from './components/events_details/essay_writing';
 import INNOSTRUCT from './components/events_details/innostruct';
 import CRACKTHECIRCUIT from './components/events_details/crackthecircuit';
 import CRACKTHECAD from './components/events_details/crackthecad';
@@ -31,7 +32,7 @@ import JENGA from './components/events_details/jengapalooza';
 import MUN from './components/events_details/mun';
 import TECH from './components/events_details/techconnecttheexhibition';
 import OAT from './components/events_details/Quizathon';
-import PP from './components/events_details/pitchperfect';
+import StartupMela from './components/events_details/startup_mela';
 import EBGMI from './components/events_details/egammingbgmi';
 import DN from './components/events_details/doneworkshop';
 import CC from './components/events_details/coordinationclash';
@@ -42,8 +43,13 @@ import EVWORKSHOP from './components/events_details/EVworkshop';
 // import ROBOSOCCER from './components/events_details/robosoccer';
 import OFFROAD from './components/events_details/offroad_odyssey';
 import DRAG_RAGE from './components/events_details/drag_race';
-import AVD_CONSTRUCT from './components/events_details/adv_construction';
+// import AVD_CONSTRUCT from './components/events_details/adv_construction';
+
+
 import ROBO_SOCCER from './components/events_details/robo_soccer';
+import NIRMAN_SE_NAVACHAAR from './components/events_details/niewan_me_navachaar';
+
+import  KABAD_SE_JUGAD from "./components/events_details/kabad_se_jugad";
 
 
 // import { i } from './assets';
@@ -71,9 +77,10 @@ const App = () => {
             <Route path='/egamingvalorant' element={<EV />} />
             <Route path='/coordination_clash' element={<CC />} />
             <Route path='/ev_workshop' element={<EVWORKSHOP />} />
-            {/* <Route path='/robo_soccer' element={<ROBOSOCCER />} /> */}
-            <Route path='/startup_mela' element={<PP />} />
+            <Route path='/robo_soccer' element={<ROBO_SOCCER />} />
+            <Route path='/startup_mela' element={<StartupMela />} />
             <Route path='/drag_race' element={<DRAG_RAGE />} />
+            <Route path='/kabad_se_jugad' element={<KABAD_SE_JUGAD />} />
             {/* <Route path='/adv_construction' element={<AVD_CONSTRUCT />} /> */}
             {/* <Route path='/robo_soccer' element={<ROBO_SOCCER />} /> */}
 
@@ -83,14 +90,16 @@ const App = () => {
             <Route path='/quiz_a_thon' element={<OAT />} />
             <Route path='/egamingbgmi' element={<EBGMI />} />
             <Route path='/bowling_alley' element={<BA />} />
-            <Route path='/beyond_the_canvas' element={<BYC />} />
+            <Route path='/beyond_the_canvas_exhibition' element={<BYC_EXHIBITION />} />
+            <Route path='/beyond_the_canvas_workshop' element={<BYC_WORKSHOP />} />
+            <Route path='/nirwan_me_navachaar' element={<NIRMAN_SE_NAVACHAAR />} />
             <Route path='/brick-o-brick' element={<BOB />} />
             <Route path='/scavenger_hunt' element={<SH />} />
             <Route path='/toggle' element={<TOGGLE />} />
             <Route path='/tower_craft' element={<TOWER />} />
             <Route path='/quakeproof' element={<QUAKE />} />
             <Route path='/mix-and-mould' element={<MIXANDMOULD />} />
-            <Route path='/art-of-persuasion' element={<ARTOFPERSUASION />} />
+            <Route path='/essay_writing' element={<ESSAY_WRITING />} />
             <Route path='/innostruct' element={<INNOSTRUCT />} />
             <Route path='/crackthecircuit' element={<CRACKTHECIRCUIT />} />
             <Route path='/crackthecad' element={<CRACKTHECAD />} />

@@ -107,6 +107,9 @@ import light_logo from './light_logo.png';
 import coor_one from './coor_one.jpg';
 import coor_two from './coor_two.jpg';
 
+import jegga from "./jegga.png";
+import fab from "./fab.png";
+
 export {
   skit_logo,
   ici_logo,
@@ -192,5 +195,7 @@ export {
   collabNine,
   light_logo,
   coor_one,
-  coor_two
+  coor_two,
+  jegga,
+  fab
 };

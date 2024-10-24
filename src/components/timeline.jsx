@@ -12,7 +12,15 @@ const Timeline = () => {
       Timing: '9:30 AM - 11:00 AM',
     },
     {
-      Event: { 1: 'EXPO/EXHIBITION/BEYOND CANVAS' },
+      Event: { 1: 'EXPO' },
+      Timing: '11:00 AM - 11:15 AM',
+    },
+    {
+      Event: { 1: 'EXHIBITION' },
+      Timing: '11:00 AM - 11:15 AM',
+    },
+    {
+      Event: { 1: 'BEYOND CANVAS' },
       Timing: '11:00 AM - 11:15 AM',
     },
     {
@@ -20,16 +28,24 @@ const Timeline = () => {
       Timing: '11:15 AM - 11:30 AM',
     },
     {
-      Event: { 1: 'Greening the Gap' },
-      Timing: '11:00 AM - 1:00 AM',
+      Event: { 1: 'Nirman Me Navachaar' },
+      Timing: '11:00 AM - 1:00 PM',
     },
     {
       Event: { 1: 'EV WORKSHOP' },
-      Timing: '11:00 AM - 1:00 AM',
+      Timing: '11:00 AM - 1:00 PM',
     },
     {
-      Event: { 1: 'BRICK-O-BRICK/IDEA FUSION/THE MUDVENTURE' },
-      Timing: '11:00 AM - 1:00 AM',
+      Event: { 1: 'BRICK-O-BRICK' },
+      Timing: '11:00 AM - 1:00 PM',
+    },
+    {
+      Event: { 1: 'IDEA FUSION' },
+      Timing: '11:00 AM - 1:00 PM',
+    },
+    {
+      Event: { 1: 'THE MUDVENTURE' },
+      Timing: '11:00 AM - 1:00 PM',
     },
     {
       Event: { 1: 'Essay Writing' },
@@ -37,14 +53,14 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'LUNCH' },
-      Timing: '1:00 AM - 2:00 PM',
+      Timing: '1:00 PM - 2:00 PM',
     },
     {
       Event: { 1: 'QUIZ-A-THON' },
-      Timing: '1:00 AM - 2:00 PM',
+      Timing: '1:00 PM - 2:00 PM',
     },
     {
-      Event: { 1: 'BOWLING ALLEY' },
+      Event: { 1: 'BOWLING ALLEY (Round 1)' },
       Timing: '1:30 PM - 3:30 PM',
     },
     {
@@ -57,12 +73,20 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'REJOICE' },
-      Timing: '3:30 PM - 5:00 AM',
+      Timing: '3:30 PM - 5:00 PM',
     },
   ];
   const DataDayTwo = [
     {
-      Event: { 1: 'BOWLLING ALLEY/JOIST QUICK/KABAD SE JUGAAD' },
+      Event: { 1: 'BOWLING ALLEY (Round 2)' },
+      Timing: '9:00 AM - 11:00 AM',
+    },
+    {
+      Event: { 1: 'JOIST QUICK' },
+      Timing: '9:00 AM - 11:00 AM',
+    },
+    {
+      Event: { 1: 'KABAD SE JUGAAD' },
       Timing: '9:00 AM - 11:00 AM',
     },
     {
@@ -121,7 +145,11 @@ const Timeline = () => {
       Timing: '10:00 AM - 12:00 PM',
     },
     {
-      Event: { 1: 'JOIST QUICK/KABAD SE JUGAAD' },
+      Event: { 1: 'JOIST QUICK' },
+      Timing: '12:00 PM - 2:00 PM',
+    },
+    {
+      Event: { 1: 'KABAD SE JUGAAD' },
       Timing: '12:00 PM - 2:00 PM',
     },
     {
@@ -142,7 +170,7 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'VALIDECTORY' },
-      Timing: '2:00 PM',
+      Timing: '2:00 PM Onwards',
     },
   ];
   return (
@@ -206,7 +234,9 @@ const Timeline = () => {
                 <div className='max-[320px]:w-[210px] w-[250px] md:w-[250px]'>
                   {Object.keys(item.Event).map((key, index) => (
                     <div key={index}>
-                      <span className='font-bold'>{item.Event[key]}</span>
+                      <span className='font-bold   text-base'>
+                        {item.Event[key]}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -232,7 +262,7 @@ const Timeline = () => {
                 <div className='max-[320px]:w-[210px] w-[250px] md:w-[250px]'>
                   {Object.keys(item.Event).map((key, index) => (
                     <div key={index}>
-                      <span className='font-bold'>{item.Event[key]}</span>
+                      <span className='font-bold  text-base'>{item.Event[key]}</span>
                     </div>
                   ))}
                 </div>
@@ -258,7 +288,7 @@ const Timeline = () => {
                 <div className='max-[320px]:w-[210px] w-[250px] md:w-[250px]'>
                   {Object.keys(item.Event).map((key, index) => (
                     <div key={index}>
-                      <span className='font-bold'>{item.Event[key]}</span>
+                      <span className='font-bold  text-base'>{item.Event[key]}</span>
                     </div>
                   ))}
                 </div>

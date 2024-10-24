@@ -8,18 +8,12 @@ import 'swiper/css/navigation';
 
 const Highlight = () => {
   const image_list = [
-    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728638081/ici-fest-24/tpvxkni3jqindhpgxnhw.png',
-    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728636254/ici-fest-24/ixdrtk4q0yfn9xdaud0o.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632099/ici-fest-24/pjkbjksgcw6vdgsrr0ll.jpg',
-    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632093/ici-fest-24/ocfau0wcst35wx1wbpru.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/lb11nmfbpl987x8kfosm.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/f7s1gh112cldcesckxon.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/f5kukhb4pwhn8m5gjfza.png',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/vsshq6x2dpaq13bcickf.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/zllvarfp5uhjuy1mr99t.png',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/qn0l1iwigsl6zxxrhac4.png',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/ycofwy9hmkpqvedo8khr.jpg',
-  ];
+    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768577/ici-24/vksuxr1tfmjzfjyvbjvf.jpg',
+    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768562/ici-24/wrzsck2uqfk2czvrblip.jpg',
+    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768564/ici-24/mepdn9dnvuvs7cunjc6u.jpg',
+    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768572/ici-24/vupgvdyr9qxg9gp9cvhm.jpg',
+    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768573/ici-24/giqzweiutxehnid9ow4n.jpg',
+  ]
   return (
     <>
       <div className='w-full xl:w-[800px] flex justify-center items-end overflow-hidden my-[10px] '>

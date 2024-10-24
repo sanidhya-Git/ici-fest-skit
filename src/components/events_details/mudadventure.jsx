@@ -34,11 +34,11 @@ const MUDADVENTURE = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - 15<sup>th </sup>September 2023
+                  Date - 08<sup>th </sup>November 2024
                 </span>
               </div>
               <div className="mt-[10px]">
-                <span>Time - 01:00 pm to 02:00 pm</span>
+                <span>Time - 11:00 am to 01:00 pm</span>
               </div>
               <div className="mt-[10px]">
                 <span>Venue - Football Ground</span>
@@ -59,7 +59,7 @@ const MUDADVENTURE = () => {
                 </button>
               </div>
             </a>
-            <div className="mt-[10px]">
+            {/* <div className="mt-[10px]">
               <span>
                 <b> For more details - Kashish Arora: {" "}
                 <a href="https://wa.me/9667255455" target="blank" className="underline">
@@ -68,7 +68,7 @@ const MUDADVENTURE = () => {
                 </a>
                 </b>
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

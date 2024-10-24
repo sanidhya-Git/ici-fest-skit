@@ -1,18 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-import { bob_img, next } from '../../assets';
-
-const materialData = [
-  { material: 'Bricks', quantity: '27' },
-  { material: 'Cement', quantity: '3 Kg' },
-  { material: 'Trowel', quantity: '2' },
-  { material: 'Sand', quantity: '15 Kg' },
-  { material: 'Water', quantity: '4 Liters' },
-  { material: 'Hand Pan', quantity: '2' },
-];
-
-const EBGMI = () => {
+const KABAD_SE_JUGAD = () => {
   const [activeButton, setActiveButton] = useState(0);
 
   const handleButtonClick = (index) => {
@@ -20,7 +8,7 @@ const EBGMI = () => {
   };
 
   return (
-    <div className='w-full min-h-screen'>
+    <div>
       <br />
       <br />
       <br />
@@ -29,8 +17,13 @@ const EBGMI = () => {
         <div className=' mx-[10px] md:mx-[60px] lg:mx-[200px] w-full'>
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
-              <span className='font-extrabold text-[38px] md:text-[50px]'>
-                E-Gaming BGMI
+              <span className='font-extrabold text-[38px] md:text-[50px] uppercase'>
+                Kabad se Jugaad
+              </span>
+            </div>
+            <div className='mb-[10px]'>
+              <span className='font-bold text-[18px] uppercase'>
+                Best Out of Waste
               </span>
             </div>
             <div className='flex justify-center'>
@@ -42,14 +35,14 @@ const EBGMI = () => {
                   Date - 10<sup>th </sup>November 2024
                 </span>
               </div>
-              <div>
-                <span>Time - 12:00 NOON - 02:00 PM</span>
+              <div className='mt-[10px]'>
+                <span>Time - 12:00 PM to 02:00 PM</span>
               </div>
-              <div>
-                <span>Venue - CRT Lab</span>
+              <div className='mt-[10px]'>
+                <span>Venue - Ground</span>
               </div>
             </div>
-            <div className='font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 '>
+            <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
               <span>Registration Fee - ₹200 per team</span>
             </div>
             <div className='mt-[10px]'>
@@ -57,29 +50,29 @@ const EBGMI = () => {
                 All the teams must have 4 members each.
               </span>
             </div>
-            <Link
-              to={`https://erp.skit.ac.in/register/r/egamingbgmi`}
-              target='_blank'
-            >
+            <a href='https://erp.skit.ac.in/register/r/kabadsejugaad'>
               <div className='mt-[10px] font-semibold'>
                 <button className='bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center'>
                   Register Now
                 </button>
               </div>
-            </Link>
-
-            <div className='mt-[10px]'>
+            </a>
+            {/* <div className='mt-[10px]'>
               <span>
                 <b>
                   {' '}
-                  For more details - Somya Roy:{' '}
-                  <a target='blank' className='underline'>
+                  For more details - Akshita Agarwal:{' '}
+                  <a
+                    href='https://wa.me/8824948314'
+                    target='blank'
+                    className='underline'
+                  >
                     {' '}
-                    +91 9829571129
+                    +91 8824948314
                   </a>
                 </b>
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -123,19 +116,18 @@ const EBGMI = () => {
 
           <div className='flex justify-center mt-[20px]'>
             <div className={activeButton === 0 ? 'active-div' : 'deactive-div'}>
-              <div className='text-center  mb-[50px]'>
+              <div className='text-center  mb-[50px] font-semibold'>
                 <div className=' mb-[10px] '>
                   <span className='font-bold  text-[20px] underline  '>
                     PROBLEM STATEMENT
                   </span>
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
-                  <span className='text-[17px] font-semibold'>
-                    To promote e-sports and teamspirit among players and
-                    showcase extraordinary skills. Our e-gaming event provides a
-                    platform for top players to compete in <b>BGMI</b>, while
-                    offering brands unique opportunities to engage with a
-                    growing, tech-savvy audience in the e- sports community.
+                  <span className='text-[17px] '>
+                    This event focusing on crafting excellence out of waste
+                    materials. This event seeks to redefine how waste is
+                    perceived and utilized, paving the way for a greener and
+                    more responsible future in engineering.
                   </span>
                 </div>
               </div>
@@ -146,7 +138,30 @@ const EBGMI = () => {
                 </div>
                 <div>
                   <span className='font-semibold text-[17px]'>
-                    All the teams must have 4 members each.
+                    A team should consist of only of 2 participants.
+                  </span>
+                </div>
+              </div>
+
+              <div className='  mb-[50px] font-semibold'>
+                <div className=' mb-[10px] text-center '>
+                  <span className='font-bold  text-[20px] underline  '>
+                    RULES
+                  </span>
+                </div>
+                <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] mt-[10px]'>
+                  <span>
+                    1. Participant are suppose to bring materials by themselfs.
+                    Waste materials could be anything like tetra packs, bottles,
+                    newspaper, old utensils, jute materials or any second hand
+                    items that otherwise would be thrown away.
+                  </span>
+                </div>
+
+                <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] mt-[10px]'>
+                  <span>
+                    2. The item would be rejected if not found to be a waste
+                    product or second hand item.
                   </span>
                 </div>
               </div>
@@ -158,13 +173,39 @@ const EBGMI = () => {
             } text-[18px] `}
           >
             <div className='text-center'>
-              <span className='font-bold underline text-[20px] uppercase '>
-                Time Limits
+              <span className='font-bold  text-[18px] '>
+                The event will be conducted in <span> 2 rounds</span>
               </span>
             </div>
-            <div className='text-center mt-[10px]'>
+            <div className='flex justify-center mt-[10px] mx-[10px] text-left md:text-center text-[17px]'>
               <div>
-                <span>Event timing - 1hrs</span>
+                <div>
+                  <span className='font-bold'>
+                    Round 1 - Making the Structure
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    Team will be given <b>1 hr 30 minutes </b>to mould their
+                    structures
+                  </span>
+                </div>
+
+                <div className='mt-[10px] '>
+                  <span className='font-bold'>
+                    Round 2 - Judging the Structure
+                  </span>
+                </div>
+                <div className='mx-[0px] md:mx-[120px] xl:mx-[220px] '>
+                  <span>
+                    The structure will be then judged based on{' '}
+                    <span className='font-bold'>
+                      creativity, utilization of resources, artistic composition
+                      & design, ecofriendly rating utility of the product and
+                      overall presentation
+                    </span>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -175,24 +216,16 @@ const EBGMI = () => {
           >
             <div className='text-center mb-[10px]'>
               <span className='font-bold text-[20px] underline'>
-                Code of Conduct:
+                JUDGING CRITERIA
               </span>
             </div>
-            <div></div>
-            <div className=' flex justify-center text-[17px]'>
+            <div className='flex justify-center text-[17px] text-center font-semibold'>
               <div>
                 <div>
                   <span>
-                    o Players must behave respectfully towards other
-                    participants, organizers, and officials.
-                    <br />
-                    o Toxic behaviour, offensive language, or unsportsmanlike
-                    conduct will result in disqualification.
-                    <br />
-                    o Cheating, hacking, or exploiting game bugs is strictly
-                    prohibited and will result in an immediate ban.
-                    <br />o Players cannot get up from their place while in
-                    game.
+                    Participants will be judged on creativity, utilization of
+                    resources, artistic composition & design, ecofriendly rating
+                    utility of the product and overall presentation.
                   </span>
                 </div>
               </div>
@@ -204,4 +237,4 @@ const EBGMI = () => {
   );
 };
 
-export default EBGMI;
+export default KABAD_SE_JUGAD;

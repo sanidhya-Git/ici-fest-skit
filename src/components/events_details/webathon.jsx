@@ -56,13 +56,13 @@ const WEBATHON = () => {
             <div className='mt-[10px]'>
               <span>
                 <b>
-                  For more details - Sanskar Chaturvedi :{' '}
+                  For more details - Rahul Garg:{' '}
                   <a
                     href='https://wa.me/6377829943'
                     target='blank'
                     className='underline'
                   >
-                    +91 6377829943
+                    +91 7814634013
                   </a>
                 </b>
               </span>
@@ -178,11 +178,11 @@ const WEBATHON = () => {
             } text-[18px]`}
           >
             <div className='text-center'>
-              <span>
+              <p className='w-full sm:max-w-[800px] sm:text-center'>
                 The event will last for 8 hours. The first 6 hours will be spent
                 designing a website based on the given problem statement,
                 followed by 2 hours for project evaluation and presentation.
-              </span>
+              </p>
             </div>
           </div>
           <div
@@ -197,36 +197,12 @@ const WEBATHON = () => {
             </div>
             <div className='flex justify-center text-[17px] text-left  '>
               <div>
-                <ul className='list-disc'>
-                  <li className='mt-3 w-full sm:max-w-[800px]'>
-                    <span className='font-semibold'>
-                      Judging will be based on the following criteria:
-                    </span>
-                    - Creativity/Innovation: Unique ideas and solutions. -
-                    Technical Implementation: Quality of code, complexity, and
-                    efficiency. - User Interface (UI) and User Experience (UX):
-                    Design, accessibility, and userfriendliness. - Scalability:
-                    Potential for future expansion or real-world application. -
-                    Functionality: How effectively the website addresses the
-                    problem statement.
-                  </li>
-                  <li className='mt-3 w-full sm:max-w-[800px]'>
-                    BUT In this Web-a-thon, we recognize that the importance of
-                    development and technical execution cannot be overlooked, as
-                    they play a vital role in creating functional and efficient
-                    websites. However, for first-year students participating in
-                    this event, we place a special emphasis on the originality
-                    of ideas and the creativity of designs. While development
-                    remains crucial, we understand that many students are still
-                    building their technical skills. As such, the focus for this
-                    competition will be on evaluating the uniqueness of
-                    concepts, design aesthetics, and how well the project
-                    addresses the given problem statement. This approach allows
-                    first-year participants to showcase their innovative
-                    thinking while still working on honing their development
-                    skills over time.
-                  </li>
-                </ul>
+                <p className='w-full sm:max-w-[800px] sm:text-center'>
+                  For first-year students, the focus is on creativity and
+                  design. However, for others, both development and technical
+                  implementation are equally important along with creativity and
+                  design.
+                </p>
               </div>
             </div>
           </div>
