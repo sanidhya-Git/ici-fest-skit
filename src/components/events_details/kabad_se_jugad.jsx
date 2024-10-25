@@ -138,7 +138,7 @@ const KABAD_SE_JUGAD = () => {
                 </div>
                 <div>
                   <span className='font-semibold text-[17px]'>
-                    A team should consist of only of 2 participants.
+                    A team should consist of only of 4 participants.
                   </span>
                 </div>
               </div>

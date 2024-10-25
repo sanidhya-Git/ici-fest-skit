@@ -51,6 +51,7 @@ import ROBO_SOCCER from './components/events_details/robo_soccer';
 import NIRMAN_SE_NAVACHAAR from './components/events_details/niewan_me_navachaar';
 
 import  KABAD_SE_JUGAD from "./components/events_details/kabad_se_jugad";
+import TUG_OF_WAR from './components/events_details/tugofwar';
 
 
 // import { i } from './assets';
@@ -95,6 +96,7 @@ const App = () => {
             <Route path='/beyond_the_canvas_workshop' element={<BYC_WORKSHOP />} />
             <Route path='/nirwan_me_navachaar' element={<NIRMAN_SE_NAVACHAAR />} />
             <Route path='/application_of_science' element={<APP_SCIENCE />} />
+            <Route path='/tug_of_war' element={<TUG_OF_WAR />} />
             <Route path='/brick-o-brick' element={<BOB />} />
             <Route path='/scavenger_hunt' element={<SH />} />
             <Route path='/toggle' element={<TOGGLE />} />

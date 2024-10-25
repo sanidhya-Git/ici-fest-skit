@@ -7,176 +7,63 @@ const Timeline = () => {
     setActiveButton(index);
   };
   const DataDayOne = [
-    {
-      Event: { 1: 'INAUGRAL' },
-      Timing: '9:30 AM - 11:00 AM',
-    },
-    {
-      Event: { 1: 'EXPO' },
-      Timing: '11:00 AM - 11:15 AM',
-    },
-    {
-      Event: { 1: 'EXHIBITION' },
-      Timing: '11:00 AM - 11:15 AM',
-    },
+    { Event: { 1: 'INAUGRAL' }, Timing: '9:30 AM - 11:00 AM' },
+    { Event: { 1: 'EXPO' }, Timing: '11:00 AM ONWARDS' },
+    { Event: { 1: 'EXHIBITION' }, Timing: '11:00 AM ONWARDS' },
     {
       Event: { 1: 'BEYOND THE CANVAS (EXHIBITION)' },
-      Timing: '11:00 AM - 11:15 AM',
+      Timing: '11:00 AM ONWARDS',
     },
-    {
-      Event: { 1: 'High tea' },
-      Timing: '11:15 AM - 11:30 AM',
-    },
-    {
-      Event: { 1: 'Nirman Me Navachaar' },
-      Timing: '11:00 AM - 1:00 PM',
-    },
-    {
-      Event: { 1: 'EV WORKSHOP' },
-      Timing: '11:00 AM - 1:00 PM',
-    },
-    {
-      Event: { 1: 'BRICK-O-BRICK' },
-      Timing: '11:00 AM - 1:00 PM',
-    },
-    {
-      Event: { 1: 'IDEA FUSION' },
-      Timing: '11:00 AM - 1:00 PM',
-    },
-    {
-      Event: { 1: 'THE MUDVENTURE' },
-      Timing: '11:00 AM - 1:00 PM',
-    },
-    {
-      Event: { 1: 'Essay Writing' },
-      Timing: '12:30 PM - 1:30 PM',
-    },
-    {
-      Event: { 1: 'LUNCH' },
-      Timing: '1:00 PM - 2:00 PM',
-    },
-    {
-      Event: { 1: 'QUIZ-A-THON' },
-      Timing: '1:00 PM - 2:00 PM',
-    },
-    {
-      Event: { 1: 'BOWLING ALLEY (Round 1)' },
-      Timing: '1:30 PM - 3:30 PM',
-    },
-    {
-      Event: { 1: 'Startup Mela' },
-      Timing: '2:00 PM - 3:30 PM',
-    },
-    {
-      Event: { 1: 'Engine Exotic' },
-      Timing: '2:00 PM - 3:30 PM',
-    },
-    {
-      Event: { 1: 'REJOICE' },
-      Timing: '3:30 PM - 5:00 PM',
-    },
+    { Event: { 1: 'HIGH TEA' }, Timing: '11:15 AM - 11:30 AM' },
+    { Event: { 1: 'NIRMAN ME NAVACHAAR' }, Timing: '11:00 AM - 1:00 PM' },
+    { Event: { 1: 'EV WORKSHOP' }, Timing: '11:00 AM - 1:00 PM' },
+    { Event: { 1: 'BRICK-O-BRICK' }, Timing: '11:00 AM - 1:00 PM' },
+    { Event: { 1: 'TECH CONNECT EXHIBITION' }, Timing: '11:00 AM - 1:00 PM' },
+    { Event: { 1: 'THE MUDVENTURE' }, Timing: '11:00 AM - 1:00 PM' },
+    { Event: { 1: 'ESSAY WRITING' }, Timing: '12:30 PM - 1:30 PM' },
+    { Event: { 1: 'LUNCH' }, Timing: '1:00 PM - 2:00 PM' },
+    { Event: { 1: 'QUIZ-A-THON' }, Timing: '1:00 PM - 2:00 PM' },
+    { Event: { 1: 'BOWLING ALLEY (ROUND 1)' }, Timing: '1:30 PM - 3:30 PM' },
+    { Event: { 1: 'STARTUP MELA' }, Timing: '2:00 PM - 3:30 PM' },
+    { Event: { 1: 'ENGINE EXOTIC' }, Timing: '2:00 PM - 3:30 PM' },
+    { Event: { 1: 'REJOICE' }, Timing: '3:30 PM - 5:00 PM' },
   ];
+
   const DataDayTwo = [
+    { Event: { 1: 'BOWLING ALLEY (ROUND 2)' }, Timing: '9:00 AM - 11:00 AM' },
+    { Event: { 1: 'JOIST QUICK (ROUND 1)' }, Timing: '9:00 AM - 11:00 AM' },
+    { Event: { 1: 'MUN' }, Timing: '9:00 AM - 12:00 PM' },
     {
-      Event: { 1: 'BOWLING ALLEY (Round 2)' },
-      Timing: '9:00 AM - 11:00 AM',
-    },
-    {
-      Event: { 1: 'JOIST QUICK (Round 1)' },
-      Timing: '9:00 AM - 11:00 AM',
-    },
-    {
-      Event: { 1: 'KABAD SE JUGAAD' },
-      Timing: '9:00 AM - 11:00 AM',
-    },
-    {
-      Event: { 1: 'MUN' },
+      Event: { 1: 'APPLICATION OF SCIENCE (अभियांत्रिकी)' },
       Timing: '9:00 AM - 12:00 PM',
     },
-    {
-      Event: { 1: 'Application of Science (अभियांत्रिकी)' },
-      Timing: '9:00 AM - 12:00 PM',
-    },
-    {
-      Event: { 1: 'TECH CONNECT EXHIBITION' },
-      Timing: '9:00 AM - 12:00 PM',
-    },
-    {
-      Event: { 1: 'WEB-A-THON' },
-      Timing: '9:00 AM - 3:00 PM',
-    },
-    {
-      Event: { 1: 'ROBO SOCCER' },
-      Timing: '9:00 AM - 11:00 AM',
-    },
-    {
-      Event: { 1: 'CRACK THE CIRCUIT' },
-      Timing: '10:00 AM - 11:00 AM',
-    },
-    {
-      Event: { 1: 'DRAG RACE' },
-      Timing: '11:00 AM - 1:00 PM',
-    },
-    {
-      Event: { 1: 'CRACK THE CAD' },
-      Timing: '12:00 PM - 1:00 PM',
-    },
+    { Event: { 1: 'TECH CONNECT EXHIBITION' }, Timing: '9:00 AM - 12:00 PM' },
+    { Event: { 1: 'WEB-A-THON' }, Timing: '9:00 AM - 3:00 PM' },
+    { Event: { 1: 'ROBO SOCCER' }, Timing: '9:00 AM - 11:00 AM' },
+    { Event: { 1: 'CRACK THE CIRCUIT' }, Timing: '10:00 AM - 11:00 AM' },
+    { Event: { 1: 'DRAG RACE' }, Timing: '11:00 AM - 1:00 PM' },
+    { Event: { 1: 'CRACK THE CAD' }, Timing: '12:00 PM - 1:00 PM' },
     {
       Event: { 1: 'BEYOND THE CANVAS (WORKSHOP)' },
       Timing: '12:00 PM - 1:30 PM',
     },
-    {
-      Event: { 1: 'TOWER CRAFT' },
-      Timing: '1:00 PM - 2:30 PM',
-    },
-    {
-      Event: { 1: 'Drone Workshop' },
-      Timing: '1:00 PM - 3:30 PM',
-    },
-    {
-      Event: { 1: 'REJOICE' },
-      Timing: '3:30 PM - 5:00 PM',
-    },
+    { Event: { 1: 'TOWER CRAFT' }, Timing: '1:00 PM - 2:30 PM' },
+    { Event: { 1: 'DRONE WORKSHOP' }, Timing: '1:00 PM - 3:30 PM' },
+    { Event: { 1: 'REJOICE' }, Timing: '3:30 PM - 5:00 PM' },
   ];
 
   const DataDayThree = [
-    {
-      Event: { 1: 'SCAVENGER HUNT' },
-      Timing: '8:00 AM - 10:00 AM',
-    },
-    {
-      Event: { 1: 'OFFROAD-O-DESEY' },
-      Timing: '10:00 AM - 12:00 PM',
-    },
-    {
-      Event: { 1: 'JOIST QUICK (Round 2)' },
-      Timing: '12:00 PM - 2:00 PM',
-    },
-    {
-      Event: { 1: 'KABAD SE JUGAAD' },
-      Timing: '12:00 PM - 2:00 PM',
-    },
-    {
-      Event: { 1: 'COORDINATION CLASH' },
-      Timing: '12:00 PM - 2:00 PM',
-    },
-    {
-      Event: { 1: 'E-GAMING' },
-      Timing: '12:00 PM - 2:00 PM',
-    },
-    {
-      Event: { 1: 'JENGA-PLOOZA' },
-      Timing: '12:00 PM - 2:00 PM',
-    },
-    {
-      Event: { 1: 'FABRIC OF FANTASY' },
-      Timing: '12:00 PM - 2:00 PM',
-    },
-    {
-      Event: { 1: 'VALIDECTORY' },
-      Timing: '2:00 PM Onwards',
-    },
+    { Event: { 1: 'SCAVENGER HUNT' }, Timing: '8:00 AM - 10:00 AM' },
+    { Event: { 1: 'OFFROAD-O-DESEY' }, Timing: '10:00 AM - 12:00 PM' },
+    { Event: { 1: 'JOIST QUICK (ROUND 2)' }, Timing: '12:00 PM - 2:00 PM' },
+    { Event: { 1: 'KABAD SE JUGAAD' }, Timing: '12:00 PM - 2:00 PM' },
+    { Event: { 1: 'COORDINATION CLASH' }, Timing: '12:00 PM - 2:00 PM' },
+    { Event: { 1: 'E-GAMING' }, Timing: '12:00 PM - 2:00 PM' },
+    { Event: { 1: 'JENGA-PLOOZA' }, Timing: '12:00 PM - 2:00 PM' },
+    { Event: { 1: 'FABRIC OF FANTASY' }, Timing: '12:00 PM - 2:00 PM' },
+    { Event: { 1: 'VALEDICTORY' }, Timing: '2:00 PM ONWARDS' },
   ];
+  
   return (
     <>
       <div className='text-center text-[30px] md:text-[36px] font-extrabold mt-[20px]'>

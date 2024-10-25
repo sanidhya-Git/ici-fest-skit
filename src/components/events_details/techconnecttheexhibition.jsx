@@ -43,7 +43,7 @@ const Exhibition = () => {
             </div>
             <div className='mt-[10px]'>
               <span className='font-semibold text-[18px]'>
-                Teams of 2-4 members
+                Teams of 4 members
               </span>
             </div>
             <a href='https://erp.skit.ac.in/register/r/techconnect'>
