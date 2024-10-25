@@ -20,7 +20,7 @@ const Timeline = () => {
       Timing: '11:00 AM - 11:15 AM',
     },
     {
-      Event: { 1: 'BEYOND CANVAS' },
+      Event: { 1: 'BEYOND THE CANVAS (EXHIBITION)' },
       Timing: '11:00 AM - 11:15 AM',
     },
     {
@@ -82,7 +82,7 @@ const Timeline = () => {
       Timing: '9:00 AM - 11:00 AM',
     },
     {
-      Event: { 1: 'JOIST QUICK' },
+      Event: { 1: 'JOIST QUICK (Round 1)' },
       Timing: '9:00 AM - 11:00 AM',
     },
     {
@@ -91,6 +91,10 @@ const Timeline = () => {
     },
     {
       Event: { 1: 'MUN' },
+      Timing: '9:00 AM - 12:00 PM',
+    },
+    {
+      Event: { 1: 'Application of Science (अभियांत्रिकी)' },
       Timing: '9:00 AM - 12:00 PM',
     },
     {
@@ -145,7 +149,7 @@ const Timeline = () => {
       Timing: '10:00 AM - 12:00 PM',
     },
     {
-      Event: { 1: 'JOIST QUICK' },
+      Event: { 1: 'JOIST QUICK (Round 2)' },
       Timing: '12:00 PM - 2:00 PM',
     },
     {
@@ -262,7 +266,9 @@ const Timeline = () => {
                 <div className='max-[320px]:w-[210px] w-[250px] md:w-[250px]'>
                   {Object.keys(item.Event).map((key, index) => (
                     <div key={index}>
-                      <span className='font-bold  text-base'>{item.Event[key]}</span>
+                      <span className='font-bold  text-base'>
+                        {item.Event[key]}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -288,7 +294,9 @@ const Timeline = () => {
                 <div className='max-[320px]:w-[210px] w-[250px] md:w-[250px]'>
                   {Object.keys(item.Event).map((key, index) => (
                     <div key={index}>
-                      <span className='font-bold  text-base'>{item.Event[key]}</span>
+                      <span className='font-bold  text-base'>
+                        {item.Event[key]}
+                      </span>
                     </div>
                   ))}
                 </div>

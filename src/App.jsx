@@ -44,6 +44,7 @@ import EVWORKSHOP from './components/events_details/EVworkshop';
 import OFFROAD from './components/events_details/offroad_odyssey';
 import DRAG_RAGE from './components/events_details/drag_race';
 // import AVD_CONSTRUCT from './components/events_details/adv_construction';
+import APP_SCIENCE from './components/events_details/application_of_science';
 
 
 import ROBO_SOCCER from './components/events_details/robo_soccer';
@@ -93,6 +94,7 @@ const App = () => {
             <Route path='/beyond_the_canvas_exhibition' element={<BYC_EXHIBITION />} />
             <Route path='/beyond_the_canvas_workshop' element={<BYC_WORKSHOP />} />
             <Route path='/nirwan_me_navachaar' element={<NIRMAN_SE_NAVACHAAR />} />
+            <Route path='/application_of_science' element={<APP_SCIENCE />} />
             <Route path='/brick-o-brick' element={<BOB />} />
             <Route path='/scavenger_hunt' element={<SH />} />
             <Route path='/toggle' element={<TOGGLE />} />

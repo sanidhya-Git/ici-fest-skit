@@ -35,7 +35,7 @@ const MUN = () => {
                 <span>Time - 09:00 AM - 12:00 NOON</span>
               </div>
               <div>
-                <span>Venue - Kautilya Auditorium</span>
+                <span>Venue - 5F1, Civil Block</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
