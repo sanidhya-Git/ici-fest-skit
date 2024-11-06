@@ -1,17 +1,32 @@
+import {
+  new_a,
+  new_d,
+  new_f,
+  new_g,
+  new_i,
+  new_j,
+  new_k,
+  new_l,
+  new_m,
+  new_n,
+  new_o,
+  new_p,
+} from '../assets';
+
 function Gallery() {
   const images = [
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768577/ici-24/ol3ru44emkgjm7wzyvfz.png',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768577/ici-24/vksuxr1tfmjzfjyvbjvf.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768562/ici-24/wrzsck2uqfk2czvrblip.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768564/ici-24/mepdn9dnvuvs7cunjc6u.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768572/ici-24/vupgvdyr9qxg9gp9cvhm.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768573/ici-24/giqzweiutxehnid9ow4n.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768573/ici-24/e4f4pqjttdufxr0repap.png',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768571/ici-24/nnxpkt9gxrahzaytoegc.png',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768567/ici-24/xjqudjpfs7s0zbmjigc7.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768571/ici-24/omxdl1tuz7m8em82eiyw.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768575/ici-24/ljcpaa3vdzqh9hjlwnhi.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768570/ici-24/repbazzwl3rakc3thjca.jpg',
+    new_a,
+    new_d,
+    new_f,
+    new_g,
+    new_i,
+    new_j,
+    new_k,
+    new_l,
+    new_m,
+    new_n,
+    new_o,
+    new_p,
   ];
 
   return (

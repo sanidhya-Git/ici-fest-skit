@@ -281,14 +281,38 @@ export const EventData: EventDataProps[] = [
     registration_status: 'live',
     category: 'event',
   },
-
   {
-    title: 'Tug Of War',
-    image:
-      'https://img.freepik.com/free-photo/mature-people-tug-war_53876-15214.jpg?t=st=1729831871~exp=1729835471~hmac=7d2c1f5f387e473c60e91432db756ea557cb95d329b1171c9c0655a393c8b0bc&w=900',
-    slug: 'tug_of_war',
+    title: 'EV Workshop',
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIRogqHTRuFThuZEpUiecfxCdIJ282eioFeA&s",
+    slug: 'ev_workshop',
     registration_status: 'live',
-    category: 'event',
+    category: 'workshop',
     brightness_adj: true,
   },
+  // {
+  //   title: 'Poster Making',
+  //   image: "https://img.freepik.com/free-photo/hands-working_1162-121.jpg",
+  //   slug: 'poster_making',
+  //   registration_status: 'live',
+  //   category: 'event',
+  //   brightness_adj: true,
+  // },
+  // {
+  //   title: 'Reel Making',
+  //   image: "https://img.freepik.com/free-photo/people-working-together-new-movie_23-2149066340.jpg",
+  //   slug: 'reel_making',
+  //   registration_status: 'live',
+  //   category: 'event',
+  //   brightness_adj: true,
+  // },
+
+  // {
+  //   title: 'Tug Of War',
+  //   image:
+  //     'https://img.freepik.com/free-photo/mature-people-tug-war_53876-15214.jpg?t=st=1729831871~exp=1729835471~hmac=7d2c1f5f387e473c60e91432db756ea557cb95d329b1171c9c0655a393c8b0bc&w=900',
+  //   slug: 'tug_of_war',
+  //   registration_status: 'live',
+  //   category: 'event',
+  //   brightness_adj: true,
+  // },
 ];

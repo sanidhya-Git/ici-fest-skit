@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+import { new_e, new_h } from "../assets";
+
 const HeroSection = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const HeroSection = () => {
         >
           {/* Desktop */}
           <source
-            src='https://res.cloudinary.com/dfpbty6rt/video/upload/v1729768597/ici-24/quziglvf359z6mktlj5b.mp4'
+            src={new_h}
             type='video/mp4'
           />
         </video>
@@ -48,7 +50,7 @@ const HeroSection = () => {
         >
           {/* Mobile */}
           <source
-            src='https://res.cloudinary.com/dfpbty6rt/video/upload/v1729768586/ici-24/nwcpttekzr6bv0m37evy.mp4'
+            src={new_e}
             type='video/mp4'
           />
         </video>

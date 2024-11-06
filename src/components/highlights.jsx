@@ -4,16 +4,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-
+import { new_a, new_d, new_f, new_g, new_i } from '../assets';
 
 const Highlight = () => {
-  const image_list = [
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768577/ici-24/vksuxr1tfmjzfjyvbjvf.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768562/ici-24/wrzsck2uqfk2czvrblip.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768564/ici-24/mepdn9dnvuvs7cunjc6u.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768572/ici-24/vupgvdyr9qxg9gp9cvhm.jpg',
-    'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768573/ici-24/giqzweiutxehnid9ow4n.jpg',
-  ]
+  const image_list = [new_a, new_d, new_f, new_g, new_i];
   return (
     <>
       <div className='w-full xl:w-[800px] flex justify-center items-end overflow-hidden my-[10px] '>

@@ -157,12 +157,12 @@ const FestEvent = () => {
       </div>
 
       <div>
-        <p className='text-[26px] md:text-[30px] font-extrabold text-center'>
-          Exhibitions
+        <p className='text-[26px] md:text-[30px] font-extrabold text-center mt-8'>
+          Events
         </p>
       </div>
       <div className='flex flex-wrap justify-center gap-5 p-5 '>
-        {EventData.filter((data) => data.category === 'exhibition').map(
+        {EventData.filter((data) => data.category === 'event').map(
           (data, index) => (
             <div
               key={index}
@@ -212,13 +212,13 @@ const FestEvent = () => {
         )}
       </div>
 
-      <div className='mt-5'>
+      <div className='mt-8'>
         <p className='text-[26px] md:text-[30px] font-extrabold text-center'>
-          Events
+          Exhibitions
         </p>
       </div>
       <div className='flex flex-wrap justify-center gap-5 p-5 '>
-        {EventData.filter((data) => data.category === 'event').map(
+        {EventData.filter((data) => data.category === 'exhibition').map(
           (data, index) => (
             <div
               key={index}

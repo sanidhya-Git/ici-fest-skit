@@ -63,7 +63,7 @@ const Timeline = () => {
     { Event: { 1: 'FABRIC OF FANTASY' }, Timing: '12:00 PM - 2:00 PM' },
     { Event: { 1: 'VALEDICTORY' }, Timing: '2:00 PM ONWARDS' },
   ];
-  
+
   return (
     <>
       <div className='text-center text-[30px] md:text-[36px] font-extrabold mt-[20px]'>
