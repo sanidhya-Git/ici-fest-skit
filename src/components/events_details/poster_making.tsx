@@ -32,7 +32,7 @@ const POSTER_MAKING = () => {
                 </span>
               </div>
               <div>
-                <span>Time - ??</span>
+                <span>Time - 08:00 AM to 08:30 AM</span>
               </div>
               <div>
                 <span>Venue - 1F1, Civil Block</span>
@@ -42,7 +42,7 @@ const POSTER_MAKING = () => {
               <span>Registration Fee - ₹100 per individual</span>
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/ici_mun`}
+              to={`https://erp.skit.ac.in/register/r/ici24_PosterCom`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -205,11 +205,25 @@ const POSTER_MAKING = () => {
             </div>
             <div className='text-[17px]'>
               <ul>
-                <li>1. Theme Relevance: 25 points</li>
-                <li>2. Creativity and Originality: 30 points</li>
-                <li>3. Visual Appeal: 20 points</li>
-                <li>4. Clarity and Organization: 15 points</li>
-                <li>5. Compliance with Guidelines: 10 points</li>
+                <li>1. Theme Relevance</li>
+                <li>2. Creativity and Originality</li>
+                <li>3. Visual Appeal</li>
+                <li>4. Clarity and Organization</li>
+                <li>5. Compliance with Guidelines</li>
+              </ul>
+            </div>
+
+            <div className='text-center mt-8 mb-[10px]'>
+              <span className='font-bold text-[20px] underline'>
+                DISQUALIFICATION CRITERIA
+              </span>
+            </div>
+            <div className='text-[17px]'>
+              <ul>
+                <li>1. Late Submission</li>
+                <li>2. Theme Non-Compliance</li>
+                <li>3. Theme Non-Compliance</li>
+                <li>4. Copyright Infringement</li>
               </ul>
             </div>
           </div>

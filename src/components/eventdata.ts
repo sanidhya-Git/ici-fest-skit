@@ -289,22 +289,22 @@ export const EventData: EventDataProps[] = [
     category: 'workshop',
     brightness_adj: true,
   },
-  // {
-  //   title: 'Poster Making',
-  //   image: "https://img.freepik.com/free-photo/hands-working_1162-121.jpg",
-  //   slug: 'poster_making',
-  //   registration_status: 'live',
-  //   category: 'event',
-  //   brightness_adj: true,
-  // },
-  // {
-  //   title: 'Reel Making',
-  //   image: "https://img.freepik.com/free-photo/people-working-together-new-movie_23-2149066340.jpg",
-  //   slug: 'reel_making',
-  //   registration_status: 'live',
-  //   category: 'event',
-  //   brightness_adj: true,
-  // },
+  {
+    title: 'Poster Making',
+    image: "https://img.freepik.com/free-photo/hands-working_1162-121.jpg",
+    slug: 'poster_making',
+    registration_status: 'live',
+    category: 'event',
+    brightness_adj: true,
+  },
+  {
+    title: 'Reel Making',
+    image: "https://img.freepik.com/free-photo/people-working-together-new-movie_23-2149066340.jpg",
+    slug: 'reel_making',
+    registration_status: 'live',
+    category: 'event',
+    brightness_adj: true,
+  },
 
   // {
   //   title: 'Tug Of War',

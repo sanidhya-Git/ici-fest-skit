@@ -42,7 +42,7 @@ const REEL_MAKING = () => {
               <span>Registration Fee - ₹50 per entry</span>
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/ici_mun`}
+              to={`https://erp.skit.ac.in/register/r/ici24_ReelComp`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -113,7 +113,22 @@ const REEL_MAKING = () => {
                 </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px]'>
                   <span className='text-[17px]'>
-                    Create an engaging reel that demonstrates a variety of products – from food to electronics – with and without the ISI mark. Highlight how BIS certification assures consumers of the quality, safety, and reliability of the products they purchase.
+                    Create an engaging reel that demonstrates a variety of
+                    products – from food to electronics – with and without the
+                    ISI mark. Highlight how BIS certification assures consumers
+                    of the quality, safety, and reliability of the products they
+                    purchase.
+                  </span>
+                </div>
+
+                <div className='mt-[30px]'>
+                  <span className='font-bold text-[20px] underline'>THEME</span>
+                </div>
+                <div className='mx-[20px] md:mx-[120px] xl:mx-[220px]'>
+                  <span className='text-[17px]'>
+                    Reels must focus on the importance of the ISI mark
+                    and BIS certification in ensuring product quality, safety,
+                    and reliability.
                   </span>
                 </div>
               </div>
@@ -134,16 +149,38 @@ const REEL_MAKING = () => {
                 </div>
                 <div className='text-[17px]'>
                   <ul>
-                    <li><span className='font-semibold'>Theme:</span> Reels must focus on the importance of the ISI mark and BIS certification in ensuring product quality, safety, and reliability.</li>
-                    <li className='mt-4'><span className='font-semibold'>Content Requirements:</span>
+                    <li>
+                      <span className='font-semibold'>Theme:</span> Reels must
+                      focus on the importance of the ISI mark and BIS
+                      certification in ensuring product quality, safety, and
+                      reliability.
+                    </li>
+                    <li className='mt-4'>
+                      <span className='font-semibold'>
+                        Content Requirements:
+                      </span>
                       <ul>
-                        <li>Showcase a minimum of 3 different products, both with and without the ISI mark.</li>
-                        <li>Content must be informative, family-friendly, and free from offensive language or imagery.</li>
+                        <li>
+                          Showcase a minimum of 3 different products, both with
+                          and without the ISI mark.
+                        </li>
+                        <li>
+                          Content must be informative, family-friendly, and free
+                          from offensive language or imagery.
+                        </li>
                         <li>Reels must not exceed 60 seconds in length.</li>
                       </ul>
                     </li>
-                    <li className='mt-4'><span className='font-semibold'>Originality:</span> All content must be original and created specifically for this competition. Plagiarism will lead to immediate disqualification.</li>
-                    <li>Deadline: All entries must be submitted by 9th November, 11:59 PM.</li>
+                    <li className='mt-4'>
+                      <span className='font-semibold'>Originality:</span> All
+                      content must be original and created specifically for this
+                      competition. Plagiarism will lead to immediate
+                      disqualification.
+                    </li>
+                    <li>
+                      Deadline: All entries must be submitted by 9th November,
+                      11:59 PM.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -162,12 +199,30 @@ const REEL_MAKING = () => {
             </div>
             <div className='text-[17px]'>
               <ul>
-                <li>1. Unique approach and creative storytelling to convey the importance of the ISI mark.</li>
-                <li>2. Effective communication of the ISI mark’s significance in product quality and safety.</li>
-                <li>3. High-quality visuals, smooth transitions, and cohesive editing.</li>
-                <li>4. Accurate depiction of products with and without the ISI mark.</li>
-                <li>5. Ability to engage and inspire viewers to understand the value of BIS certification.</li>
-                <li>6. Staying on topic and meeting the requirements outlined in the competition guidelines.</li>
+                <li>
+                  1. Unique approach and creative storytelling to convey the
+                  importance of the ISI mark.
+                </li>
+                <li>
+                  2. Effective communication of the ISI mark’s significance in
+                  product quality and safety.
+                </li>
+                <li>
+                  3. High-quality visuals, smooth transitions, and cohesive
+                  editing.
+                </li>
+                <li>
+                  4. Accurate depiction of products with and without the ISI
+                  mark.
+                </li>
+                <li>
+                  5. Ability to engage and inspire viewers to understand the
+                  value of BIS certification.
+                </li>
+                <li>
+                  6. Staying on topic and meeting the requirements outlined in
+                  the competition guidelines.
+                </li>
               </ul>
             </div>
           </div>

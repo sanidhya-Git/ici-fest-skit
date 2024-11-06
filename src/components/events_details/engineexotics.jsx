@@ -37,7 +37,7 @@ const ES = () => {
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
-              <span>Registration Fee - ₹200 per Team</span>
+              <span>Registration Fee - ₹100 per Team</span>
             </div>
             <div className='mt-[10px]'>
               <span className='font-semibold text-[18px]'>
@@ -45,7 +45,7 @@ const ES = () => {
               </span>
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/ici24_rapidefire`}
+              to={`https://erp.skit.ac.in/register/r/ici24_rapidfire`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
