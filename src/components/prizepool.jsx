@@ -1,4 +1,5 @@
- 
+
+import { new_b } from '../assets';
 
 const Prizepool = () => {
   return (
@@ -6,7 +7,7 @@ const Prizepool = () => {
       <div className="relative flex items-center justify-center mt-[80px]">
         <div className="w-[70%] z-10">
           <img
-            src="https://res.cloudinary.com/dm2pha7cn/image/upload/v1729245050/ici-fest-24/yple91p8wkn0cklci8jm.png"
+            src={new_b}
             alt=""
             className="w-full h-full "
           />

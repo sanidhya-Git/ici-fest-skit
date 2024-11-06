@@ -25,7 +25,7 @@ const MUN = () => {
             <div className='flex justify-center'>
               <div className='w-[100px] h-[4px] bg-[#ff583e]  ' />
             </div>
-            <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
+            <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
                   Date - 9<sup>th </sup>November 2024
@@ -35,7 +35,7 @@ const MUN = () => {
                 <span>Time - 09:00 AM - 12:00 NOON</span>
               </div>
               <div>
-                <span>Venue - Kautilya Auditorium</span>
+                <span>Venue - 5F1, Civil Block</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
@@ -63,7 +63,7 @@ const MUN = () => {
                   For more details - Jagrati pareek:{' '}
                   <a target='blank' className='underline'>
                     {' '}
-                    +91
+                    9772111651
                   </a>
                 </b>
               </span>
@@ -122,19 +122,17 @@ const MUN = () => {
                   </div>
                   <div className='mx-[20px] md:mx-[120px] xl:mx-[220px]'>
                     <span className='text-[17px]'>
-                      The All India Political Party Meet (AIPPM) is organizing a
-                      Model United Nations (MUN) conference to address the
-                      critical and long-standing issue of terrorism in Kashmir.
-                      The agenda of the meeting focuses on facilitating a
-                      thorough debate among delegates representing various
-                      political parties, concentrating on the security,
-                      geopolitical, and human rights dimensions of the Kashmir
-                      conflict. Participants are expected to engage in
-                      constructive discussions, propose actionable solutions,
-                      and develop policy recommendations in line with their
-                      party's stance. The outcome should include a comprehensive
-                      strategy to combat terrorism, promote peace, and address
-                      the social and political concerns in the Kashmir region.
+                      Regulation and Ethical Concerns Around Social Media and
+                      Freedom of Expression This agenda aims to explore the
+                      complexities of governing social media platforms while
+                      safeguarding the fundamental right to freedom of
+                      expression. Participants will deliberate on the challenges
+                      and opportunities that arise in regulating content,
+                      protecting user privacy, combating misinformation, and
+                      ensuring ethical practices in the digital landscape. The
+                      discussion will focus on crafting policies that balance
+                      the need for regulation with the imperative of upholding
+                      democratic values and individual freedoms.
                     </span>
                   </div>
 

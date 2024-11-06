@@ -30,7 +30,7 @@ const EV = () => {
           <div className="bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center">
             <div>
               <span className="font-extrabold text-[38px] md:text-[50px]">
-                E-Gamming 
+                E-Gaming 
                 valorant
               </span>
             </div>

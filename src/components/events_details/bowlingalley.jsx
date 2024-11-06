@@ -40,13 +40,21 @@ const BA = () => {
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
-                  Date - 9<sup>th </sup>November 2024
+                  Date - 8<sup>th </sup>November 2024 (Round 1)
                 </span>
               </div>
               <div>
                 <span>Time - 01:30 PM - 03:30 PM</span>
               </div>
+              <div className='mt-2'>
+                <span>
+                  Date - 9<sup>th </sup>November 2024 (Round 2)
+                </span>
+              </div>
               <div>
+                <span>Time - 09:00 AM - 11:00 AM</span>
+              </div>
+              <div className='mt-2'> 
                 <span>Venue - Ground</span>
               </div>
             </div>

@@ -34,11 +34,11 @@ const MUDADVENTURE = () => {
             <div className="mt-[15px] font-bold  text-[16px] md:text-[18px]">
               <div>
                 <span>
-                  Date - 15<sup>th </sup>September 2023
+                  Date - 08<sup>th </sup>November 2024
                 </span>
               </div>
               <div className="mt-[10px]">
-                <span>Time - 01:00 pm to 02:00 pm</span>
+                <span>Time - 11:00 am to 01:00 pm</span>
               </div>
               <div className="mt-[10px]">
                 <span>Venue - Football Ground</span>
@@ -52,14 +52,14 @@ const MUDADVENTURE = () => {
                 All the teams must have 4 memebers each.
               </span>
             </div>
-            <a href="https://erp.skit.ac.in/register/r/mudventure">
+            <a href="https://erp.skit.ac.in/register/r/mud_24">
               <div className="mt-[10px] font-semibold">
                 <button className="bg-[#ff583e] hover:bg-white text-white hover:text-[#ff583e] duration-300 hover:ring-1 ring-[#ff583e] pt-[9px] pb-[9px] pl-[18px] pr-[18px] lg:pt-[11px] lg:pb-[11px] lg:pl-[20px] lg:pr-[20px] rounded-[8px] text-[14px] lg:text-[16px]  self-center">
                   Register Now
                 </button>
               </div>
             </a>
-            <div className="mt-[10px]">
+            {/* <div className="mt-[10px]">
               <span>
                 <b> For more details - Kashish Arora: {" "}
                 <a href="https://wa.me/9667255455" target="blank" className="underline">
@@ -68,7 +68,7 @@ const MUDADVENTURE = () => {
                 </a>
                 </b>
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

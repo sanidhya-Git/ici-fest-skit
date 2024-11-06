@@ -107,6 +107,28 @@ import light_logo from './light_logo.png';
 import coor_one from './coor_one.jpg';
 import coor_two from './coor_two.jpg';
 
+import jegga from "./jegga.png";
+import fab from "./fab.png";
+
+
+// new
+import new_a from './new/a.png';
+import new_b from './new/b.png';
+import new_c from './new/c.jpg';
+import new_d from './new/d.jpg';
+import new_e from './new/e.mp4';
+import new_f from './new/f.png';
+import new_g from './new/g.png';
+import new_h from './new/h.mp4';
+import new_i from './new/i.jpg';
+import new_j from './new/j.jpg';
+import new_k from './new/k.jpg';
+import new_l from './new/l.jpg';
+import new_m from './new/m.jpg';
+import new_n from './new/n.jpg';
+import new_o from './new/o.jpg';  
+import new_p from './new/p.jpg';
+
 export {
   skit_logo,
   ici_logo,
@@ -192,5 +214,23 @@ export {
   collabNine,
   light_logo,
   coor_one,
-  coor_two
+  coor_two,
+  jegga,
+  fab,
+  new_a,
+  new_b,
+  new_c,
+  new_d,
+  new_f,
+  new_g,
+  new_i,
+  new_j,
+  new_k,
+  new_l,
+  new_m,
+  new_n,
+  new_o,  
+  new_p,
+  new_e,
+  new_h
 };

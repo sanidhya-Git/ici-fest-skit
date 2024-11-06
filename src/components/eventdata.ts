@@ -15,6 +15,9 @@ import {
   mud_img,
   brush_img,
   joist_img,
+  jegga,
+  fab,
+  tower_img,
 } from '../assets';
 
 interface EventDataProps {
@@ -23,16 +26,43 @@ interface EventDataProps {
   slug: string;
   registration_status: 'live' | 'closed' | 'reopened' | 'upcoming';
   brightness_adj?: boolean;
-  category: 'event' | 'workshop';
+  category: 'event' | 'workshop' | 'exhibition';
 }
 
 export const EventData: EventDataProps[] = [
   {
-    title: 'Beyond The Canvas',
-    image: jw,
-    slug: 'beyond_the_canvas',
+    title: 'Application of Science',
+    image:
+      'https://img.freepik.com/free-photo/real-estate-desk-with-keys_23-2147653337.jpg?t=st=1729793363~exp=1729796963~hmac=d22ce8786ef61f51f46dcd643cd720a258e142c1d48b540a3dd35aaf4be00fde&w=996',
+    slug: 'application_of_science',
     registration_status: 'live',
-    category: 'event',
+    category: 'exhibition',
+    brightness_adj: true,
+  },
+  {
+    title: 'Nirman Me Navachaar',
+    image:
+      'https://img.freepik.com/free-vector/green-energy-vector-concept_1308-130351.jpg?t=st=1729764563~exp=1729768163~hmac=42c7476c8ee2fc8017ef0e27c40af7cbf6772b8bf33d304cd88bad1820f114a2&w=1380',
+    slug: 'nirwan_me_navachaar',
+    registration_status: 'live',
+    category: 'workshop',
+    brightness_adj: true,
+  },
+  {
+    title: 'Beyond The Canvas Workshop',
+    image: jw,
+    slug: 'beyond_the_canvas_workshop',
+    registration_status: 'live',
+    category: 'workshop',
+    brightness_adj: true,
+  },
+  {
+    title: 'Beyond The Canvas Exhibition',
+    image: jw,
+    slug: 'beyond_the_canvas_exhibition',
+    registration_status: 'live',
+    category: 'exhibition',
+    brightness_adj: true,
   },
   {
     title: 'Bowling Alley',
@@ -52,13 +82,13 @@ export const EventData: EventDataProps[] = [
     title: 'Coordination Clash',
     slug: 'coordination_clash',
     image:
-      'https://res.cloudinary.com/dm2pha7cn/image/upload/v1729670147/ici-fest-24/uaqlsgrmumemje5l2myb.jpg',
+      'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768577/ici-24/rzsjhzz4aqalbcvlat4z.jpg',
     brightness_adj: true,
     registration_status: 'live',
     category: 'event',
   },
   {
-    title: 'Crack The circuit',
+    title: 'Crack The Circuit',
     image:
       'https://img.freepik.com/premium-vector/close-up-hand-with-screwdriver-fixing-circuit-flat_1324820-1993.jpg?w=1380',
     slug: 'crackthecircuit',
@@ -72,7 +102,7 @@ export const EventData: EventDataProps[] = [
       'https://img.freepik.com/premium-photo/drone-flies-rural-country-road_134345-7534.jpg?w=740',
     slug: 'drone_workshop',
     registration_status: 'live',
-    category: 'event',
+    category: 'workshop',
     brightness_adj: true,
   },
   {
@@ -107,8 +137,7 @@ export const EventData: EventDataProps[] = [
   },
   {
     title: 'Fabric Of Fantasy',
-    image:
-      'https://img.freepik.com/premium-photo/fantasy-wallpaper-fabric-life_746565-161621.jpg?w=740',
+    image: fab,
     slug: 'fabricoffantacy',
     registration_status: 'live',
     category: 'event',
@@ -116,8 +145,7 @@ export const EventData: EventDataProps[] = [
   },
   {
     title: 'Jenga Palooza',
-    image:
-      'https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/01/31195901/shutterstock_559355647-1.jpg',
+    image: jegga,
     slug: 'jengaplooza',
     registration_status: 'live',
     category: 'event',
@@ -125,7 +153,8 @@ export const EventData: EventDataProps[] = [
   },
   {
     title: 'Joist Kwik',
-    image: joist_img,
+    image:
+      'https://img.freepik.com/free-photo/porto-bridge-from-low-angle_181624-29992.jpg?t=st=1729850995~exp=1729854595~hmac=32328a4a0d8c81bc7b10a50301d23bc5d7befd61e7a144f4715d13c5b5eeed41&w=826',
     slug: 'joist_kwik',
     registration_status: 'live',
     category: 'event',
@@ -165,7 +194,7 @@ export const EventData: EventDataProps[] = [
     brightness_adj: true,
 
     registration_status: 'live',
-    category: 'event',
+    category: 'exhibition',
   },
 
   {
@@ -179,7 +208,7 @@ export const EventData: EventDataProps[] = [
   },
   {
     title: 'Tower Craft',
-    image: tower_1,
+    image: tower_img,
     slug: 'tower_craft',
     registration_status: 'live',
     category: 'event',
@@ -201,33 +230,23 @@ export const EventData: EventDataProps[] = [
     brightness_adj: true,
     category: 'event',
   },
-
-
-  // {
-  //   title: 'Advance Construction Technology',
-  //   image:
-  //     'https://img.freepik.com/free-photo/african-american-woman-using-vr-glasses-work_482257-10518.jpg?t=st=1729664844~exp=1729668444~hmac=c892a6baabbee8abd62f5585d0dcada0bf5eef2ec0440f35c5ca75757e09329f&w=996',
-  //   slug: 'adv_construction',
-  //   brightness_adj: true,
-
-  //   registration_status: 'live',
-  //   category: 'event',
-  // },
-  // {
-  //   title: 'Crack the Circuit',
-  //   image: ctc,
-  //   slug: 'crackthecircuit',
-  //   registration_status: 'live',
-  // category:"event",
-  // },
-  // {
-  //   title: 'Robo Soccer',
-  //   image: "https://res.cloudinary.com/dm2pha7cn/image/upload/v1729666150/ici-fest-24/qo3iez58b3tsvqizrtnr.png",
-  //   slug: 'robo_soccer',
-  //   registration_status: 'live',
-  // category:"event",
-  //   brightness_adj: true
-  // },
+  {
+    title: 'Mudaventure',
+    image: mud_img,
+    slug: 'the-mud-adventure',
+    registration_status: 'live',
+    brightness_adj: true,
+    category: 'event',
+  },
+  {
+    title: 'Robo Soccer',
+    image:
+      'https://res.cloudinary.com/dfpbty6rt/image/upload/v1729768573/ici-24/gxrngsxdakvcg6zhgy3r.png',
+    slug: 'robo_soccer',
+    registration_status: 'live',
+    category: 'event',
+    brightness_adj: true,
+  },
   {
     title: 'Off Road Odyssey',
     image:
@@ -237,73 +256,63 @@ export const EventData: EventDataProps[] = [
     category: 'event',
     brightness_adj: true,
   },
-
   {
-    title: 'Drag Race',
+    title: 'Robo Drag Race',
     image:
-      'https://img.freepik.com/free-photo/view-car-running-high-speed_23-2150635442.jpg?t=st=1729654034~exp=1729657634~hmac=f4b2a48e26717f42abfa840edb526ab18c8de904e7ac07f5ff09aab0743d0b1c&w=996',
+      'https://img.freepik.com/free-photo/f1-racing-24-hours-le-mans-render-3d-illustration_654080-341.jpg?t=st=1729766478~exp=1729770078~hmac=ad2a47280657868a146a3d1165bf05c71705c63787604ce54e92d5cb89a5fe44&w=1060',
     slug: 'drag_race',
     registration_status: 'live',
     category: 'event',
     brightness_adj: true,
   },
-  // {
-  //   title: 'EV - Workshop',
-  //   image: 'https://img.freepik.com/free-vector/electric-car-concept-illustration_114360-927.jpg?t=st=1729620622~exp=1729624222~hmac=b7a9ae6fb46ddfc354e0f8fd1302292999f698676c39d339689d39229b201d27&w=1060',
-  //   slug: 'ev_workshop',
-  //   registration_status: 'live',
-  // category:"event",
-  //   brightness_adj:true
-  // },
+
+  {
+    title: 'Kabad Se Jugaad',
+    image: inno_img,
+    slug: 'kabad_se_jugad',
+    registration_status: 'live',
+    category: 'event',
+  },
+
+  {
+    title: 'Essay Writing',
+    image: essay_img,
+    slug: 'essay_writing',
+    registration_status: 'live',
+    category: 'event',
+  },
+  {
+    title: 'EV Workshop',
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIRogqHTRuFThuZEpUiecfxCdIJ282eioFeA&s",
+    slug: 'ev_workshop',
+    registration_status: 'live',
+    category: 'workshop',
+    brightness_adj: true,
+  },
+  {
+    title: 'Poster Making',
+    image: "https://img.freepik.com/free-photo/hands-working_1162-121.jpg",
+    slug: 'poster_making',
+    registration_status: 'live',
+    category: 'event',
+    brightness_adj: true,
+  },
+  {
+    title: 'Reel Making',
+    image: "https://img.freepik.com/free-photo/people-working-together-new-movie_23-2149066340.jpg",
+    slug: 'reel_making',
+    registration_status: 'live',
+    category: 'event',
+    brightness_adj: true,
+  },
 
   // {
-  //   title: 'IGBC',
-  //   image: cw,
-  //   slug: '',
+  //   title: 'Tug Of War',
+  //   image:
+  //     'https://img.freepik.com/free-photo/mature-people-tug-war_53876-15214.jpg?t=st=1729831871~exp=1729835471~hmac=7d2c1f5f387e473c60e91432db756ea557cb95d329b1171c9c0655a393c8b0bc&w=900',
+  //   slug: 'tug_of_war',
   //   registration_status: 'live',
-  // category:"event",
-  // },
-  // {
-  //   title: 'Walkathon & Cyclothon',
-  //   image: cw,
-  //   slug: '',
-  //   registration_status: 'live',
-  // category:"event",
-  // },
-
-  // {
-  //   title: 'Ball and Pen Showdown',
-  //   image: essay_img,
-  //   slug: '',
-  //   registration_status: 'live',
-  // category:"event",
-  // },
-  // {
-  //   title: 'Ball and Pen Showdown',
-  //   image: essay_img,
-  //   slug: '',
-  //   registration_status: 'live',
-  // category:"event",
-  // },
-  // {
-  //   title: 'Ball and Pen Showdown',
-  //   image: essay_img,
-  //   slug: '',
-  //   registration_status: 'live',
-  // category:"event",
-  // },
-  // {
-  //   title: 'Ball and Pen Showdown',
-  //   image: essay_img,
-  //   slug: '',
-  //   registration_status: 'live',
-  // category:"event",
-  // },
-  // {
-  //   title: 'Ball and Pen Showdown',
-  //   image: essay_img,
-  //   slug: '',
-  //   registration_status: 'live',
-  // category:"event",
+  //   category: 'event',
+  //   brightness_adj: true,
   // },
 ];

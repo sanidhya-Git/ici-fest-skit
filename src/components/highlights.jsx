@@ -4,22 +4,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-
+import { new_a, new_d, new_f, new_g, new_i } from '../assets';
 
 const Highlight = () => {
-  const image_list = [
-    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728638081/ici-fest-24/tpvxkni3jqindhpgxnhw.png',
-    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728636254/ici-fest-24/ixdrtk4q0yfn9xdaud0o.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632099/ici-fest-24/pjkbjksgcw6vdgsrr0ll.jpg',
-    // 'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632093/ici-fest-24/ocfau0wcst35wx1wbpru.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/lb11nmfbpl987x8kfosm.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/f7s1gh112cldcesckxon.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/f5kukhb4pwhn8m5gjfza.png',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/vsshq6x2dpaq13bcickf.jpg',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/zllvarfp5uhjuy1mr99t.png',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728806945/ici-fest-24/qn0l1iwigsl6zxxrhac4.png',
-    'https://res.cloudinary.com/dm2pha7cn/image/upload/v1728632090/ici-fest-24/ycofwy9hmkpqvedo8khr.jpg',
-  ];
+  const image_list = [new_a, new_d, new_f, new_g, new_i];
   return (
     <>
       <div className='w-full xl:w-[800px] flex justify-center items-end overflow-hidden my-[10px] '>

@@ -132,8 +132,8 @@ const TOWER = () => {
                     tower, which is taller and stable in natural forces.
                   </span>
                 </div>
-                <div className="flex justify-center">
-                  <img src={tower_img} className="h-[250px]" />
+                <div className="flex justify-center mt-3">
+                  <img src={tower_img} className="h-[300px] rounded-lg" />
                 </div>
               </div>
 

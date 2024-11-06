@@ -37,15 +37,15 @@ const ES = () => {
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>
-              <span>Registration Fee - ₹200 per Team</span>
+              <span>Registration Fee - ₹100 per Team</span>
             </div>
             <div className='mt-[10px]'>
               <span className='font-semibold text-[18px]'>
-                All the teams must have 4 members each.
+                All the teams must have 2 members each.
               </span>
             </div>
             <Link
-              to={`https://erp.skit.ac.in/register/r/engine_exotics`}
+              to={`https://erp.skit.ac.in/register/r/ici24_rapidfire`}
               target='_blank'
             >
               <div className='mt-[10px] font-semibold'>
@@ -132,7 +132,7 @@ const ES = () => {
                   </div>
                   <div>
                     <span className='font-semibold text-[17px]'>
-                      In teams. Must have 4 members each.
+                      In teams. Must have 2 members each.
                     </span>
                   </div>
                 </div>

@@ -19,7 +19,7 @@ const EVWORKSHOP = () => {
           <div className='bg-[#ffb4a7] px-[20px] md:px-[40px] py-[30px] rounded-[30px] text-center'>
             <div>
               <span className='font-extrabold text-[38px] md:text-[50px] uppercase'>
-                EV Workshop
+                EV Workshop by HVRDC Electric
               </span>
             </div>
             <div className='flex justify-center'>
@@ -30,7 +30,7 @@ const EVWORKSHOP = () => {
                 <span>Date - 08th November 2024</span>
               </div>
               <div className='mt-[10px]'>
-                <span>Time - 10:00 AM to 11:00 AM</span>
+                <span>Time - 02:00 PM to 03:30 PM</span>
               </div>
               <div className='mt-[10px]'>
                 <span>Venue - JC Bose Auditorium</span>
@@ -54,22 +54,6 @@ const EVWORKSHOP = () => {
                 </button>
               </div>
             </Link>
-            <div className='mt-[10px]'>
-              <span>
-                <b>
-                  {' '}
-                  For more details - :{' '}
-                  <a
-                    
-                    target='blank'
-                    className='underline'
-                  >
-                    {' '}
-                    +91 
-                  </a>
-                </b>
-              </span>
-            </div>
           </div>
         </div>
       </div>
@@ -87,136 +71,121 @@ const EVWORKSHOP = () => {
                 ABOUT
               </button>
             </div>
-
-            <div>
-              <button
-                className={`${
-                  activeButton === 1 ? 'btn_active' : 'btn_deactive'
-                } 'btn_active' : 'btn_deactive'} tracking-wide px-[35px] py-[18px] btn_active font-extrabold text-[14px] rounded-full `}
-                onClick={() => handleButtonClick(1)}
-              >
-                STRUCTURE
-              </button>
-            </div>
-
-            <div>
-              <button
-                className={`${
-                  activeButton === 2 ? 'btn_active' : 'btn_deactive'
-                } 'btn_active' : 'btn_deactive'} tracking-wide px-[35px] py-[18px] btn_active font-extrabold text-[14px] rounded-full `}
-                onClick={() => handleButtonClick(2)}
-              >
-                JUDGEMENT CRITERIA
-              </button>
-            </div>
           </div>
 
           <div className='flex justify-center mt-[20px]'>
             <div className={activeButton === 0 ? 'active-div' : 'deactive-div'}>
               <div className='text-center  mb-[50px] font-semibold'>
-                <div className=' mb-[10px] '>
-                  <span className='font-bold  text-[20px] underline  '>
-                    PROBLEM STATEMENT
-                  </span>
-                </div>
                 <div className='mx-[20px] md:mx-[120px] xl:mx-[220px] '>
-                  <span className='text-[17px]'>
-                    Your task is to design a residential house using AutoCAD
-                    software.Design a residential house with a footprint of 30'
-                    by 60' using AutoCAD, incorporating essential elements to
-                    meet the basic residential requirements. The design should
-                    ensure optimal space utilization, functionality, and a
-                    balanced integration of indoor and outdoor spaces.
-                  </span>
+                  <h1 className='text-2xl font-bold mb-4'>
+                    HVRDC Electric Workshop
+                  </h1>
+                  <p className='mb-4'>
+                    HVRDC Electric is a recognized leader in electric mobility
+                    solutions in Rajasthan, certified by DIPPIT, iStart, Startup
+                    India, and more. We are renowned for our research and
+                    development efforts in the EV domain, focusing on areas such
+                    as retrofitting, EV rentals, battery swapping, and skill
+                    development and training. With a strong foundation in
+                    sustainable transport and cutting-edge EV technology, we are
+                    excited to host this workshop.
+                  </p>
+                  <div className='text-center  mb-[50px] font-semibold'>
+                    <div className='text-left'>
+                      <h2 className='text-xl font-semibold mb-2'>
+                        Workshop Outcomes
+                      </h2>
+                      <p className='mb-4'>
+                        Participants will benefit from the following outcomes:
+                      </p>
+                      <ul className='list-disc list-inside space-y-2 mb-6'>
+                        <li>
+                          <span className='font-bold'>Industry Insight:</span>{' '}
+                          Understand the current landscape and future trends of
+                          the electric vehicle industry.
+                        </li>
+                        <li>
+                          <span className='font-bold'>
+                            Technical Knowledge:
+                          </span>{' '}
+                          Gain expertise on essential EV components and
+                          technologies.
+                        </li>
+                        <li>
+                          <span className='font-bold'>
+                            Hands-On Experience:
+                          </span>{' '}
+                          Engage with EV components through practical sessions.
+                        </li>
+                        <li>
+                          <span className='font-bold'>
+                            Understanding Retrofitting:
+                          </span>{' '}
+                          Learn the process of converting ICE vehicles to
+                          electric.
+                        </li>
+                        <li>
+                          <span className='font-bold'>
+                            Data Analytics Awareness:
+                          </span>{' '}
+                          Discover the role of data in optimizing EV operations.
+                        </li>
+                        <li>
+                          <span className='font-bold'>
+                            Collaborative Learning:
+                          </span>{' '}
+                          Participate in discussions and knowledge exchange with
+                          peers and experts.
+                        </li>
+                        <li>
+                          <span className='font-bold'>
+                            Career Opportunities:
+                          </span>{' '}
+                          Explore potential career paths in the growing EV
+                          sector.
+                        </li>
+                        <li>
+                          <span className='font-bold'>
+                            Inspiration for Innovation:
+                          </span>{' '}
+                          Ignite creativity and innovation in addressing
+                          challenges in the EV space.
+                        </li>
+                      </ul>
+
+                      <h2 className='text-xl font-semibold mb-2'>
+                        Innovation and Research Focus
+                      </h2>
+                      <p className='mb-4'>
+                        HVRDC Electric places a strong emphasis on research and
+                        development. We are actively engaged in:
+                      </p>
+                      <ul className='list-disc list-inside space-y-2'>
+                        <li>
+                          Conducting research on EV powertrains to enhance
+                          performance and efficiency.
+                        </li>
+                        <li>
+                          Developing skill development programs to educate and
+                          empower the next generation of professionals in the EV
+                          sector.
+                        </li>
+                        <li>
+                          Collaborating with academic institutions and industry
+                          experts to foster innovation and drive advancements in
+                          electric vehicle technology.
+                        </li>
+                      </ul>
+                    </div>
+
+                   
+                  </div>
                 </div>
 
-                <div className='text-center my-[30px] '>
-                  <div className=' mb-[10px] underline'>
-                    <span className='font-bold  text-[20px]'>
-                      PARTICIPATION
-                    </span>
-                  </div>
-                  <div>
-                    <span className='font-semibold text-[17px]'>
-                      Participate Individually.
-                    </span>
-                  </div>
-                </div>
-
-                <div className='mx-[10px] flex justify-center'>
-                  <div>
-                    <div className='mt-[10px] '>
-                      <span className='font-bold text-[18px] '>
-                        Basic Requirements
-                      </span>
-                    </div>
-                    <div className='flex justify-center  '>
-                      <span>
-                        Living room, Dining room, Kitchen with adequate
-                        countertop space and storage, Master bedroom with
-                        attached bathroom,
-                        <br className='hidden lg:block' /> Additional bedrooms
-                        with shared bathrooms, Home office/study room, Utility
-                        room
-                      </span>
-                    </div>
-                    <div>
-                      <span className='font-bold text-[18px] '>NOTE: </span>
-                      <span>Computers will be provided</span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-          <div
-            className={`${
-              activeButton === 1 ? 'active-div' : 'deactive-div'
-            } text-[18px] `}
-          >
-            <div className='flex justify-center mt-[10px] text-center'>
-              <div>
-                <span>
-                  This is the single round event. Participant will be given{' '}
-                  <b>1 hour</b> to complete their task. No submissions are
-                  allowed after 1 hour.
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`${
-              activeButton === 2 ? 'active-div' : 'deactive-div'
-            } mx-[20px]`}
-          >
-            <div className='text-center mb-[10px]'>
-              <span className='font-bold text-[20px] underline'>
-                JUDGING CRITERIA
-              </span>
-            </div>
-            <div className=''>
-              <span className='font-bold text-[18px] '>
-                You will be judged based on the following criterias:-
-              </span>
-            </div>
-            <div className='flex justify-center  text-[17px]'>
-              <ul>
-                <li>
-                  1. Adherence to the specified dimensions and requirements
-                </li>
-                <li>2. Logical and efficient layout of rooms</li>
-                <li>3. Proper allocation of spaces for different functions.</li>
-                <li>
-                  4. Adequate consideration for ventilation, lighting, safety,
-                  and privacy
-                </li>
-                <li>
-                  5. Clear and professional presentation of the design using
-                  AutoCAD tools.
-                </li>
-              </ul>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>
