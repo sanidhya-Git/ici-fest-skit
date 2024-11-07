@@ -30,7 +30,7 @@ const EVWORKSHOP = () => {
                 <span>Date - 08th November 2024</span>
               </div>
               <div className='mt-[10px]'>
-                <span>Time - 02:00 PM to 03:30 PM</span>
+                <span>Time - 01:00 PM to 02:30 PM</span>
               </div>
               <div className='mt-[10px]'>
                 <span>Venue - JC Bose Auditorium</span>

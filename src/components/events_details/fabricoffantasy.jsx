@@ -46,7 +46,7 @@ const Fabric = () => {
                 <span>Time - 12:00 NOON - 02:00 PM</span>
               </div>
               <div>
-                <span>Venue - CAEG Lab</span>
+                <span>Venue - Yoga Garden</span>
               </div>
             </div>
             <div className="font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 ">

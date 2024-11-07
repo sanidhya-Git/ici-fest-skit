@@ -35,7 +35,7 @@ const JENGA = () => {
                 <span>Time - 12:00 NOON - 02:00 PM</span>
               </div>
               <div>
-                <span>Venue - G-Lift area</span>
+                <span>Venue - Canteen Parking</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>

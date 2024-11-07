@@ -39,11 +39,11 @@ const BYC_WORKSHOP = () => {
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
-                  Date - 8<sup>th </sup>November 2024 (workshop)
+                  Date - 9<sup>th </sup>November 2024 (workshop)
                 </span>
               </div>
               <div>
-                <span>Time - 11:00 AM Onwards</span>
+                <span>Time - 12:00 PM - 01:30 PM</span> 
               </div>
               {/* <div>
                 <span>
@@ -54,7 +54,7 @@ const BYC_WORKSHOP = () => {
                 <span>Time - 12:00 NOON - 01:30 PM</span>
               </div> */}
               <div>
-                <span>Venue - Ground</span>
+                <span>Venue - BD Lab</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 '>

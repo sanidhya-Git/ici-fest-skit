@@ -30,7 +30,7 @@ const ES = () => {
                 <span>Date - 8<sup>th </sup>November 2024</span>
               </div>
               <div className='mt-[10px]'>
-                <span>Time - 02:00 PM - 03:30 PM</span>
+                <span>Time - 01:00 PM - 02:30 PM</span>
               </div>
               <div className='mt-[10px]'>
                 <span>Venue - 1F3, Civil Block</span>
@@ -59,7 +59,7 @@ const ES = () => {
                 <b>
                   {' '}
                   For more details - Yuvraj Singh Jadaun:{' '}
-                  <a target='blank' className='underline'>
+                  <a target='blank' className='underline' >
                     {' '}
                     +91 7742014101
                   </a>

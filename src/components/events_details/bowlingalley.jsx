@@ -44,7 +44,7 @@ const BA = () => {
                 </span>
               </div>
               <div>
-                <span>Time - 01:30 PM - 03:30 PM</span>
+                <span>Time - 01:30 PM - 02:30 PM</span>
               </div>
               <div className='mt-2'>
                 <span>
@@ -52,7 +52,7 @@ const BA = () => {
                 </span>
               </div>
               <div>
-                <span>Time - 09:00 AM - 11:00 AM</span>
+                <span>Time - 01:00 PM - 02:30 AM</span>
               </div>
               <div className='mt-2'> 
                 <span>Venue - Ground</span>

@@ -28,14 +28,14 @@ const WEBATHON = () => {
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
-                  Date - 9<sup>th </sup>November 2024
+                  Date - 09<sup>th </sup>November 2024
                 </span>
               </div>
               <div>
-                <span>Time - 09:00 AM - 03:00 PM</span>
+                <span>Time - 09:00 AM - 02:30 PM</span>
               </div>
               <div>
-                <span>Venue - CRT Lab</span>
+                <span>Venue - CAD Lab, Civil Block</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none mt-[10px]'>
