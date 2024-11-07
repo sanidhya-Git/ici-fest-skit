@@ -30,24 +30,24 @@ interface EventDataProps {
 }
 
 export const EventData: EventDataProps[] = [
-  {
-    title: 'Application of Science',
-    image:
-      'https://img.freepik.com/free-photo/real-estate-desk-with-keys_23-2147653337.jpg?t=st=1729793363~exp=1729796963~hmac=d22ce8786ef61f51f46dcd643cd720a258e142c1d48b540a3dd35aaf4be00fde&w=996',
-    slug: 'application_of_science',
-    registration_status: 'live',
-    category: 'exhibition',
-    brightness_adj: true,
-  },
-  {
-    title: 'Nirman Me Navachaar',
-    image:
-      'https://img.freepik.com/free-vector/green-energy-vector-concept_1308-130351.jpg?t=st=1729764563~exp=1729768163~hmac=42c7476c8ee2fc8017ef0e27c40af7cbf6772b8bf33d304cd88bad1820f114a2&w=1380',
-    slug: 'nirwan_me_navachaar',
-    registration_status: 'live',
-    category: 'workshop',
-    brightness_adj: true,
-  },
+  // {
+  //   title: 'Application of Science',
+  //   image:
+  //     'https://img.freepik.com/free-photo/real-estate-desk-with-keys_23-2147653337.jpg?t=st=1729793363~exp=1729796963~hmac=d22ce8786ef61f51f46dcd643cd720a258e142c1d48b540a3dd35aaf4be00fde&w=996',
+  //   slug: 'application_of_science',
+  //   registration_status: 'live',
+  //   category: 'exhibition',
+  //   brightness_adj: true,
+  // },
+  // {
+  //   title: 'Nirman Me Navachaar',
+  //   image:
+  //     'https://img.freepik.com/free-vector/green-energy-vector-concept_1308-130351.jpg?t=st=1729764563~exp=1729768163~hmac=42c7476c8ee2fc8017ef0e27c40af7cbf6772b8bf33d304cd88bad1820f114a2&w=1380',
+  //   slug: 'nirwan_me_navachaar',
+  //   registration_status: 'live',
+  //   category: 'workshop',
+  //   brightness_adj: true,
+  // },
   {
     title: 'Beyond The Canvas Workshop',
     image: jw,
