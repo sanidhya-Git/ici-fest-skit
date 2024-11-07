@@ -28,11 +28,11 @@ const DRAG_RACE = () => {
             <div className='mt-[15px] font-bold  text-[16px] md:text-[18px]'>
               <div>
                 <span>
-                  Date - 9<sup>th </sup>November 2024
+                  Date - 8<sup>th </sup>November 2024
                 </span>
               </div>
               <div>
-                <span>Time - 11:00 AM - 01:00 PM</span>
+                <span>Time - 11:00 AM - 02:30 PM</span>
               </div>
               <div>
                 <span>Venue - Basketball Court</span>

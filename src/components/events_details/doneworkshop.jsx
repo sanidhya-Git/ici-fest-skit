@@ -32,7 +32,7 @@ const DN = () => {
                 </span>
               </div>
               <div>
-                <span>Time - 01:00 PM - 03:00 PM</span>
+                <span>Time - 10:00 AM - 11:30 PM</span>
               </div>
               <div>
                 <span>Venue - JC Bose Auditorium</span>

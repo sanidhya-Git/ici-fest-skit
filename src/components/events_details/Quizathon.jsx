@@ -35,7 +35,7 @@ const QAT = () => {
                 <span>Time - 01:00 PM - 02:00 PM</span>
               </div>
               <div>
-                <span>Venue - 4F4, Civil Block</span>
+                <span>Venue - 1F2, Civil Block</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none  mt-[10px] '>

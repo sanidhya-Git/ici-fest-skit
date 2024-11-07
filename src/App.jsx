@@ -6,8 +6,8 @@ import Accommodation from './components/accommodation';
 import TempReg from './components/temp_regis';
 import AboutTeam from './components/aboutteam';
 import JK from './components/events_details/joistkwik';
-import BYC_EXHIBITION  from './components/events_details/beyondthecanvas_exhibition';
-import BYC_WORKSHOP  from './components/events_details/beyondthecanvas_workshop';
+import BYC_EXHIBITION from './components/events_details/beyondthecanvas_exhibition';
+import BYC_WORKSHOP from './components/events_details/beyondthecanvas_workshop';
 import BA from './components/events_details/bowlingalley';
 import BOB from './components/events_details/brickobrick';
 import WEBATHON from './components/events_details/webathon';
@@ -46,15 +46,13 @@ import DRAG_RAGE from './components/events_details/drag_race';
 // import AVD_CONSTRUCT from './components/events_details/adv_construction';
 import APP_SCIENCE from './components/events_details/application_of_science';
 
-
 import ROBO_SOCCER from './components/events_details/robo_soccer';
 import NIRMAN_SE_NAVACHAAR from './components/events_details/niewan_me_navachaar';
 
-import  KABAD_SE_JUGAD from "./components/events_details/kabad_se_jugad";
+import KABAD_SE_JUGAD from './components/events_details/kabad_se_jugad';
 import POSTER_MAKING from './components/events_details/poster_making';
 import REEL_MAKING from './components/events_details/reel_making';
 // import TUG_OF_WAR from './components/events_details/tugofwar';
-
 
 // import { i } from './assets';
 
@@ -70,6 +68,7 @@ const App = () => {
             <Route path='/accommodation' element={<Accommodation />} />
             <Route path='/registrations' element={<TempReg />} />
             <Route path='/aboutteam' element={<AboutTeam />} />
+
             <Route path='/joist_kwik' element={<JK />} />
             <Route path='/drone_workshop' element={<DN />} />
             <Route path='/fabricoffantacy' element={<Fabric />} />
@@ -80,40 +79,43 @@ const App = () => {
             <Route path='/engine_exotics' element={<ES />} />
             <Route path='/egamingvalorant' element={<EV />} />
             <Route path='/coordination_clash' element={<CC />} />
-            <Route path='/ev_workshop' element={<EVWORKSHOP />} />
             <Route path='/robo_soccer' element={<ROBO_SOCCER />} />
             <Route path='/startup_mela' element={<StartupMela />} />
             <Route path='/drag_race' element={<DRAG_RAGE />} />
             <Route path='/kabad_se_jugad' element={<KABAD_SE_JUGAD />} />
             <Route path='/ev_workshop' element={<EVWORKSHOP />} />
+
             <Route path='/poster_making' element={<POSTER_MAKING />} />
             <Route path='/reel_making' element={<REEL_MAKING />} />
-
-
-
             <Route path='/techconnect' element={<TECH />} />
+
             <Route path='/web_a_thon' element={<WEBATHON />} />
             <Route path='/quiz_a_thon' element={<OAT />} />
             <Route path='/egamingbgmi' element={<EBGMI />} />
             <Route path='/bowling_alley' element={<BA />} />
-            <Route path='/beyond_the_canvas_exhibition' element={<BYC_EXHIBITION />} />
-            <Route path='/beyond_the_canvas_workshop' element={<BYC_WORKSHOP />} />
-            <Route path='/nirwan_me_navachaar' element={<NIRMAN_SE_NAVACHAAR />} />
+            <Route
+              path='/beyond_the_canvas_exhibition'
+              element={<BYC_EXHIBITION />}
+            />
+            <Route
+              path='/beyond_the_canvas_workshop'
+              element={<BYC_WORKSHOP />}
+            />
+
+            <Route
+              path='/nirwan_me_navachaar'
+              element={<NIRMAN_SE_NAVACHAAR />}
+            />
             <Route path='/application_of_science' element={<APP_SCIENCE />} />
-            {/* <Route path='/tug_of_war' element={<TUG_OF_WAR />} /> */}
+
             <Route path='/brick-o-brick' element={<BOB />} />
             <Route path='/scavenger_hunt' element={<SH />} />
-            <Route path='/toggle' element={<TOGGLE />} />
             <Route path='/tower_craft' element={<TOWER />} />
-            <Route path='/quakeproof' element={<QUAKE />} />
-            <Route path='/mix-and-mould' element={<MIXANDMOULD />} />
             <Route path='/essay_writing' element={<ESSAY_WRITING />} />
-            <Route path='/innostruct' element={<INNOSTRUCT />} />
             <Route path='/crackthecircuit' element={<CRACKTHECIRCUIT />} />
             <Route path='/crackthecad' element={<CRACKTHECAD />} />
             <Route path='/the-mud-adventure' element={<MUDADVENTURE />} />
-            <Route path='/let-the-brush-talk' element={<BRUSHTALK />} />
-            <Route path='/cement-workshop' element={<WORKSHOP />} />
+
             <Route path='/gallery' element={<GALLERY />} />
             <Route path='/response' element={<RESPONSE />} />
             <Route path='/jecrc' element={<JECRC />} />

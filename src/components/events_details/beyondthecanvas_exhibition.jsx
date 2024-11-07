@@ -43,7 +43,7 @@ const BYC_EXHIBITION = () => {
                 </span>
               </div>
               <div>
-                <span>Time - 11:00 AM Onwards</span>
+                <span>Time - 11:00 AM - 02:30 PM</span>
               </div>
               {/* <div>
                 <span>
@@ -54,7 +54,7 @@ const BYC_EXHIBITION = () => {
                 <span>Time - 12:00 NOON - 01:30 PM</span>
               </div> */}
               <div>
-                <span>Venue - Ground</span>
+                <span>Venue - CE / ME Parking</span>
               </div>
             </div>
             <div className='font-bold text-[22px] md:text-[28px] leading-none mt-[10px] md:mt-0 '>

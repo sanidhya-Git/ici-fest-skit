@@ -37,7 +37,7 @@ const ESSAY_WRITING = () => {
                 <span>Time - 12:30 PM - 01:30 PM</span>
               </div>
               <div className="mt-[10px]">
-                <span>Venue - 2F1, Civil Block</span>
+                <span>Venue - 2F2, Civil Block</span>
               </div>
               {/* <div><span>Tech zone in football ground</span></div> */}
             </div>

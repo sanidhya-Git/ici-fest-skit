@@ -32,7 +32,7 @@ const ROBO_SOCCER = () => {
                 </span>
               </div>
               <div>
-                <span>Time - 9:00 AM - 11:00 AM</span>
+                <span>Time - 11:00 AM - 01:00 PM</span>
               </div>
               <div>
                 <span>Venue - Front Side, Civil Block</span>
