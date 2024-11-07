@@ -7,7 +7,7 @@ const Timeline = () => {
     setActiveButton(index);
   };
   const DataDayOne = [
-    { Event: { 1: 'Inaugural' }, Timing: '10:00 AM - 11:00 AM' },
+    { Event: { 1: 'Inaugural' }, Timing: '09:30 AM - 11:00 AM' },
     { Event: { 2: 'Expo' }, Timing: '11:00 AM - 02:30 PM' },
     {
       Event: { 3: 'Beyond The Canvas (Exhibition)' },
