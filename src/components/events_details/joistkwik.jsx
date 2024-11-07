@@ -50,7 +50,7 @@ const JK = () => {
                     <span>Time</span>
                   </div>
                   <div>
-                    <span><span className="inline md:hidden"> Round 1</span> - 01:00 PM - 02:00 pM</span>
+                    <span><span className="inline md:hidden"> Round 1</span> - 01:00 PM - 02:30 PM</span>
                   </div>
                   <div>
                     <span><span className="inline md:hidden"> Round 2</span> - 12:00 NOON - 02:00 PM</span>
