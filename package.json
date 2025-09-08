@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.7",
     "demo-website": "file:",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-double-marquee": "^1.1.0",

@@ -149,33 +149,27 @@ const Footer = () => {
             <div className='text-[15px] mt-[10px] ml-[28px] '>
               <ul className='text-[#fff]'>
                 <li className='hover:text-[#ff583e] duration-300  mb-[10px]'>
-                  Saarthak Chopra -
-                  <a href='https://wa.me/9571285091' target='blank'>
+                  Vaibhav Upadhyay -
+                  <a href='https://wa.me/9105939291' target='blank'>
                     {' '}
-                    &nbsp;+91 9571285091
+                    &nbsp;+91 9105939291
                   </a>
                 </li>
                 <li className='hover:text-[#ff583e] duration-300  mb-[10px]'>
-                  Uday Singh Sisodia -
-                  <a href='https://wa.me/7733917219' target='blank'>
+                  Kaynat Ansari -
+                  <a href='https://wa.me/8112236498' target='blank'>
                     {' '}
-                    &nbsp;+91 7733917219
+                    &nbsp;+91 8112236498
                   </a>
                 </li>
                 <li className='hover:text-[#ff583e] duration-300  mb-[10px]'>
-                  Puneet Dadheech -
-                  <a href='https://wa.me/8619106882' target='blank'>
+                  Tushar Singh Parihar -
+                  <a href='https://wa.me/9414655494' target='blank'>
                     {' '}
-                    &nbsp;+91 8619106882
+                    &nbsp;+91 9414655494
                   </a>
                 </li>
-                <li className='hover:text-[#ff583e] duration-300  mb-[10px]'>
-                  Nupur Agarwal -
-                  <a href='https://wa.me/8209753424' target='blank'>
-                    {' '}
-                    &nbsp;+91 8209753424
-                  </a>
-                </li>
+
               </ul>
             </div>
           </div>

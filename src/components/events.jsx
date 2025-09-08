@@ -14,13 +14,13 @@ const FestEvent = () => {
       <div className='text-center mb-[20px] md:mb-[40px] mt-[10px]'>
         <span className='text-[26px] md:text-[30px] font-extrabold'>
           FEST{"'"}
-          <span className='text-[#ff583e]'>24 </span>EVENTS
+          <span className='text-[#ff583e]'>25 </span>EVENTS
         </span>
       </div>
 
-      {/* <div className='text-center mb-[20px] md:mb-[40px] mt-[50px] text-[26px] md:text-[30px] font-extrabold'>
+      <div className='text-center mb-[20px] md:mb-[40px] mt-[50px] text-[26px] md:text-[30px] font-extrabold'>
         Registration opening soon
-      </div> */}
+      </div>
 
       {/* <div className='flex flex-wrap justify-center  gap-3 md:gap-5'>
         <div>
@@ -100,7 +100,7 @@ const FestEvent = () => {
           )}
         </div>
       )} */}
-      <div>
+      {/* <div>
         <p className='text-[26px] md:text-[30px] font-extrabold text-center'>
           Workshops
         </p>
@@ -266,7 +266,7 @@ const FestEvent = () => {
             </div>
           ),
         )}
-      </div>
+      </div> */}
     </>
   );
 };

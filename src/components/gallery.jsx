@@ -33,8 +33,8 @@ function Gallery() {
     <div className='container mx-auto px-1 py-1 lg:px-10 lg:pt-10'>
       <div className='text-center mb-[40px]'>
         <span className='text-[30px] md:text-[36px] font-extrabold'>
-          Highlights of ICI FEST{"'"}
-          <span className='text-[#ff583e]'>23</span>
+          Highlights of {" "}
+          <span className='text-[#ff583e]'>ICI</span> Fest
         </span>
       </div>
       <div className='-m-1 flex flex-wrap md:-m-2'>

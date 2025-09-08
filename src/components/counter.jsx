@@ -4,7 +4,7 @@ const Counter = () => {
       <div className='mt-[30px] md:mt-[50px] text-[30px] md:text-[36px] font-extrabold text-center'>
         <span>
           FEST{"'"}
-          <span className='text-[#ff583e]'>23 </span>Stats
+          <span className='text-[#ff583e]'>24 </span>Stats
         </span>
       </div>
 
@@ -13,7 +13,7 @@ const Counter = () => {
           <div>
             <div className=''>
               <span className='text-[24px] lg:text-[36px] font-extrabold text-[#ff583e] leading-none'>
-                15+
+                20+
               </span>
             </div>
             <div className=''>
@@ -28,7 +28,7 @@ const Counter = () => {
           <div>
             <div className=''>
               <span className='text-[24px] lg:text-[36px] font-extrabold text-[#ff583e] leading-none'>
-                4500+
+                2800+
               </span>
             </div>
             <div className=''>
@@ -43,7 +43,7 @@ const Counter = () => {
           <div className=''>
             <div className=''>
               <span className='text-[24px]  lg:text-[36px] font-extrabold text-[#ff583e] leading-none '>
-                250+
+                450+
               </span>
             </div>
             <div className=''>
@@ -58,7 +58,7 @@ const Counter = () => {
           <div>
             <div className=''>
               <span className='text-[24px] lg:text-[36px] font-extrabold text-[#ff583e] leading-none'>
-                5000+
+                3500+
               </span>
             </div>
             <div className=''>
@@ -73,7 +73,7 @@ const Counter = () => {
           <div>
             <div className=''>
               <span className='text-[24px] lg:text-[36px] font-extrabold text-[#ff583e] leading-none'>
-                100+
+                120+
               </span>
             </div>
             <div className=''>

@@ -184,12 +184,12 @@ const About = () => {
           <div>
             <div className='mt-[10px]'>
               <span className='font-bold text-[16px] md:text-[18px]'>
-                Dates for FEST{"'"}24
+                Dates for FEST{"'"}25
               </span>
             </div>
             <div className='text-[14px] md:text-[16px]'>
               <span>
-                08<sup>th </sup>to 10<sup>th </sup>November 2024
+                26<sup>th </sup>to 28<sup>th </sup>September 2025
               </span>
             </div>
             <div className='mt-[10px]'>
@@ -206,7 +206,7 @@ const About = () => {
           <div>
             <span className='text-[30px] md:text-[36px] font-extrabold'>
               Highlights{"'"}
-              <span className='text-[#ff583e]'>23</span>
+              <span className='text-[#ff583e]'>24</span>
             </span>
           </div>
           <Highlight />

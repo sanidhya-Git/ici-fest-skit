@@ -91,13 +91,13 @@ export const Collaborators = () => {
 
   return (
     <div className='block gap-[150px] lg:gap-[250px]'>
-      <div className='flex justify-center mt-[50px]'>
+      {/* <div className='flex justify-center mt-[50px]'>
         <span className='text-[30px] md:text-[36px] font-extrabold'>
           In association with
         </span>
-      </div>
+      </div> */}
 
-      <div className='mt-6 mb-5 flex  flex-wrap gap-7 justify-center items-center'>
+      {/* <div className='mt-6 mb-5 flex  flex-wrap gap-7 justify-center items-center'>
         {collab_image.map((img_info, index) => (
           <div key={index} className='flex justify-center'>
             <img
@@ -109,7 +109,7 @@ export const Collaborators = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -25,7 +25,7 @@ const Jecrc = () => {
     <>
       <div className="text-center mb-[20px] md:mb-[40px] mt-[10px]">
         <span className="text-[26px] md:text-[30px] font-extrabold">
-          FEST'<span className="text-[#ff583e]">23 </span>EVENTS
+          FEST'<span className="text-[#ff583e]">24 </span>EVENTS
         </span>
       </div>
 
