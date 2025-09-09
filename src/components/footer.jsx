@@ -87,7 +87,7 @@ const Footer = () => {
                   <Link to='/registrations'>Register Now</Link>
                 </li>
                 <li className='hover:text-[#ff583e] duration-300'>
-                  <a href='mailto:prashant.s2922@gmail.com'>Report Bug</a>
+                  <a href='mailto:sanidhya.web@gmail.com'>Report Bug</a>
                 </li>
               </ul>
             </div>
@@ -297,23 +297,19 @@ const Footer = () => {
               <div className='text-[13px] md:text-[15px] mt-[3px] md:mt-[5px]  ml-[24px] '>
                 <ul className='text-[#fff]'>
                   <li className='hover:text-[#ff583e] duration-300'>
-                    Saarthak Chopra -
-                    <a href='https://wa.me/9571285091'>&nbsp;+91 9571285091</a>
+                    Vaibhav Upadhyay -
+                    <a href='https://wa.me/9105939291'>&nbsp;+91 9105939291</a>
                   </li>
                   <li className='hover:text-[#ff583e] duration-300'>
-                    Uday Singh Sisodia -
-                    <a href='https://wa.me/7733917219'>&nbsp;+91 7733917219</a>
+                    Kaynat Ansari -
+                    <a href='https://wa.me/8112236498'>&nbsp;+91 8112236498</a>
                   </li>
                   <li className='hover:text-[#ff583e] duration-300'>
-                    Puneet Dadheech -
-                    <a href='https://wa.me/8619106882'>&nbsp;+91 8619106882</a>
-                  </li>
+                    Tushar Singh Parihar-
+                    <a href='https://wa.me/9414655494'>&nbsp;+91 9414655494</a>
+                  </li>                 
                   <li className='hover:text-[#ff583e] duration-300'>
-                    Nupur Agarwal -
-                    <a href='https://wa.me/8209753424'>&nbsp;+91 8209753424</a>
-                  </li>
-                  <li className='hover:text-[#ff583e] duration-300'>
-                    <a href='mailto:prashant.s2922@gmail.com'>Report Bug</a>
+                    <a href='mailto:sanidhya.web@gmail.com'>Report Bug</a>
                   </li>
                 </ul>
               </div>

@@ -18,7 +18,7 @@ const HeroSection = () => {
             type='video/mp4'
           />
         </video>
-        <div className='flex flex-col items-center justify-center absolute mt-[250px] animate-bounce'>
+        <div className='flex flex-col items-center justify-center absolute mt-[300px] animate-bounce'>
           {' '}
           <div>
             <span className='text-[#1a1a1a] font-extrabold text-xl'>
