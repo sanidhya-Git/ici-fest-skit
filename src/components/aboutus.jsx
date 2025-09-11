@@ -205,8 +205,8 @@ const About = () => {
         <div className='max-[320px]:mt-[20px] mt-[50px] xl:mt-0 '>
           <div>
             <span className='text-[30px] md:text-[36px] font-extrabold'>
-              Highlights{"'"}
-              <span className='text-[#ff583e]'>24</span>
+              Highlights
+             
             </span>
           </div>
           <Highlight />
