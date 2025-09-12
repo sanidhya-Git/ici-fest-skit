@@ -11,8 +11,9 @@ const Event = () => {
       try {
         const res = await fetch(
           "https://ici-fest-skit.vercel.app/api/v1/events?page=1&limit=50",
-          {
-            method: "GET",            
+           {
+            method: "GET",
+
           }
         );
 

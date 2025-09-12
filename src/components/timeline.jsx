@@ -16,8 +16,9 @@ const Timeline = () => {
       try {
         const res = await fetch(
           "https://ici-fest-skit.vercel.app/api/v1/schedule?type=all&page=1&limit=20",
-          {
+           {
             method: "GET",
+
           }
         );
 
