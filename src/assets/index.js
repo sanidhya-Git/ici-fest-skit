@@ -21,7 +21,7 @@ import img13 from './13.png';
 import img14 from './14.png';
 import img15 from './15.png';
 import img16 from './16.png';
-// import img17 from './17.png';
+
 import img18 from './18.png';
 import img19 from './19.png';
 import img20 from './20.png';
@@ -49,8 +49,7 @@ import workshop from './workshop.png';
 import cementpottery from './cementpottery.png';
 import civilwar from './civilwar.png';
 import ctc from './ctc.png';
-import tower_1 from './event-pics/tower_1.png';
-import quake_img from './event-pics/quake.png';
+
 
 import mainlogo from './mainlogo.png';
 
@@ -74,16 +73,6 @@ import four from './4.png';
 
 import next from './next.png';
 
-import bob_img from './event-pics/bob.png';
-import joist_img from './event-pics/joist.png';
-import bowling_img from './event-pics/bowling.png';
-import tower_img from './event-pics/tower.png';
-import crackthecad_img from './event-pics/crackthecad.png';
-import pot_img from './event-pics/pot.png';
-import essay_img from './event-pics/essay.png';
-import inno_img from './event-pics/inno.png';
-import mud_img from './event-pics/mud.png';
-import brush_img from './event-pics/brush.png';
 
 import map_img from './map.png';
 import PrizePool from './prize.png';
@@ -128,6 +117,16 @@ import new_m from './new/m.jpg';
 import new_n from './new/n.jpg';
 import new_o from './new/o.jpg';  
 import new_p from './new/p.jpg';
+import new_q from './new/q.jpg';
+import new_r from './new/r.jpg';
+import new_s from './new/s.jpg';
+import new_t from './new/t.jpg';
+import new_u from './new/u.jpg';
+import new_v from './new/v.jpg';
+import new_w from './new/w.jpg';
+import new_x from './new/x.jpg';
+
+
 
 export {
   skit_logo,
@@ -139,7 +138,7 @@ export {
   img14,
   img15,
   img16,
-  // img17,
+  
   img18,
   img19,
   img20,
@@ -153,7 +152,7 @@ export {
   workshop,
   cementpottery,
   civilwar,
-  tower_1,
+  
   mainlogo,
   social_icon,
   quicklink_icon,
@@ -180,17 +179,7 @@ export {
   three,
   four,
   next,
-  bob_img,
-  joist_img,
-  bowling_img,
-  tower_img,
-  crackthecad_img,
-  quake_img,
-  pot_img,
-  essay_img,
-  inno_img,
-  mud_img,
-  brush_img,
+
   map_img,
   PrizePool,
   ResponseLogo,
@@ -231,6 +220,14 @@ export {
   new_n,
   new_o,  
   new_p,
+  new_q,
+  new_r,
+  new_s,
+  new_t,
+  new_u,
+  new_v,
+  new_w,
+  new_x,
   new_e,
   new_h
 };

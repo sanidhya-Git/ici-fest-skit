@@ -11,10 +11,27 @@ import {
   new_n,
   new_o,
   new_p,
+  new_q,
+  new_r,
+  new_s,
+  new_t,
+  new_u,
+  new_v,
+  new_w,
+  new_x,
+
 } from '../assets';
 
 function Gallery() {
   const images = [
+      new_s,
+      new_r,
+
+  new_t,
+  new_u,
+  new_v,
+  new_w,
+  new_x,
     new_a,
     new_d,
     new_f,
@@ -27,6 +44,8 @@ function Gallery() {
     new_n,
     new_o,
     new_p,
+    new_q,
+
   ];
 
   return (
