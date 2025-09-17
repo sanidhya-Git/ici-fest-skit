@@ -8,7 +8,7 @@ import b from './b.jpg';
 import c from './c.jpg';
 import d from './d.jpg';
 import e from './e.jpg';
-import f from './f.jpg';
+
 import g from './g.jpg';
 import h from './h.jpg';
 import i from './i.jpg';
@@ -25,8 +25,11 @@ import img16 from './16.png';
 import img18 from './18.png';
 import img19 from './19.png';
 import img20 from './20.png';
+
 import img21 from './anutech.png';
 import img22 from './triangle.png';
+import img23 from './23.png';
+import ehcc from './ehcc.png';
 
 // new sponsors
 import new_spon_one from './new_spon_one.jpg';
@@ -39,14 +42,12 @@ import new_spon_seven from './new_spon_seven.png';
 
 import loader from './loader_logo.png';
 
-import jw from './jw.png';
 
 import ba from './ba.png';
 import bob from './bob.png';
 import cw from './c&w.png';
 import th from './th.png';
-import workshop from './workshop.png';
-import cementpottery from './cementpottery.png';
+
 import civilwar from './civilwar.png';
 import ctc from './ctc.png';
 
@@ -90,14 +91,14 @@ import collabSeven from './collaborator/seven.png';
 import collabEight from './collaborator/eight.png';
 import collabNine from './collaborator/nine.png';
 
+
 // logo
 import light_logo from './light_logo.png';
 
 import coor_one from './coor_one.jpg';
 import coor_two from './coor_two.jpg';
 
-import jegga from "./jegga.png";
-import fab from "./fab.png";
+
 
 
 // new
@@ -142,16 +143,19 @@ export {
   img18,
   img19,
   img20,
+  img23,
+  
   loader,
-  jw,
+
   ba,
   bob,
   cw,
   th,
   ctc,
-  workshop,
-  cementpottery,
+
   civilwar,
+
+  ehcc,
   
   mainlogo,
   social_icon,
@@ -164,7 +168,7 @@ export {
   c,
   d,
   e,
-  f,
+  
   g,
   h,
   i,
@@ -179,7 +183,6 @@ export {
   three,
   four,
   next,
-
   map_img,
   PrizePool,
   ResponseLogo,
@@ -201,11 +204,12 @@ export {
   collabSeven,
   collabEight,
   collabNine,
+
   light_logo,
   coor_one,
   coor_two,
-  jegga,
-  fab,
+
+  
   new_a,
   new_b,
   new_c,

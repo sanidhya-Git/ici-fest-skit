@@ -16,14 +16,14 @@ const Timeline = () => {
       try {
         const res = await fetch(
           "https://ici-fest-skit.vercel.app/api/v1/schedule?type=all&page=1&limit=20",
-           {
+          {
             method: "GET",
 
           }
         );
 
         const data = await res.json();
-        console.log("API Response:", data); 
+        console.log("API Response:", data);
 
         const fetchedSchedules = data?.data?.data?.schedules || [];
         setSchedules(fetchedSchedules);
@@ -40,18 +40,25 @@ const Timeline = () => {
 
   if (loading) return <p className="text-center">Loading timeline...</p>;
   if (error) return <p className="text-center text-red-500">{error}</p>;
-  if (!schedules.length) return <p className="text-center">No schedules available</p>;
+  if (!schedules.length)
+    return <p className="text-center">No schedules available</p>;
 
-
+  // ✅ Group schedules by LOCAL date (IST), not UTC
   const groupedByDate = schedules.reduce((acc, schedule) => {
-    if (!acc[schedule.date]) {
-      acc[schedule.date] = [];
+    const d = new Date(schedule.date);
+    const normalizedDate = d.toLocaleDateString("en-CA"); // YYYY-MM-DD in local timezone (IST)
+
+    if (!acc[normalizedDate]) {
+      acc[normalizedDate] = [];
     }
-    acc[schedule.date].push(schedule);
+    acc[normalizedDate].push(schedule);
     return acc;
   }, {});
 
-  const dates = Object.keys(groupedByDate);
+  // ✅ Sort dates so Day 1, Day 2, etc. are in order
+  const dates = Object.keys(groupedByDate).sort(
+    (a, b) => new Date(a) - new Date(b)
+  );
 
   return (
     <>

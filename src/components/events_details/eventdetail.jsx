@@ -12,17 +12,18 @@ const EventDetail = () => {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
+        console.log(slug);
         const res = await fetch(
           `https://ici-fest-skit.vercel.app/api/v1/events?slug=${slug}`,
           {
             method: "GET",
-        
+
           }
         );
 
         const data = await res.json();
-        if (data?.success) {
-          setEvent(data.data.data);
+        if (data?.success && data?.data) {
+          setEvent(data.data); // ✅ FIXED
         } else {
           setError("Failed to fetch event details.");
         }
@@ -49,7 +50,9 @@ const EventDetail = () => {
 
   if (error)
     return (
-      <p className="text-center text-red-600 font-semibold mt-20 px-4">{error}</p>
+      <p className="text-center text-red-600 font-semibold mt-20 px-4">
+        {error}
+      </p>
     );
 
   if (!event)
@@ -57,7 +60,7 @@ const EventDetail = () => {
       <p className="text-center mt-20 text-gray-500 px-4">No event found.</p>
     );
 
-  // Dynamic Tabs
+  // Tabs
   const tabs = [
     event.description && "About",
     event.judgementCriteria && "Judgement Criteria",
@@ -65,7 +68,6 @@ const EventDetail = () => {
     event.materialsProvided && "Materials",
   ].filter(Boolean);
 
-  // Clean text: remove leading "-" and trim spaces
   const cleanText = (text) =>
     text
       ?.split("\n")
@@ -172,7 +174,7 @@ const EventDetail = () => {
         </div>
       )}
 
-      {/* Tabs Section */}
+      {/* Tabs */}
       {tabs.length > 0 && (
         <>
           <div className="flex justify-center mt-10 flex-wrap gap-3 sm:gap-4">

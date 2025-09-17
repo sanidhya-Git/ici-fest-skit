@@ -11,14 +11,14 @@ const Event = () => {
       try {
         const res = await fetch(
           "https://ici-fest-skit.vercel.app/api/v1/events?page=1&limit=50",
-           {
+          {
             method: "GET",
 
           }
         );
 
         const data = await res.json();
-        const fetchedEvents = data?.data?.data?.events || [];
+        const fetchedEvents = data?.data?.events || [];
         setEvents(fetchedEvents);
       } catch (err) {
         console.log("error", err);
@@ -31,23 +31,18 @@ const Event = () => {
     fetchEvents();
   }, []);
 
-  if (loading) {
-    return <p className="text-center text-lg">Loading events...</p>;
-  }
-
-  if (error) {
-    return <p className="text-center text-red-500">Error: {error}</p>;
-  }
+  if (loading) return <p className="text-center text-lg">Loading events...</p>;
+  if (error) return <p className="text-center text-red-500">Error: {error}</p>;
 
   return (
     <>
       <div className="text-center mb-[20px] md:mb-[40px] mt-[10px]">
         <span className="text-[26px] md:text-[30px] font-extrabold">
-          FEST{"'"}
-          <span className="text-[#ff583e]">25 </span>EVENTS
+          FEST{"'"} <span className="text-[#ff583e]">25 </span>EVENTS
         </span>
       </div>
 
+      <CategorySection title="Hackathons" events={events} category="HACKATHON" />
       <CategorySection title="Workshops" events={events} category="WORKSHOP" />
       <CategorySection title="Events" events={events} category="EVENT" />
       <CategorySection title="Exhibitions" events={events} category="EXHIBITION" />
@@ -67,6 +62,7 @@ const CategorySection = ({ title, events, category }) => {
           {title}
         </p>
       </div>
+
       <div className="flex flex-wrap justify-center gap-5 p-5">
         {filteredEvents.map((data) => (
           <div
@@ -99,17 +95,20 @@ const CategorySection = ({ title, events, category }) => {
                 }`}
               >
                 <Link
-  to={data.registrationStatus === "OPEN" ? `/event/${data.slug}` : "#"}
->
-  <span className="text-white font-semibold hover:text-[#ff583e] duration-200">
-    {data.registrationStatus === "OPEN"
-      ? "Register Now"
-      : data.registrationStatus === "UPCOMING"
-      ? "Coming Soon"
-      : "Registration Closed"}  
-  </span>
-</Link>
-
+                  to={
+                    data.registrationStatus === "OPEN"
+                      ? `/events/${data.slug}`
+                      : "#"
+                  }
+                >
+                  <span className="text-white font-semibold hover:text-[#ff583e] duration-200">
+                    {data.registrationStatus === "OPEN"
+                      ? "Register Now"
+                      : data.registrationStatus === "UPCOMING"
+                      ? "Coming Soon"
+                      : "Registration Closed"}
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
