@@ -23,7 +23,7 @@ const EventDetail = () => {
 
         const data = await res.json();
         if (data?.success && data?.data) {
-          setEvent(data.data); // ✅ FIXED
+          setEvent(data.data);
         } else {
           setError("Failed to fetch event details.");
         }
@@ -107,6 +107,11 @@ const EventDetail = () => {
         return null;
     }
   };
+
+  const shouldRenderWhatsapp =
+    event.whatsappGroupURL &&
+    event.whatsappGroupURL !== "https://www.google.com" &&
+    event.whatsappGroupURL !== "https://me.com";
 
   return (
     <div className="p-4 sm:p-6 md:px-16 lg:px-24 xl:px-32">
@@ -199,16 +204,27 @@ const EventDetail = () => {
         </>
       )}
 
-      {/* Brochure */}
-      {event.brochure && (
-        <div className="mt-10 text-center">
+      {/* Brochure + Problem Statement + WhatsApp */}
+      <div className="mt-10 flex flex-wrap justify-center gap-4 text-center">
+        {event.brochure && (
           <a href={event.brochure} target="_blank" rel="noreferrer">
             <button className="bg-white border-2 border-[#ff583e] text-[#ff583e] px-5 sm:px-6 py-2 sm:py-3 rounded-lg font-bold hover:bg-[#ff583e] hover:text-white transition text-sm sm:text-base">
               📖 View Brochure
             </button>
           </a>
-        </div>
-      )}
+        )}
+
+
+        
+
+        {shouldRenderWhatsapp && (
+          <a href={event.whatsappGroupURL} target="_blank" rel="noreferrer">
+            <button className="bg-white border-2 border-[#ff583e] text-[#ff583e] px-5 sm:px-6 py-2 sm:py-3 rounded-lg font-bold hover:bg-[#ff583e] hover:text-white transition text-sm sm:text-base">
+              📑 Problem Statement
+            </button>
+          </a>
+        )}
+      </div>
     </div>
   );
 };
