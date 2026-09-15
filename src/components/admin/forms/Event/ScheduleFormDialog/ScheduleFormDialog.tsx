@@ -1,0 +1,505 @@
+/* eslint-disable @typescript-eslint/prefer-nullish-coalescing */
+"use client";
+
+import React from "react";
+import { useEffect, useState } from "react";
+
+// Hooks
+import { useMounted } from "@/hooks";
+
+// Schema
+import {
+  CreateEventScheduleSchema,
+  type PartialUpdateEventScheduleSchema,
+  type CreateEventSchema,
+} from "@/schema/event.schema";
+
+// Zod and RHF
+import { zodResolver } from "@hookform/resolvers/zod";
+import type { z } from "zod";
+import { useForm } from "react-hook-form";
+
+import type {
+  UseFieldArrayAppend,
+  UseFieldArrayRemove,
+  UseFieldArrayUpdate,
+} from "react-hook-form";
+
+// Icons
+import { Plus } from "lucide-react";
+
+// Components
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  Button,
+  Input,
+  DatePicker,
+  TimePicker,
+  Textarea,
+} from "@/components/ui";
+
+// Constants
+import { SCHEDULE_FORM_DEFAULTS } from "@/global/formDefaults";
+
+// Utils
+import {
+  convertDateStringToMin,
+  convertMinsToTimeString,
+  convertMinToDate,
+} from "@/utils/timeHandler";
+import { convertDateTimeToDate } from "@/utils/dateHandler";
+import { api } from "@/trpc/react";
+import { PageLoader } from "@/components/common/PageLoader";
+import { toast } from "sonner";
+
+interface Props {
+  append?: UseFieldArrayAppend<z.infer<typeof CreateEventSchema>, "schedule">;
+  update?: UseFieldArrayUpdate<z.infer<typeof CreateEventSchema>, "schedule">;
+  remove?: UseFieldArrayRemove;
+  updateIndex?: number;
+  removeIndex?: number;
+  data?: z.infer<typeof PartialUpdateEventScheduleSchema>;
+  state: "CREATE" | "UPDATE" | "DELETE" | "UPDATE_BY_COORDINATOR";
+  trigger?: React.ReactNode;
+  isFormSubmitting: boolean;
+  setAllSchedulesInfo?: React.Dispatch<
+    React.SetStateAction<
+      | {
+          info: string | null | undefined;
+        }[]
+      | undefined
+    >
+  >;
+}
+
+export const ScheduleFormDialog: React.FC<Props> = ({
+  append,
+  update,
+  remove,
+  updateIndex,
+  removeIndex,
+  data,
+  state,
+  trigger,
+  isFormSubmitting,
+}) => {
+  const [open, setOpen] = useState(false);
+
+  const [startTime, setStartTime] = useState<Date>(
+    data ? new Date(convertMinToDate(data.startTime || 0)) : new Date(),
+  );
+  const [endTime, setEndTime] = useState<Date>(
+    data ? new Date(convertMinToDate(data.endTime || 0)) : new Date(),
+  );
+
+  const isMounted = useMounted();
+
+  const parseDate = (dateString: string | Date): Date => {
+    if (dateString instanceof Date) {
+      return dateString;
+    }
+
+    // Handle ISO format: "2025-09-26T18:30:00.000Z"
+    if (dateString.includes("T") && dateString.includes("Z")) {
+      return new Date(dateString);
+    }
+
+    // Handle YYYY-MM-DD format: "2025-09-26"
+    const dateOnlyRegex = /^\d{4}-\d{2}-\d{2}$/;
+    if (dateOnlyRegex.exec(dateString)) {
+      const [year, month, day] = dateString.split("-").map(Number);
+
+      if (!year || !month || !day) return new Date();
+
+      return new Date(year, month - 1, day, 0, 0, 0, 0);
+    }
+
+    // Handle "DD Month, YYYY" format: "27 September, 2025"
+    if (dateString.includes(",")) {
+      return new Date(dateString);
+    }
+
+    // Fallback to Date constructor
+    return new Date(dateString);
+  };
+
+  // Helper function to convert ISO string to YYYY-MM-DD format for HTML date input
+  const isoToDateInputValue = (isoString: string): string => {
+    const date = parseDate(isoString);
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+
+  // Helper function to convert HTML date input value (YYYY-MM-DD) to ISO string
+  const dateInputValueToISO = (dateValue: string): string => {
+    const [year, month, day] = dateValue.split("-").map(Number);
+    if (!year || !month || !day) return new Date().toISOString();
+
+    const date = new Date(year, month - 1, day, 12, 0, 0, 0); // Set to noon
+
+    return date.toISOString();
+  };
+
+  type CreateEventScheduleData = z.infer<typeof CreateEventScheduleSchema>;
+  const form = useForm<CreateEventScheduleData>({
+    resolver: zodResolver(CreateEventScheduleSchema),
+    defaultValues: data ? data : SCHEDULE_FORM_DEFAULTS,
+  });
+
+  useEffect(() => {
+    setStartTime(new Date());
+    setEndTime(new Date());
+
+    if (!data) {
+      return;
+    }
+    form.reset(data);
+
+    setStartTime(new Date(convertMinToDate(data.startTime || 0)));
+    setEndTime(new Date(convertMinToDate(data.endTime || 0)));
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data, open]);
+
+  // add form data
+  const handleAddForm = (formData: CreateEventScheduleData) => {
+    if (append) {
+      const data = formatFormData(formData);
+
+      append(data);
+      // form.
+      form.reset(SCHEDULE_FORM_DEFAULTS);
+      setOpen(false);
+    }
+  };
+
+  const handleUpdateForm = (formData: CreateEventScheduleData) => {
+    if (update && updateIndex !== undefined) {
+      const data = formatFormData(formData);
+      update(updateIndex, data);
+      form.reset(SCHEDULE_FORM_DEFAULTS);
+      setOpen(false);
+    } else {
+      console.warn("Update function or index is missing");
+    }
+  };
+
+  const handleFormRemove = () => {
+    if (remove && removeIndex !== undefined) {
+      remove(removeIndex);
+      setOpen(false);
+    } else {
+      console.warn("Remove function or index is missing");
+    }
+  };
+
+  // Determine submit handler based on state
+  const submitHandler = (() => {
+    switch (state) {
+      case "CREATE":
+        return handleAddForm;
+      case "UPDATE":
+        return handleUpdateForm;
+      case "DELETE":
+        return handleFormRemove;
+      default:
+        return handleAddForm;
+    }
+  })();
+
+  const formatFormData = (formData: CreateEventScheduleData) => {
+    console.log("formData.date", formData.date); // "2025-09-27T06:30:00.000Z"
+
+    // Method 1: Extract date part directly from ISO string (Fastest)
+    const simpleDateString = formData.date.split("T")[0] ?? ""; // "2025-09-27"
+
+    // Method 2: Using Date object with UTC methods (Most reliable)
+    // const dateObj = new Date(formData.date);
+    // const simpleDateString = `${dateObj.getUTCFullYear()}-${String(dateObj.getUTCMonth() + 1).padStart(2, '0')}-${String(dateObj.getUTCDate()).padStart(2, '0')}`;
+
+    // Method 3: Using toISOString and splitting (Alternative)
+    // const simpleDateString = new Date(formData.date).toISOString().split('T')[0];
+
+    console.log("Simple date string:", simpleDateString); // "2025-09-27"
+
+    return {
+      ...formData,
+      startTime: convertDateStringToMin(startTime.toString()),
+      endTime: convertDateStringToMin(endTime.toString()),
+      date: simpleDateString, // Store as "YYYY-MM-DD"
+    };
+  };
+  if (!isMounted) {
+    return <PageLoader />;
+  }
+
+  return (
+    <Dialog open={open} onOpenChange={setOpen} modal>
+      <DialogTrigger asChild>
+        {trigger ? (
+          trigger
+        ) : (
+          <Button variant="default" size="sm" disabled={isFormSubmitting}>
+            <Plus className="h-4 w-4" /> Add New Schedule
+          </Button>
+        )}
+      </DialogTrigger>
+      <DialogContent
+        className={`${state === "UPDATE_BY_COORDINATOR" ? "max-w-[700px]" : "max-w-[500px]"}`}
+      >
+        <DialogHeader>
+          <DialogTitle>
+            {state === "DELETE"
+              ? "Delete Schedule Form"
+              : state === "CREATE"
+                ? "New Schedule Form"
+                : state === "UPDATE_BY_COORDINATOR"
+                  ? "Add Schedule Info"
+                  : "Edit Schedule Form"}
+          </DialogTitle>
+          <DialogDescription className="leading-tight">
+            {state === "DELETE" ? (
+              <span>
+                <span className="font-semibold">
+                  This action can&apos;t be undone.
+                </span>{" "}
+                Are you sure you want to delete{" "}
+                <span className="font-semibold">{data?.title}</span>
+              </span>
+            ) : state === "CREATE" ? (
+              "Fill the below details for add a schedule"
+            ) : state === "UPDATE_BY_COORDINATOR" ? (
+              <span>
+                {data?.title} &#x2022; {data?.date} &#x2022;{" "}
+                {convertMinsToTimeString(data?.startTime || 0)} -{" "}
+                {convertMinsToTimeString(data?.endTime || 0)}
+              </span>
+            ) : (
+              <span>
+                Fill the below details for update{" "}
+                <span className="font-semibold">{data?.title}</span>
+              </span>
+            )}
+            <br />
+          </DialogDescription>
+        </DialogHeader>
+
+        {state === "DELETE" ? (
+          <div className="-mt-2">
+            <section className="mt-3 flex justify-end gap-2">
+              <DialogClose asChild>
+                <Button size="sm" variant="ghost">
+                  Cancel
+                </Button>
+              </DialogClose>
+
+              <Button
+                size="sm"
+                variant="destructive"
+                onClick={handleFormRemove}
+              >
+                Delete this form
+              </Button>
+            </section>
+          </div>
+        ) : (
+          <Form {...form}>
+            <form className="space-y-3 px-1">
+              <div className="flex flex-col gap-4">
+                {/* Form Title */}
+                {state !== "UPDATE_BY_COORDINATOR" && (
+                  <FormField
+                    control={form.control}
+                    name="title"
+                    render={({ field }) => (
+                      <FormItem className="gap-[50px] space-y-0">
+                        <div className="leading-tight">
+                          <FormLabel className="leading-tight">Title</FormLabel>
+                          <FormDescription className="text-xs text-black/70">
+                            If your event have multiple schedules, you can add
+                            it as a{" "}
+                            <span className="font-semibold">
+                              Your Event Name - Round 1
+                            </span>
+                          </FormDescription>
+                        </div>
+                        <FormControl>
+                          <div className="w-full">
+                            <Input
+                              placeholder="Schedule Title"
+                              className="mt-2 px-5 py-5 font-medium"
+                              {...field}
+                            />
+                            <FormMessage className="mt-1 px-1" />
+                          </div>
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+                )}
+
+                {state !== "UPDATE_BY_COORDINATOR" && (
+                  <FormField
+                    control={form.control}
+                    name="date"
+                    render={({ field }) => (
+                      <FormItem className="gap-[50px] space-y-2">
+                        <div className="leading-tight">
+                          <FormLabel className="leading-tight">Date</FormLabel>
+                          <FormDescription className="text-xs text-black/70">
+                            Date of your event / round.
+                          </FormDescription>
+                        </div>
+                        <FormControl>
+                          <input
+                            type="date"
+                            className="mt-2 flex h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            min="2025-01-01"
+                            max="2025-12-31"
+                            value={
+                              field.value
+                                ? isoToDateInputValue(field.value)
+                                : ""
+                            }
+                            onChange={(e) => {
+                              if (e.target.value) {
+                                const isoString = dateInputValueToISO(
+                                  e.target.value,
+                                );
+                                field.onChange(isoString);
+                              }
+                            }}
+                          />
+                        </FormControl>
+                        <FormMessage className="px-1" />
+                      </FormItem>
+                    )}
+                  />
+                )}
+
+                {/* Time */}
+                {state !== "UPDATE_BY_COORDINATOR" && (
+                  <section className="mt-2 grid grid-cols-2 place-items-center gap-3">
+                    {/* Start Time */}
+                    <FormField
+                      control={form.control}
+                      name="startTime"
+                      render={() => (
+                        <FormItem className="gap-[50px] space-y-2">
+                          <div className="leading-tight">
+                            <FormLabel className="leading-tight">
+                              Start Time
+                            </FormLabel>
+                            <FormDescription className="text-xs text-black/70">
+                              Start time of your event
+                            </FormDescription>
+                          </div>
+                          <FormControl>
+                            <TimePicker
+                              date={startTime}
+                              setDate={setStartTime}
+                              showSeconds={false}
+                            />
+                          </FormControl>
+                        </FormItem>
+                      )}
+                    />
+
+                    {/* End Time */}
+                    <FormField
+                      control={form.control}
+                      name="endTime"
+                      render={() => (
+                        <FormItem className="gap-[50px] space-y-2">
+                          <div className="leading-tight">
+                            <FormLabel className="leading-tight">
+                              End Time
+                            </FormLabel>
+                            <FormDescription className="text-xs text-black/70">
+                              End time of your event
+                            </FormDescription>
+                          </div>
+                          <FormControl>
+                            <TimePicker
+                              date={endTime}
+                              setDate={setEndTime}
+                              showSeconds={false}
+                            />
+                          </FormControl>
+                        </FormItem>
+                      )}
+                    />
+                  </section>
+                )}
+
+                {/* Venue */}
+                {state !== "UPDATE_BY_COORDINATOR" && (
+                  <FormField
+                    control={form.control}
+                    name="venue"
+                    render={({ field }) => (
+                      <FormItem className="gap-[50px] space-y-0">
+                        <div className="leading-tight">
+                          <FormLabel className="leading-tight">Venue</FormLabel>
+                          <FormDescription className="text-xs text-black/70">
+                            Venue where the event will be held
+                          </FormDescription>
+                        </div>
+                        <FormControl>
+                          <div className="w-full">
+                            <Input
+                              placeholder="Venue"
+                              className="mt-2 px-5 py-5 font-medium"
+                              {...field}
+                            />
+                            <FormMessage className="mt-1 px-1" />
+                          </div>
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+                )}
+              </div>
+              <DialogFooter>
+                <div className="flex gap-2">
+                  <DialogClose asChild>
+                    <Button variant="secondary" size="sm">
+                      Cancel
+                    </Button>
+                  </DialogClose>
+
+                  <Button
+                    variant="default"
+                    size="sm"
+                    type="button"
+                    form="registrationFormDialogForm"
+                    className={`${state === "UPDATE" ? "bg-green-600 hover:bg-green-600/90" : ""}`}
+                    onClick={form.handleSubmit(submitHandler)}
+                  >
+                    {state === "CREATE" ? "Add" : "Update"}
+                  </Button>
+                </div>
+              </DialogFooter>
+            </form>
+          </Form>
+        )}
+      </DialogContent>
+    </Dialog>
+  );
+};
