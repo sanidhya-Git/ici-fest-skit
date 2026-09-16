@@ -43,12 +43,8 @@ import { CoverImageUploadField } from "../../common/CoverImageUploader";
 
 interface Props {
   field: CreateCoordinatorManageFormFieldConfigProps;
-  form: UseFormReturn<
-    z.infer<typeof CreateCoordinatorManagedData>,
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    any,
-    undefined
-  >;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  form: any;
   isFormSubmitting: boolean;
   uploadedCoverImage?: string;
   uploadedImages?: string[];

@@ -43,11 +43,8 @@ interface ImageUploadFieldProps {
   maxFiles?: number;
   minFiles?: number;
   maxSizePerFileInMB?: number;
-  form: UseFormReturn<
-    z.infer<typeof CreateCoordinatorManagedData>,
-    any,
-    undefined
-  >;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  form: any;
   isFormSubmitting: boolean;
   uploadedImages?: string[];
   slug: string;

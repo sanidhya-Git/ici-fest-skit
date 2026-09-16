@@ -44,7 +44,7 @@ import { CoverImageUploadField } from "../../common/CoverImageUploader";
 interface Props {
   field: CreateEventFormFieldConfigProps;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  form: UseFormReturn<z.infer<typeof CreateEventSchema>, any, undefined>;
+  form: any;
   isFormSubmitting: boolean;
   isEventDeleting: boolean;
 }

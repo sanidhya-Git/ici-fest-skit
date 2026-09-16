@@ -27,7 +27,6 @@ type Credential = {
 };
 
 export const authConfig: NextAuthConfig = {
-  // @ts-expect-error - refer to this https://github.com/prisma/prisma/issues/25857
   adapter: PrismaAdapter(db),
   secret: env.AUTH_SECRET,
   session: {
