@@ -6,13 +6,15 @@ const config = {
     "@uploadthing/shared",
     "@uploadthing/mime-types",
   ],
-  experimental: {
-    turbo: {
-      rules: {
-        "**/*.md": {
-          loaders: ["null-loader"],
-          as: "*.js",
-        },
+  turbo: {
+    rules: {
+      "**/*.md": {
+        loaders: ["null-loader"],
+        as: "*.js",
+      },
+      "**/*.d.cts": {
+        loaders: ["null-loader"],
+        as: "*.js",
       },
     },
   },
