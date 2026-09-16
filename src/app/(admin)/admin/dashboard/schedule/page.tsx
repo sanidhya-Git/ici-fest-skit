@@ -14,8 +14,8 @@ const Events: React.FC = () => {
   const { data, isLoading, refetch, isFetching } =
     api.schedule.getAllSchedules.useQuery();
   return (
-    <div className="px-[250px] py-[100px]">
-      <section className="flex w-full items-center justify-between">
+    <div className="px-4 py-20 sm:px-8 lg:px-[250px] lg:py-[100px]">
+      <section className="flex w-full flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-xl font-semibold">
           All Schedules{" "}
           <span className="text-gray-500">({data ? data?.length : 0})</span>

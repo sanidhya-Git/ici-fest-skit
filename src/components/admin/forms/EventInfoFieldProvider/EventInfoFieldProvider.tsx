@@ -65,8 +65,8 @@ export const EventInfoFieldProvider: React.FC<Props> = ({
       control={form.control}
       name={field.fieldName}
       render={({ field: fieldProps }) => (
-        <FormItem className="flex gap-[50px] space-y-0">
-          <div className="min-w-[400px] max-w-[400px]">
+        <FormItem className="flex flex-col gap-3 space-y-0 md:flex-row md:gap-[50px]">
+          <div className="w-full md:min-w-[300px] md:max-w-[300px] lg:min-w-[400px] lg:max-w-[400px]">
             <FormLabel className="leading-tight">{field.fieldTitle}</FormLabel>
             <FormDescription className="text-xs text-black/70">
               {field.fieldDescription}

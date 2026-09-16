@@ -5,15 +5,15 @@ import Marquee from "react-fast-marquee";
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen w-full px-[50px] pt-[150px]">
+    <div className="min-h-screen w-full px-4 pt-24 sm:px-8 md:px-[50px] md:pt-[150px]">
       <div className="mx-auto flex w-fit flex-col items-center">
-        <h1 className="text-center text-[48px] font-extrabold uppercase leading-tight">
+        <h1 className="text-center text-3xl font-extrabold uppercase leading-tight md:text-[48px]">
           ICI <span data-highlighted-text>Fest</span>
         </h1>
         <div className="h-1 w-[80%] rounded-full bg-primary" />
       </div>
 
-      <p className="mt-4 px-[250px] text-center text-base font-medium">
+      <p className="mt-4 px-0 text-center text-base font-medium md:px-[100px] lg:px-[250px]">
         The ICI Fest has a special mission: To inspire young minds to show off
         their skills and go up against others by joining different technical,
         non technical events and workshops. Don&apos;t wait - register today to
@@ -41,12 +41,12 @@ const About: React.FC = () => {
       </div>
 
       <div className="mx-auto mt-[50px] flex w-fit flex-col items-center">
-        <h1 className="text-center text-[48px] font-extrabold uppercase leading-tight">
+        <h1 className="text-center text-3xl font-extrabold uppercase leading-tight md:text-[48px]">
           About <span data-highlighted-text>SKIT</span>
         </h1>
         <div className="h-1 w-[80%] rounded-full bg-primary" />
       </div>
-      <p className="mt-4 px-[250px] text-center text-base font-medium">
+      <p className="mt-4 px-0 text-center text-base font-medium md:px-[100px] lg:px-[250px]">
         Swami Keshvanand Institute of Technology, Management & Gramothan (SKIT)
         has established itself as a premier institution for engineering and
         technology education in Jaipur since its inception in 2000. In 2024 SKIT
@@ -59,7 +59,7 @@ const About: React.FC = () => {
         companies, providing students with valuable practical skills.
       </p>
 
-      <div className="mt-4 grid grid-cols-4 gap-2">
+      <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
         {Array(4)
           .fill(0)
           .map((_, index) => (

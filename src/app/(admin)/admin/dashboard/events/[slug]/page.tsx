@@ -20,11 +20,11 @@ const Event: React.FC = () => {
   return (
     <div className="bg-[#f7f7f7]">
       {isLoading ? (
-        <div className="h-screen w-full px-[250px] py-[100px]">
+        <div className="h-screen w-full px-4 py-20 sm:px-8 lg:px-[250px] lg:py-[100px]">
           <FormLoader />
         </div>
       ) : data ? (
-        <div className="min-h-screen px-[250px] py-[100px]">
+        <div className="min-h-screen px-4 py-20 sm:px-8 lg:px-[250px] lg:py-[100px]">
           <CreateEventForm data={data} state="UPDATE" />
         </div>
       ) : (

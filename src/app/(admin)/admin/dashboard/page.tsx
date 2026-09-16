@@ -18,6 +18,7 @@ const Admin: React.FC = () => {
       {realtime && (
         <section className="w-full max-w-3xl">
           <h2 className="mb-2 text-lg font-semibold">Stats</h2>
+          <div className="overflow-x-auto">
           <table className="w-full border-collapse rounded-lg border border-gray-300 text-sm shadow-md">
             <thead className="bg-gray-100">
               <tr>
@@ -68,6 +69,7 @@ const Admin: React.FC = () => {
               </tr>
             </tbody>
           </table>
+          </div>
 
           <div className="mt-4">
             <p>

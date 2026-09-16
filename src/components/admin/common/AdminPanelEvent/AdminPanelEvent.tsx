@@ -352,7 +352,7 @@ const AdminEventsPanel: React.FC = () => {
         value={activeCategory}
         onValueChange={(value) => setActiveCategory(value as CategoryType)}
       >
-        <TabsList className="mb-6 grid w-full grid-cols-4">
+        <TabsList className="mb-6 grid w-full grid-cols-2 sm:grid-cols-4">
           {categories.map((category) => (
             <TabsTrigger
               key={category.value}
@@ -524,9 +524,10 @@ const AdminEventsPanel: React.FC = () => {
                   ))}
                 </div>
               ) : (
+                <div className="overflow-x-auto">
                 <>
                   {/* Table Header */}
-                  <div className="grid-cols-13 grid gap-4 border-b bg-gray-50 py-3 text-sm font-medium text-gray-700">
+                  <div className="grid-cols-13 grid min-w-[900px] gap-4 border-b bg-gray-50 py-3 text-sm font-medium text-gray-700">
                     <div className="col-span-1"></div> {/* Drag handle space */}
                     <div className="col-span-2">Title</div>
                     <div className="col-span-2">Coordinator Email</div>
@@ -573,7 +574,7 @@ const AdminEventsPanel: React.FC = () => {
                                         : "bg-white hover:bg-gray-50"
                                     } ${reorderMutation.isPending || isRefetchingAll ? "opacity-60" : ""}`}
                                   >
-                                    <div className="grid-cols-13 grid items-center gap-4 py-4 text-sm">
+                                    <div className="grid-cols-13 grid min-w-[900px] items-center gap-4 py-4 text-sm">
                                       {/* Drag Handle */}
                                       <div className="col-span-1">
                                         <div
@@ -679,6 +680,7 @@ const AdminEventsPanel: React.FC = () => {
                     </Droppable>
                   </DragDropContext>
                 </>
+                </div>
               )}
             </div>
           </TabsContent>

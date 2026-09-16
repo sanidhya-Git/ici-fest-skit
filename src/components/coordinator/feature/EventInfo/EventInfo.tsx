@@ -68,7 +68,7 @@ export const EventInfo: React.FC<Props> = ({ eventId, isAdmin }) => {
 
   if (isLoading || isCoordinatorLoading) {
     return (
-      <div className="min-h-screen w-full bg-[#f7f7f7] px-[250px] py-[100px]">
+      <div className="min-h-screen w-full bg-[#f7f7f7] px-4 py-20 sm:px-8 lg:px-[250px] lg:py-[100px]">
         <div className="loader h-6 w-[150px] rounded-sm" />
         <EventInfoLoader />
       </div>
@@ -124,7 +124,7 @@ export const EventInfo: React.FC<Props> = ({ eventId, isAdmin }) => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-[#f7f7f7] px-[250px] py-[100px]">
+    <div className="min-h-screen w-full bg-[#f7f7f7] px-4 py-20 sm:px-8 lg:px-[250px] lg:py-[100px]">
       {isLoading ? (
         <EventInfoLoader />
       ) : (
@@ -148,7 +148,7 @@ export const EventInfo: React.FC<Props> = ({ eventId, isAdmin }) => {
 
           {isAdmin && data.reviewRequestStatus === "PENDING" && (
             <div className="mt-5 overflow-hidden rounded-lg border bg-white">
-              <div className="flex w-full justify-between gap-[100px] px-5 py-4">
+              <div className="flex w-full flex-col gap-4 px-5 py-4 sm:flex-row sm:justify-between sm:gap-[100px]">
                 <section>
                   <h3 className="text-sm font-semibold">
                     Review Update Request
@@ -193,7 +193,7 @@ export const EventInfo: React.FC<Props> = ({ eventId, isAdmin }) => {
             </div>
 
             <div className="px-5 py-4">
-              <div className="grid grid-cols-3 gap-5">
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
                 <div>
                   <p className="text-xs text-black/70">Title</p>
                   <h2 className="text-sm font-medium">{data.title}</h2>

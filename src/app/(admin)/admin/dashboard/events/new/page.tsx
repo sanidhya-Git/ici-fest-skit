@@ -5,7 +5,7 @@ import { CreateEventForm } from "@/components/admin/forms";
 
 const NewEvent: React.FC = () => {
   return (
-    <div className="bg-[#f7f7f7] px-[250px] py-[100px]">
+    <div className="bg-[#f7f7f7] px-4 py-20 sm:px-8 lg:px-[250px] lg:py-[100px]">
       <section className="mt-5">
         <CreateEventForm state="CREATE" />
       </section>

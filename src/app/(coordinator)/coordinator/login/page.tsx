@@ -112,7 +112,7 @@ const Login: React.FC = () => {
       {status === "loading" ? (
         <PageLoader />
       ) : (
-        <div className="flex h-screen w-full items-center justify-center px-[250px] py-[50px]">
+        <div className="flex h-screen w-full items-center justify-center px-4 py-8 sm:px-10 md:px-[250px]">
           <Card>
             <CardHeader>
               <CardTitle className="text-xl">Coordinator Login</CardTitle>

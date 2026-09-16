@@ -131,7 +131,7 @@ export const ScheduleTable: React.FC<Props> = ({ data }) => {
         </div>
       </div>
 
-      <div className="mt-5">
+      <div className="mt-5 overflow-x-auto">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
