@@ -298,7 +298,7 @@ export const EventInfo: React.FC<Props> = ({ eventId, isAdmin }) => {
                 )}
 
                 {data.schedule && (
-                  <div className="col-span-3">
+                  <div className="col-span-full">
                     <p className="text-xs text-black/70">
                       Event Schedule(s) ({data.schedule.length})
                     </p>
@@ -367,7 +367,7 @@ const EventInfoLoader = () => {
           mis-match, please contact the Event Admin.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-5 px-5 py-4">
+      <div className="grid grid-cols-1 gap-5 px-5 py-4 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <p className="text-xs text-black/70">Title</p>
           <div className="loader mt-1 h-3 w-[150px] rounded-full" />

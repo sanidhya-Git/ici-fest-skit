@@ -7,7 +7,7 @@ export const About: React.FC = () => {
       <h1 className="text-3xl font-extrabold">
         <span data-highlighted-text>ICI</span> Fest
       </h1>
-      <p className="mt-1 w-[550px] text-base leading-tight">
+      <p className="mt-1 w-full max-w-[550px] text-base leading-tight">
         ICI fest aims at aspiring the young brains to showcase their skills and
         compete with others by participating in various technical events and
         workshop. Register today to make yourself stand out among all odds.

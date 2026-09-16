@@ -324,7 +324,7 @@ const AdminEventsPanel: React.FC = () => {
 
   return (
     <div className="">
-      <div className="mb-6 flex items-center justify-between">
+      <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-xl font-semibold">All Events</p>
 
         <div className="flex items-center gap-3">
@@ -365,7 +365,7 @@ const AdminEventsPanel: React.FC = () => {
         </TabsList>
 
         {/* Search Bar */}
-        <div className="mb-4 flex items-center justify-between">
+        <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-wrap gap-3">
             <div className="relative max-w-sm">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 transform text-gray-400" />
@@ -506,11 +506,11 @@ const AdminEventsPanel: React.FC = () => {
           <TabsContent key={category.value} value={category.value}>
             <div className="bg-white">
               {isLoading && !events[category.value]?.length ? (
-                <div className="mt-5">
+                <div className="mt-5 overflow-x-auto">
                   {Array.from({ length: 8 }).map((_, index) => (
                     <div
                       key={index}
-                      className="grid grid-cols-6 gap-5 border-b py-2"
+                      className="grid min-w-[900px] grid-cols-6 gap-5 border-b py-2"
                     >
                       {Array.from({ length: 6 }).map((_, index) => (
                         <div

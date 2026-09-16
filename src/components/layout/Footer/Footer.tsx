@@ -6,13 +6,13 @@ import { SocialIcons } from "@/icons";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="p-[50px]">
-      <div className="rounded-3xl bg-black px-[50px] py-[40px]">
-        <h1 className="text-3xl font-extrabold text-white">
+    <footer className="p-4 sm:p-8 lg:p-[50px]">
+      <div className="rounded-3xl bg-black px-4 py-6 sm:px-8 sm:py-8 lg:px-[50px] lg:py-[40px]">
+        <h1 className="text-2xl font-extrabold text-white sm:text-3xl">
           <span data-highlighted-text>ICI</span> Fest&apos;
           <span data-highlighted-text>{YEAR}</span>
         </h1>
-        <div className="mt-5 flex gap-[100px]">
+        <div className="mt-5 flex flex-col gap-6 sm:flex-row sm:flex-wrap sm:gap-8 lg:gap-[100px]">
           <div>
             <p className="flex items-center gap-2 text-sm text-white">
               <SocialIcons.MapIcon />
@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
           </div>
           {FooterData.map((data, index) => (
             <div key={index} className="flex flex-col gap-4">
-              <p className="flex items-center gap-2 text-sm text-white font-medium">
+              <p className="flex items-center gap-2 text-sm font-medium text-white">
                 <data.icon />
                 {data.category}
               </p>

@@ -241,7 +241,7 @@ export const CreateEventForm: React.FC<Props> = ({ data, state }) => {
           className="mt-5 space-y-3"
         >
           {/* Form Header and Submit button */}
-          <section className="flex items-center justify-between">
+          <section className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <section>
               <h1 className="text-lg font-semibold leading-tight">
                 {data ? (
@@ -310,8 +310,8 @@ export const CreateEventForm: React.FC<Props> = ({ data, state }) => {
                 {category.categoryId === "registration" && (
                   <div>
                     <div className="gap-[50px]">
-                      <section className="flex items-center justify-between">
-                        <section className="min-w-[400px] max-w-[400px]">
+                      <section className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                        <section className="min-w-0 max-w-full sm:min-w-[400px] sm:max-w-[400px]">
                           <p
                             className="text-sm font-medium"
                             style={{
@@ -354,7 +354,7 @@ export const CreateEventForm: React.FC<Props> = ({ data, state }) => {
                     </div>
 
                     {registrationFormArray.fields.length > 0 && (
-                      <div className="mt-3 grid grid-cols-3 gap-3">
+                      <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                         {registrationFormArray.fields.map((field, index) => (
                           <RegistrationFormUpdateDialog
                             key={index}
@@ -374,8 +374,8 @@ export const CreateEventForm: React.FC<Props> = ({ data, state }) => {
                 {category.categoryId === "schedule" && (
                   <div>
                     <div className="gap-[50px]">
-                      <section className="flex items-center justify-between">
-                        <section className="min-w-[400px] max-w-[400px]">
+                      <section className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                        <section className="min-w-0 max-w-full sm:min-w-[400px] sm:max-w-[400px]">
                           <p
                             className="text-sm font-medium"
                             style={{
@@ -407,7 +407,7 @@ export const CreateEventForm: React.FC<Props> = ({ data, state }) => {
                     </div>
 
                     {scheduleFormArray.fields.length > 0 && (
-                      <div className="mt-3 grid grid-cols-3 gap-3">
+                      <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                         {scheduleFormArray.fields.map((field, index) => (
                           <ScheduleFormUpdateDialog
                             key={index}
@@ -428,8 +428,8 @@ export const CreateEventForm: React.FC<Props> = ({ data, state }) => {
                 {category.categoryId === "coordinators" && (
                   <div>
                     <div className="gap-[50px]">
-                      <section className="flex items-center justify-between">
-                        <section className="min-w-[400px] max-w-[400px]">
+                      <section className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                        <section className="min-w-0 max-w-full sm:min-w-[400px] sm:max-w-[400px]">
                           <p
                             className="text-sm font-medium"
                             style={{
@@ -463,7 +463,7 @@ export const CreateEventForm: React.FC<Props> = ({ data, state }) => {
                     {/* {JSON.stringify(coordinatorFormArray.fields)} */}
 
                     {coordinatorFormArray.fields.length > 0 && (
-                      <div className="mt-3 grid grid-cols-3 gap-3">
+                      <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                         {coordinatorFormArray.fields.map((field, index) => (
                           <CoordinatorFormUpdateDialog
                             key={index}
@@ -488,8 +488,8 @@ export const CreateEventForm: React.FC<Props> = ({ data, state }) => {
               <div className="border-b border-destructive bg-white px-5 py-4">
                 <p className="text-sm font-semibold">Delete Zone</p>
               </div>
-              <div className="flex gap-5 bg-white px-5 py-4">
-                <div className="min-w-[400px] max-w-[400px]">
+              <div className="flex flex-col gap-4 bg-white px-5 py-4 sm:flex-row sm:gap-5">
+                <div className="min-w-0 max-w-full sm:min-w-[400px] sm:max-w-[400px]">
                   <p className="text-sm font-medium leading-tight">
                     Delete this Event
                   </p>

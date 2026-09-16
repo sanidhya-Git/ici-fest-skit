@@ -27,12 +27,17 @@ export const Highlights: React.FC = () => {
         </Button>
       </section>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={10}
         loop={true}
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+          },
         }}
         className="mt-2 overflow-hidden rounded-lg"
         modules={[Autoplay]}

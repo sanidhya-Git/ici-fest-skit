@@ -10,7 +10,7 @@ export const Stats: React.FC = () => {
       <h1 className="text-center text-3xl font-extrabold">
         Fest&apos; <span data-highlighted-text>{YEAR - 1}</span> Stats
       </h1>
-      <div className="mt-8 flex justify-center gap-[50px]">
+      <div className="mt-8 flex flex-wrap justify-center gap-5 sm:gap-[50px]">
         {statsData.map((data, index) => (
           <div
             key={index}

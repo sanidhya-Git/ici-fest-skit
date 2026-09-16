@@ -124,7 +124,7 @@ export const EventInfoForm: React.FC<Props> = ({ data, state, slug }) => {
             onSubmit={form.handleSubmit(onSubmit)}
             className="mt-5 space-y-3"
           >
-            <div className="mt-5 flex w-full items-center justify-between rounded-lg border bg-white px-5 py-4">
+            <div className="mt-5 flex w-full flex-col gap-4 rounded-lg border bg-white px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h3 className="text-sm font-semibold">Event Information</h3>
                 <p className="text-xs text-black/70">

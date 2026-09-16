@@ -52,9 +52,9 @@ const ScheduleTableLoader: React.FC = () => {
         <div className="loader h-7 w-[50px] rounded-sm" />
       </div>
 
-      <div className="mt-5">
+      <div className="mt-5 overflow-x-auto">
         {Array.from({ length: 8 }).map((_, index) => (
-          <div key={index} className="grid grid-cols-6 gap-5 border-b py-2">
+          <div key={index} className="grid min-w-[600px] grid-cols-6 gap-5 border-b py-2">
             {Array.from({ length: 6 }).map((_, index) => (
               <div
                 key={index}

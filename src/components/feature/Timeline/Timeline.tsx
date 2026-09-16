@@ -23,7 +23,7 @@ export const Timeline: React.FC = () => {
               key={index}
               variant={activeTab === index ? "default" : "outline"}
               size="lg"
-              className="h-auto rounded-full px-8 py-4 font-semibold"
+              className="h-auto rounded-full px-4 py-2 font-semibold sm:px-8 sm:py-4"
               onClick={() => setActiveTab(index)}
             >
               Day {index + 1}
@@ -31,7 +31,7 @@ export const Timeline: React.FC = () => {
           ))}
       </div>
 
-      <div className="mt-5 grid grid-cols-3 gap-3 px-[250px]">
+      <div className="mt-5 grid grid-cols-1 gap-3 px-4 sm:grid-cols-2 sm:px-8 lg:grid-cols-3 lg:px-[250px]">
         {TimelineData.map((data, index) => {
           const dayDifference = Math.floor(
             (Date.parse(data.eventDate) - Date.parse(FEST_START_DATE)) /
