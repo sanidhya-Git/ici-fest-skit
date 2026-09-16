@@ -1,4 +1,4 @@
-/** @type {import("eslint").Linter.Config} */
+/** @type {import("eslint").Linter.LegacyConfig} */
 const config = {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -29,6 +29,10 @@ const config = {
       }
     ],
     "@typescript-eslint/require-await": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "off",
+    "@typescript-eslint/no-base-to-string": "off",
     "@typescript-eslint/no-misused-promises": [
       "error",
       {
