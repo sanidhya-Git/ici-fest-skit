@@ -11,7 +11,7 @@ const Admin: React.FC = () => {
   );
 
   return (
-    <main className="flex h-screen w-full flex-col items-center justify-start gap-6 p-6">
+    <main className="flex min-h-screen w-full flex-col items-center justify-start gap-6 px-4 pb-6 pt-20 sm:px-6 sm:pt-24">
       <h1 className="text-2xl font-bold">ICI Fest 2025 Admin Dashboard</h1>
 
       {/* --- Realtime Summary Table --- */}

@@ -40,11 +40,9 @@ export const Navbar: React.FC = () => {
             <NavigationMenuList>
               {visibleLinks.map((data, index) => (
                 <NavigationMenuItem key={index}>
-                  <Link href={data.href} legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                      {data.label}
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                    <Link href={data.href}>{data.label}</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>

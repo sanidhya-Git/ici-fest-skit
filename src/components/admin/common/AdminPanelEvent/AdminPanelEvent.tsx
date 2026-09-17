@@ -524,162 +524,136 @@ const AdminEventsPanel: React.FC = () => {
                   ))}
                 </div>
               ) : (
-                <div className="overflow-x-auto">
-                <>
-                  {/* Table Header */}
-                  <div className="grid-cols-13 grid min-w-[900px] gap-4 border-b bg-gray-50 py-3 text-sm font-medium text-gray-700">
-                    <div className="col-span-1"></div> {/* Drag handle space */}
-                    <div className="col-span-2">Title</div>
-                    <div className="col-span-2">Coordinator Email</div>
-                    <div className="col-span-2">Event ID</div>
-                    <div className="col-span-2">Password</div>
-                    <div className="col-span-1">Dashboard</div>
-                    <div className="col-span-2">Status</div>
-                    <div className="col-span-1">Action</div> {/* Actions */}
+                <div>
+                  {/* Desktop Table (hidden on mobile) */}
+                  <div className="hidden overflow-x-auto md:block">
+                    <>
+                      <div className="grid-cols-13 grid min-w-[900px] gap-4 border-b bg-gray-50 py-3 text-sm font-medium text-gray-700">
+                        <div className="col-span-1"></div>
+                        <div className="col-span-2">Title</div>
+                        <div className="col-span-2">Coordinator Email</div>
+                        <div className="col-span-2">Event ID</div>
+                        <div className="col-span-2">Password</div>
+                        <div className="col-span-1">Dashboard</div>
+                        <div className="col-span-2">Status</div>
+                        <div className="col-span-1">Action</div>
+                      </div>
+
+                      <DragDropContext onDragEnd={handleDragEnd}>
+                        <Droppable droppableId={`${category.value}-desktop`}>
+                          {(provided, snapshot) => (
+                            <div
+                              {...provided.droppableProps}
+                              ref={provided.innerRef}
+                              className={snapshot.isDraggingOver ? "bg-blue-50" : ""}
+                            >
+                              {filteredEvents.length === 0 ? (
+                                <div className="p-8 text-center text-gray-500">
+                                  {searchTerm ? "No events match your search" : "No events found in this category"}
+                                </div>
+                              ) : (
+                                filteredEvents.map((event, index) => (
+                                  <Draggable
+                                    key={event.id}
+                                    draggableId={`${event.id}-desktop`}
+                                    index={index}
+                                    isDragDisabled={reorderMutation.isPending || isRefetchingAll}
+                                  >
+                                    {(provided, snapshot) => (
+                                      <div
+                                        ref={provided.innerRef}
+                                        {...provided.draggableProps}
+                                        className={`group border-b last:border-b-0 ${snapshot.isDragging ? "rounded border border-blue-200 bg-white shadow-lg" : "bg-white hover:bg-gray-50"} ${reorderMutation.isPending || isRefetchingAll ? "opacity-60" : ""}`}
+                                      >
+                                        <div className="grid-cols-13 grid min-w-[900px] items-center gap-4 py-4 text-sm">
+                                          <div className="col-span-1">
+                                            <div {...provided.dragHandleProps} className={`text-gray-400 hover:text-gray-600 ${reorderMutation.isPending || isRefetchingAll ? "cursor-not-allowed" : "cursor-grab active:cursor-grabbing"}`}>
+                                              <GripVertical size={16} />
+                                            </div>
+                                          </div>
+                                          <div className="col-span-2">
+                                            <div className="truncate font-medium text-gray-900">{event.title}</div>
+                                          </div>
+                                          <div className="col-span-2">
+                                            <div className="truncate"><TextWithCopyIcon text={event.coordinatorEmail} /></div>
+                                          </div>
+                                          <div className="col-span-2">
+                                            <div className="truncate font-mono text-xs"><TextWithCopyIcon text={event.eventId} /></div>
+                                          </div>
+                                          <div className="col-span-2">
+                                            <div className="font-mono text-xs"><TextWithCopyIcon text={event.eventDbPassword} hideText /></div>
+                                          </div>
+                                          <div className="col-span-1">
+                                            <div className="-mt-2">
+                                              <Link href={event.eventDbURL} className="text-xs text-blue-600 underline hover:text-blue-800" target="_blank">URL</Link>
+                                            </div>
+                                          </div>
+                                          <div className="col-span-2 flex flex-col gap-1">
+                                            {getStatusPill(event.registrationStatus, "registration")}
+                                            {getStatusPill(event.isHidden, "hidden")}
+                                            {getStatusPill(event.reviewRequestStatus, "review")}
+                                          </div>
+                                          <div className="col-span-1">
+                                            <Button size="sm" variant="ghost" asChild>
+                                              <Link href={`/admin/dashboard/events/${event.eventId}`}><Settings size={12} /></Link>
+                                            </Button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    )}
+                                  </Draggable>
+                                ))
+                              )}
+                              {provided.placeholder}
+                            </div>
+                          )}
+                        </Droppable>
+                      </DragDropContext>
+                    </>
                   </div>
 
-                  <DragDropContext onDragEnd={handleDragEnd}>
-                    <Droppable droppableId={category.value}>
-                      {(provided, snapshot) => (
+                  {/* Mobile Card View (visible only on mobile) */}
+                  <div className="md:hidden">
+                    {filteredEvents.length === 0 ? (
+                      <div className="p-8 text-center text-gray-500">
+                        {searchTerm ? "No events match your search" : "No events found in this category"}
+                      </div>
+                    ) : (
+                      filteredEvents.map((event, index) => (
                         <div
-                          {...provided.droppableProps}
-                          ref={provided.innerRef}
-                          className={
-                            snapshot.isDraggingOver ? "bg-blue-50" : ""
-                          }
+                          key={event.id}
+                          className="border-b last:border-b-0 bg-white px-4 py-4"
                         >
-                          {filteredEvents.length === 0 ? (
-                            <div className="p-8 text-center text-gray-500">
-                              {searchTerm
-                                ? "No events match your search"
-                                : "No events found in this category"}
+                          <div className="flex items-start justify-between gap-3">
+                            <div className="min-w-0 flex-1">
+                              <p className="truncate text-sm font-semibold text-gray-900">{event.title}</p>
+                              <p className="mt-0.5 truncate text-xs text-gray-500">{event.coordinatorEmail}</p>
+                              <p className="mt-0.5 font-mono text-xs text-gray-400">{event.eventId}</p>
                             </div>
-                          ) : (
-                            filteredEvents.map((event, index) => (
-                              <Draggable
-                                key={event.id}
-                                draggableId={event.id}
-                                index={index}
-                                isDragDisabled={
-                                  reorderMutation.isPending || isRefetchingAll
-                                }
+                            <div className="flex shrink-0 items-center gap-2">
+                              <Link
+                                href={event.eventDbURL}
+                                className="text-xs text-blue-600 underline hover:text-blue-800"
+                                target="_blank"
                               >
-                                {(provided, snapshot) => (
-                                  <div
-                                    ref={provided.innerRef}
-                                    {...provided.draggableProps}
-                                    className={`group border-b last:border-b-0 ${
-                                      snapshot.isDragging
-                                        ? "rounded border border-blue-200 bg-white shadow-lg"
-                                        : "bg-white hover:bg-gray-50"
-                                    } ${reorderMutation.isPending || isRefetchingAll ? "opacity-60" : ""}`}
-                                  >
-                                    <div className="grid-cols-13 grid min-w-[900px] items-center gap-4 py-4 text-sm">
-                                      {/* Drag Handle */}
-                                      <div className="col-span-1">
-                                        <div
-                                          {...provided.dragHandleProps}
-                                          className={`text-gray-400 hover:text-gray-600 ${
-                                            reorderMutation.isPending ||
-                                            isRefetchingAll
-                                              ? "cursor-not-allowed"
-                                              : "cursor-grab active:cursor-grabbing"
-                                          }`}
-                                        >
-                                          <GripVertical size={16} />
-                                        </div>
-                                      </div>
-
-                                      {/* Title */}
-                                      <div className="col-span-2">
-                                        <div className="truncate font-medium text-gray-900">
-                                          {event.title}
-                                        </div>
-                                      </div>
-
-                                      {/* Coordinator Email */}
-                                      <div className="col-span-2">
-                                        <div className="truncate">
-                                          <TextWithCopyIcon
-                                            text={event.coordinatorEmail}
-                                          />
-                                        </div>
-                                      </div>
-
-                                      {/* Event ID */}
-                                      <div className="col-span-2">
-                                        <div className="truncate font-mono text-xs">
-                                          <TextWithCopyIcon
-                                            text={event.eventId}
-                                          />
-                                        </div>
-                                      </div>
-
-                                      {/* Dashboard Password */}
-                                      <div className="col-span-2">
-                                        <div className="font-mono text-xs">
-                                          <TextWithCopyIcon
-                                            text={event.eventDbPassword}
-                                            hideText
-                                          />
-                                        </div>
-                                      </div>
-
-                                      {/* Dashboard URL */}
-                                      <div className="col-span-1">
-                                        <div className="-mt-2">
-                                          <Link
-                                            href={event.eventDbURL}
-                                            className="text-xs text-blue-600 underline hover:text-blue-800"
-                                            target="_blank"
-                                          >
-                                            URL
-                                          </Link>
-                                        </div>
-                                      </div>
-
-                                      {/* Status Pills */}
-                                      <div className="col-span-2 flex flex-col gap-1">
-                                        {getStatusPill(
-                                          event.registrationStatus,
-                                          "registration",
-                                        )}
-                                        {getStatusPill(
-                                          event.isHidden,
-                                          "hidden",
-                                        )}
-                                        {getStatusPill(
-                                          event.reviewRequestStatus,
-                                          "review",
-                                        )}
-                                      </div>
-
-                                      {/* Actions */}
-                                      <div className="col-span-1">
-                                        <Button
-                                          size="sm"
-                                          variant="ghost"
-                                          asChild
-                                        >
-                                          <Link
-                                            href={`/admin/dashboard/events/${event.eventId}`}
-                                          >
-                                            <Settings size={12} />
-                                          </Link>
-                                        </Button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                )}
-                              </Draggable>
-                            ))
-                          )}
-                          {provided.placeholder}
+                                DB
+                              </Link>
+                              <Button size="sm" variant="ghost" asChild>
+                                <Link href={`/admin/dashboard/events/${event.eventId}`}>
+                                  <Settings size={14} />
+                                </Link>
+                              </Button>
+                            </div>
+                          </div>
+                          <div className="mt-2 flex flex-wrap gap-1">
+                            {getStatusPill(event.registrationStatus, "registration")}
+                            {getStatusPill(event.isHidden, "hidden")}
+                            {getStatusPill(event.reviewRequestStatus, "review")}
+                          </div>
                         </div>
-                      )}
-                    </Droppable>
-                  </DragDropContext>
-                </>
+                      ))
+                    )}
+                  </div>
                 </div>
               )}
             </div>

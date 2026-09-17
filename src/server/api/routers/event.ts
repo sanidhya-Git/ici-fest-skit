@@ -345,44 +345,19 @@ export const eventRouter = createTRPCRouter({
     .input(CreateEventSchema)
     .mutation(async ({ ctx, input }) => {
       try {
-        console.log("input.schedule", input.schedule);
-        console.log(
-          "formatted input.schedule",
-          input.schedule.map((item) => ({
-            ...item,
-            date: formatDate(item.date),
-          })),
-        );
-
-        // Parallel validation instead of sequential
         const [existingSlug, existingEmail] = await Promise.all([
-          ctx.db.event.findUnique({
-            where: { slug: input.slug },
-            select: { id: true },
-          }),
-          ctx.db.event.findUnique({
-            where: { coordinatorEmail: input.coordinatorEmail },
-            select: { id: true },
-          }),
+          ctx.db.event.findUnique({ where: { slug: input.slug }, select: { id: true } }),
+          ctx.db.event.findUnique({ where: { coordinatorEmail: input.coordinatorEmail }, select: { id: true } }),
         ]);
 
         if (existingSlug) {
-          return {
-            data: null,
-            error: "SLUG_EXISTS",
-            message: "An event with this slug already exists",
-          };
+          return { data: null, error: "SLUG_EXISTS", message: "An event with this slug already exists" };
         }
-
         if (existingEmail) {
-          return {
-            data: null,
-            error: "COORDINATOR_EMAIL_EXISTS",
-            message: "An event with this coordinator email already exists",
-          };
+          return { data: null, error: "COORDINATOR_EMAIL_EXISTS", message: "An event with this coordinator email already exists" };
         }
 
-        const event = await ctx.db.event.create({
+        await ctx.db.event.create({
           data: {
             slug: input.slug,
             dbPassword: input.dbPassword,
@@ -398,16 +373,13 @@ export const eventRouter = createTRPCRouter({
             registrationStatus: input.registrationStatus,
             isHidden: input.isHidden,
             schedule: {
-              create: input.schedule.map((item) => ({
-                ...item,
-                date: formatDate(item.date),
-              })),
+              createMany: { data: input.schedule.map((item) => ({ ...item, date: formatDate(item.date) })) },
             },
             registrationForm: {
-              create: input.registrationForm,
+              createMany: { data: input.registrationForm },
             },
             coordinators: {
-              create: input.coordinators,
+              createMany: { data: input.coordinators },
             },
             coordinatorManagedData: {
               create: {
@@ -425,18 +397,10 @@ export const eventRouter = createTRPCRouter({
           },
         });
 
-        return {
-          data: [],
-          error: null,
-          message: "Event created successfully",
-        };
+        return { data: [], error: null, message: "Event created successfully" };
       } catch (error) {
         console.error("Error creating event:", error);
-        return {
-          data: null,
-          error: "DATABASE_ERROR",
-          message: `Error creating event`,
-        };
+        return { data: null, error: "DATABASE_ERROR", message: "Error creating event" };
       }
     }),
 
@@ -447,98 +411,56 @@ export const eventRouter = createTRPCRouter({
         const { schedule, registrationForm, coordinators, slug, ...rest } =
           input;
 
-        return await ctx.db.$transaction(async (tx) => {
-          // First get the event ID
-          const event = await tx.event.findUnique({
-            where: { slug },
-            select: { id: true },
-          });
+        // Fetch event ID first — needed to build relation ops before the transaction
+        const event = await ctx.db.event.findUnique({ where: { slug }, select: { id: true } });
+        if (!event) throw new Error(`Event with slug ${slug} not found`);
 
-          if (!event) {
-            throw new Error(`Event with slug ${slug} not found`);
+        // Array-form $transaction sends everything as one batch to Postgres —
+        // faster than an interactive transaction and safe with Supabase's pooler.
+        // Operations execute in array order so deleteMany always precedes createMany.
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const ops: any[] = [];
+
+        if (Object.keys(rest).length > 0) {
+          ops.push(ctx.db.event.update({ where: { slug }, data: rest }));
+        }
+        if (schedule !== undefined) {
+          ops.push(ctx.db.eventSchedule.deleteMany({ where: { eventId: event.id } }));
+          if (schedule.length > 0) {
+            ops.push(ctx.db.eventSchedule.createMany({
+              data: schedule.map(({ id: itemId, eventId: originalEventId, ...restSchedule }) => ({
+                eventId: event.id, ...restSchedule,
+              })),
+            }));
           }
-
-          const updates = [];
-
-          // Update main event data if there are changes
-          if (Object.keys(rest).length > 0) {
-            updates.push(
-              tx.event.update({
-                where: { slug },
-                data: rest,
-              }),
-            );
+        }
+        if (registrationForm !== undefined) {
+          ops.push(ctx.db.eventRegistrationForm.deleteMany({ where: { eventId: event.id } }));
+          if (registrationForm.length > 0) {
+            ops.push(ctx.db.eventRegistrationForm.createMany({
+              data: registrationForm.map(({ id: itemId, eventId: originalEventId, ...restForm }) => ({
+                eventId: event.id, ...restForm,
+              })),
+            }));
           }
-
-          // Only update schedule if provided
-          if (schedule !== undefined) {
-            updates.push(
-              tx.eventSchedule.deleteMany({ where: { eventId: event.id } }),
-              tx.eventSchedule.createMany({
-                data: schedule.map(
-                  ({
-                    id: itemId,
-                    eventId: originalEventId,
-                    ...restSchedule
-                  }) => ({
-                    eventId: event.id,
-                    ...restSchedule,
-                  }),
-                ),
-              }),
-            );
+        }
+        if (coordinators !== undefined) {
+          ops.push(ctx.db.eventCoordinator.deleteMany({ where: { eventId: event.id } }));
+          if (coordinators.length > 0) {
+            ops.push(ctx.db.eventCoordinator.createMany({
+              data: coordinators.map(({ id: itemId, eventId: originalEventId, ...restCoordinator }) => ({
+                eventId: event.id, ...restCoordinator,
+              })),
+            }));
           }
+        }
 
-          // Only update registration form if provided
-          if (registrationForm !== undefined) {
-            updates.push(
-              tx.eventRegistrationForm.deleteMany({
-                where: { eventId: event.id },
-              }),
-              tx.eventRegistrationForm.createMany({
-                data: registrationForm.map(
-                  ({ id: itemId, eventId: originalEventId, ...restForm }) => ({
-                    eventId: event.id,
-                    ...restForm,
-                  }),
-                ),
-              }),
-            );
-          }
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        if (ops.length > 0) await ctx.db.$transaction(ops as any);
 
-          // Only update coordinators if provided
-          if (coordinators !== undefined) {
-            updates.push(
-              tx.eventCoordinator.deleteMany({
-                where: { eventId: event.id },
-              }),
-              tx.eventCoordinator.createMany({
-                data: coordinators.map(
-                  ({
-                    id: itemId,
-                    eventId: originalEventId,
-                    ...restCoordinator
-                  }) => ({
-                    eventId: event.id,
-                    ...restCoordinator,
-                  }),
-                ),
-              }),
-            );
-          }
-
-          // Execute all updates
-          await Promise.all(updates);
-
-          // Return updated event with relations
-          return tx.event.findUnique({
-            where: { slug },
-            include: {
-              schedule: true,
-              registrationForm: true,
-              coordinators: true,
-            },
-          });
+        return ctx.db.event.findUnique({
+          where: { slug },
+          include: { schedule: true, registrationForm: true, coordinators: true },
         });
       } catch (error) {
         console.error(`Error updating event ${input.slug}:`, error);
@@ -565,120 +487,58 @@ export const eventRouter = createTRPCRouter({
           });
         }
 
-        return await ctx.db.$transaction(async (tx) => {
-          // Store operations to execute
-          const operations: Promise<unknown>[] = [];
+        // Array-form $transaction sends everything as one batch to Postgres —
+        // faster than an interactive transaction and safe with Supabase's pooler.
+        // Operations execute in array order so deleteMany always precedes createMany.
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const ops: any[] = [];
 
-          // Main event update
-          if (Object.keys(rest).length > 0) {
-            operations.push(tx.event.update({ where: { id }, data: rest }));
-          }
+        if (Object.keys(rest).length > 0) {
+          ops.push(ctx.db.event.update({ where: { id }, data: rest }));
+        }
 
-          // Handle schedule updates
-          if (schedule !== undefined) {
-            operations.push(
-              tx.eventSchedule.deleteMany({ where: { eventId: id } }),
-            );
-
-            if (schedule.length > 0) {
-              // Filter out invalid schedules and properly map data
-              const validSchedules = schedule
-                .filter((item) => item.title && item.date && item.venue)
-                .map(
-                  ({
-                    id: scheduleId,
-                    eventId: originalEventId,
-                    ...scheduleRest
-                  }) => ({
-                    eventId: id, // Use the main event ID
-                    ...scheduleRest,
-                  }),
-                );
-
-              if (validSchedules.length > 0) {
-                operations.push(
-                  tx.eventSchedule.createMany({
-                    data: validSchedules,
-                    skipDuplicates: true,
-                  }),
-                );
-              }
+        if (schedule !== undefined) {
+          ops.push(ctx.db.eventSchedule.deleteMany({ where: { eventId: id } }));
+          if (schedule.length > 0) {
+            const validSchedules = schedule
+              .filter((item) => item.title && item.date && item.venue)
+              .map(({ id: scheduleId, eventId: originalEventId, ...scheduleRest }) => ({ eventId: id, ...scheduleRest }));
+            if (validSchedules.length > 0) {
+              ops.push(ctx.db.eventSchedule.createMany({ data: validSchedules, skipDuplicates: true }));
             }
           }
+        }
 
-          // Handle registration form updates
-          if (registrationForm !== undefined) {
-            operations.push(
-              tx.eventRegistrationForm.deleteMany({ where: { eventId: id } }),
-            );
-
-            if (registrationForm.length > 0) {
-              // Filter and properly map registration form data
-              const validRegistrationForms = registrationForm
-                .filter((item) => item.title && item.formURL !== undefined)
-                .map(
-                  ({ id: formId, eventId: originalEventId, ...formRest }) => ({
-                    eventId: id, // Use the main event ID, ensure it's string
-                    ...formRest,
-                  }),
-                );
-
-              if (validRegistrationForms.length > 0) {
-                operations.push(
-                  tx.eventRegistrationForm.createMany({
-                    data: validRegistrationForms,
-                    skipDuplicates: true,
-                  }),
-                );
-              }
+        if (registrationForm !== undefined) {
+          ops.push(ctx.db.eventRegistrationForm.deleteMany({ where: { eventId: id } }));
+          if (registrationForm.length > 0) {
+            const validForms = registrationForm
+              .filter((item) => item.title && item.formURL !== undefined)
+              .map(({ id: formId, eventId: originalEventId, ...formRest }) => ({ eventId: id, ...formRest }));
+            if (validForms.length > 0) {
+              ops.push(ctx.db.eventRegistrationForm.createMany({ data: validForms, skipDuplicates: true }));
             }
           }
+        }
 
-          // Handle coordinators updates
-          if (coordinators !== undefined) {
-            operations.push(
-              tx.eventCoordinator.deleteMany({ where: { eventId: id } }),
-            );
-
-            if (coordinators.length > 0) {
-              // Filter and properly map coordinator data
-              const validCoordinators = coordinators
-                .filter((item) => item.name && item.mobile && item.branch)
-                .map(
-                  ({
-                    id: coordinatorId,
-                    eventId: originalEventId,
-                    ...coordinatorRest
-                  }) => ({
-                    eventId: id, // Use the main event ID, ensure it's string
-                    ...coordinatorRest,
-                  }),
-                );
-
-              if (validCoordinators.length > 0) {
-                operations.push(
-                  tx.eventCoordinator.createMany({
-                    data: validCoordinators,
-                    skipDuplicates: true,
-                  }),
-                );
-              }
+        if (coordinators !== undefined) {
+          ops.push(ctx.db.eventCoordinator.deleteMany({ where: { eventId: id } }));
+          if (coordinators.length > 0) {
+            const validCoordinators = coordinators
+              .filter((item) => item.name && item.mobile && item.branch)
+              .map(({ id: coordinatorId, eventId: originalEventId, ...coordinatorRest }) => ({ eventId: id, ...coordinatorRest }));
+            if (validCoordinators.length > 0) {
+              ops.push(ctx.db.eventCoordinator.createMany({ data: validCoordinators, skipDuplicates: true }));
             }
           }
+        }
 
-          // Execute all operations concurrently
-          await Promise.all(operations);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        if (ops.length > 0) await ctx.db.$transaction(ops as any);
 
-          // Return the updated event with minimal data
-          return await tx.event.findUnique({
-            where: { id },
-            select: {
-              id: true,
-              title: true,
-              slug: true,
-              updatedAt: true,
-            },
-          });
+        return await ctx.db.event.findUnique({
+          where: { id },
+          select: { id: true, title: true, slug: true, updatedAt: true },
         });
       } catch (error) {
         console.error(`Error updating event ${input.id}:`, error);
